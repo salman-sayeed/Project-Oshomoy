@@ -28,13 +28,74 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.topPanel = new System.Windows.Forms.Panel();
+            this.minimizeBox = new System.Windows.Forms.PictureBox();
+            this.closeBox = new System.Windows.Forms.PictureBox();
+            this.topPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.minimizeBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.closeBox)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // topPanel
+            // 
+            this.topPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.topPanel.Controls.Add(this.minimizeBox);
+            this.topPanel.Controls.Add(this.closeBox);
+            this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.topPanel.Location = new System.Drawing.Point(0, 0);
+            this.topPanel.Name = "topPanel";
+            this.topPanel.Size = new System.Drawing.Size(1200, 35);
+            this.topPanel.TabIndex = 0;
+            // 
+            // minimizeBox
+            // 
+            this.minimizeBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.minimizeBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("minimizeBox.BackgroundImage")));
+            this.minimizeBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.minimizeBox.Location = new System.Drawing.Point(1117, 5);
+            this.minimizeBox.Name = "minimizeBox";
+            this.minimizeBox.Size = new System.Drawing.Size(25, 25);
+            this.minimizeBox.TabIndex = 2;
+            this.minimizeBox.TabStop = false;
+            this.minimizeBox.Click += new System.EventHandler(this.minimizeBox_Click);
+            // 
+            // closeBox
+            // 
+            this.closeBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.closeBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("closeBox.BackgroundImage")));
+            this.closeBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.closeBox.Location = new System.Drawing.Point(1159, 5);
+            this.closeBox.Name = "closeBox";
+            this.closeBox.Size = new System.Drawing.Size(25, 25);
+            this.closeBox.TabIndex = 1;
+            this.closeBox.TabStop = false;
+            this.closeBox.Click += new System.EventHandler(this.closeBox_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.ClientSize = new System.Drawing.Size(1200, 600);
+            this.Controls.Add(this.topPanel);
+            this.ForeColor = System.Drawing.SystemColors.Control;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.topPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.minimizeBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.closeBox)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel topPanel;
+        private System.Windows.Forms.PictureBox closeBox;
+        private System.Windows.Forms.PictureBox minimizeBox;
     }
 }
 
