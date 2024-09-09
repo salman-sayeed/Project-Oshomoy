@@ -26,5 +26,10 @@ namespace Oshomoy
         {
             this.WindowState = FormWindowState.Minimized;
         }
+
+        private void login1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

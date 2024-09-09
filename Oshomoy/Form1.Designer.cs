@@ -32,6 +32,7 @@
             this.topPanel = new System.Windows.Forms.Panel();
             this.minimizeBox = new System.Windows.Forms.PictureBox();
             this.closeBox = new System.Windows.Forms.PictureBox();
+            this.login1 = new Oshomoy.Login();
             this.topPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.minimizeBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.closeBox)).BeginInit();
@@ -39,7 +40,7 @@
             // 
             // topPanel
             // 
-            this.topPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.topPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(47)))), ((int)(((byte)(62)))));
             this.topPanel.Controls.Add(this.minimizeBox);
             this.topPanel.Controls.Add(this.closeBox);
             this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
@@ -72,12 +73,22 @@
             this.closeBox.TabStop = false;
             this.closeBox.Click += new System.EventHandler(this.closeBox_Click);
             // 
+            // login1
+            // 
+            this.login1.BackColor = System.Drawing.Color.IndianRed;
+            this.login1.Location = new System.Drawing.Point(0, 36);
+            this.login1.Name = "login1";
+            this.login1.Size = new System.Drawing.Size(1200, 565);
+            this.login1.TabIndex = 1;
+            this.login1.Load += new System.EventHandler(this.login1_Load);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(29)))), ((int)(((byte)(29)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(47)))), ((int)(((byte)(62)))));
             this.ClientSize = new System.Drawing.Size(1200, 600);
+            this.Controls.Add(this.login1);
             this.Controls.Add(this.topPanel);
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -96,6 +107,7 @@
         private System.Windows.Forms.Panel topPanel;
         private System.Windows.Forms.PictureBox closeBox;
         private System.Windows.Forms.PictureBox minimizeBox;
+        private Login login1;
     }
 }
 

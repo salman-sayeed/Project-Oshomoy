@@ -18,3 +18,4 @@ C:\Users\User\OneDrive\Desktop\pro c#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.
 C:\Users\User\OneDrive\Desktop\pro c#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.csproj.CoreCompileInputs.cache
 C:\Users\User\OneDrive\Desktop\pro c#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.exe
 C:\Users\User\OneDrive\Desktop\pro c#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.pdb
+D:\Programming\AIUB\C#\C# Project - Oshomoy\Oshomoy\obj\Debug\Oshomoy.Login.resources
