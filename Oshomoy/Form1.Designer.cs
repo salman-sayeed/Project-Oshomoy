@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.topPanel = new System.Windows.Forms.Panel();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.minimizeBox = new System.Windows.Forms.PictureBox();
             this.closeBox = new System.Windows.Forms.PictureBox();
-            this.login1 = new Oshomoy.Login();
             this.topPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.minimizeBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.closeBox)).BeginInit();
@@ -41,6 +41,7 @@
             // topPanel
             // 
             this.topPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(47)))), ((int)(((byte)(62)))));
+            this.topPanel.Controls.Add(this.lblTitle);
             this.topPanel.Controls.Add(this.minimizeBox);
             this.topPanel.Controls.Add(this.closeBox);
             this.topPanel.Dock = System.Windows.Forms.DockStyle.Top;
@@ -48,6 +49,20 @@
             this.topPanel.Name = "topPanel";
             this.topPanel.Size = new System.Drawing.Size(1200, 35);
             this.topPanel.TabIndex = 0;
+            this.topPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mouseDown);
+            this.topPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mouseMove);
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.BackColor = System.Drawing.Color.Transparent;
+            this.lblTitle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblTitle.Font = new System.Drawing.Font("Arial", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(73, 9);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(94, 19);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "OSHOMOY";
             // 
             // minimizeBox
             // 
@@ -73,22 +88,12 @@
             this.closeBox.TabStop = false;
             this.closeBox.Click += new System.EventHandler(this.closeBox_Click);
             // 
-            // login1
-            // 
-            this.login1.BackColor = System.Drawing.Color.IndianRed;
-            this.login1.Location = new System.Drawing.Point(0, 36);
-            this.login1.Name = "login1";
-            this.login1.Size = new System.Drawing.Size(1200, 565);
-            this.login1.TabIndex = 1;
-            this.login1.Load += new System.EventHandler(this.login1_Load);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(47)))), ((int)(((byte)(62)))));
             this.ClientSize = new System.Drawing.Size(1200, 600);
-            this.Controls.Add(this.login1);
             this.Controls.Add(this.topPanel);
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -96,6 +101,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.topPanel.ResumeLayout(false);
+            this.topPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.minimizeBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.closeBox)).EndInit();
             this.ResumeLayout(false);
@@ -107,7 +113,7 @@
         private System.Windows.Forms.Panel topPanel;
         private System.Windows.Forms.PictureBox closeBox;
         private System.Windows.Forms.PictureBox minimizeBox;
-        private Login login1;
+        private System.Windows.Forms.Label lblTitle;
     }
 }
 
