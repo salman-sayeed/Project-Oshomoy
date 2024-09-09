@@ -29,18 +29,18 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lbSignUsername = new System.Windows.Forms.Label();
-            this.tbSignUsername = new System.Windows.Forms.TextBox();
-            this.tbSignEmail = new System.Windows.Forms.TextBox();
-            this.lbSignEmail = new System.Windows.Forms.Label();
-            this.tbSignPassword = new System.Windows.Forms.TextBox();
-            this.lbSignPassword = new System.Windows.Forms.Label();
+            this.btSignSignUp = new System.Windows.Forms.Button();
+            this.lbSignDOB = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.tbSignConfirmPassword = new System.Windows.Forms.TextBox();
             this.lbSignConfirmPassword = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.lbSignDOB = new System.Windows.Forms.Label();
-            this.btSignSignUp = new System.Windows.Forms.Button();
+            this.tbSignPassword = new System.Windows.Forms.TextBox();
+            this.lbSignPassword = new System.Windows.Forms.Label();
+            this.tbSignEmail = new System.Windows.Forms.TextBox();
+            this.lbSignEmail = new System.Windows.Forms.Label();
+            this.tbSignUsername = new System.Windows.Forms.TextBox();
+            this.lbSignUsername = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,79 +63,36 @@
             this.panel1.Size = new System.Drawing.Size(430, 570);
             this.panel1.TabIndex = 0;
             // 
-            // label1
+            // btSignSignUp
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Javanese Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label1.Location = new System.Drawing.Point(163, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(102, 52);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "SignUp";
+            this.btSignSignUp.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btSignSignUp.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btSignSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btSignSignUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btSignSignUp.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btSignSignUp.Location = new System.Drawing.Point(40, 491);
+            this.btSignSignUp.Name = "btSignSignUp";
+            this.btSignSignUp.Size = new System.Drawing.Size(308, 45);
+            this.btSignSignUp.TabIndex = 11;
+            this.btSignSignUp.Text = "SignUp";
+            this.btSignSignUp.UseVisualStyleBackColor = false;
             // 
-            // lbSignUsername
+            // lbSignDOB
             // 
-            this.lbSignUsername.AutoSize = true;
-            this.lbSignUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSignUsername.Location = new System.Drawing.Point(36, 67);
-            this.lbSignUsername.Name = "lbSignUsername";
-            this.lbSignUsername.Size = new System.Drawing.Size(94, 20);
-            this.lbSignUsername.TabIndex = 1;
-            this.lbSignUsername.Text = "Username";
+            this.lbSignDOB.AutoSize = true;
+            this.lbSignDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSignDOB.Location = new System.Drawing.Point(36, 412);
+            this.lbSignDOB.Name = "lbSignDOB";
+            this.lbSignDOB.Size = new System.Drawing.Size(60, 20);
+            this.lbSignDOB.TabIndex = 10;
+            this.lbSignDOB.Text = "D.O.B";
             // 
-            // tbSignUsername
+            // dateTimePicker1
             // 
-            this.tbSignUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.tbSignUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbSignUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbSignUsername.Location = new System.Drawing.Point(39, 95);
-            this.tbSignUsername.Multiline = true;
-            this.tbSignUsername.Name = "tbSignUsername";
-            this.tbSignUsername.Size = new System.Drawing.Size(309, 39);
-            this.tbSignUsername.TabIndex = 2;
-            // 
-            // tbSignEmail
-            // 
-            this.tbSignEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.tbSignEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbSignEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbSignEmail.Location = new System.Drawing.Point(39, 173);
-            this.tbSignEmail.Multiline = true;
-            this.tbSignEmail.Name = "tbSignEmail";
-            this.tbSignEmail.Size = new System.Drawing.Size(309, 39);
-            this.tbSignEmail.TabIndex = 4;
-            // 
-            // lbSignEmail
-            // 
-            this.lbSignEmail.AutoSize = true;
-            this.lbSignEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSignEmail.Location = new System.Drawing.Point(36, 145);
-            this.lbSignEmail.Name = "lbSignEmail";
-            this.lbSignEmail.Size = new System.Drawing.Size(56, 20);
-            this.lbSignEmail.TabIndex = 3;
-            this.lbSignEmail.Text = "Email";
-            // 
-            // tbSignPassword
-            // 
-            this.tbSignPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
-            this.tbSignPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbSignPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbSignPassword.Location = new System.Drawing.Point(39, 257);
-            this.tbSignPassword.Multiline = true;
-            this.tbSignPassword.Name = "tbSignPassword";
-            this.tbSignPassword.Size = new System.Drawing.Size(309, 39);
-            this.tbSignPassword.TabIndex = 6;
-            // 
-            // lbSignPassword
-            // 
-            this.lbSignPassword.AutoSize = true;
-            this.lbSignPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSignPassword.Location = new System.Drawing.Point(36, 229);
-            this.lbSignPassword.Name = "lbSignPassword";
-            this.lbSignPassword.Size = new System.Drawing.Size(91, 20);
-            this.lbSignPassword.TabIndex = 5;
-            this.lbSignPassword.Text = "Password";
+            this.dateTimePicker1.Location = new System.Drawing.Point(40, 435);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
+            this.dateTimePicker1.TabIndex = 9;
             // 
             // tbSignConfirmPassword
             // 
@@ -158,36 +115,79 @@
             this.lbSignConfirmPassword.TabIndex = 7;
             this.lbSignConfirmPassword.Text = "Confirm Password";
             // 
-            // dateTimePicker1
+            // tbSignPassword
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(40, 435);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker1.TabIndex = 9;
+            this.tbSignPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.tbSignPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbSignPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSignPassword.Location = new System.Drawing.Point(39, 257);
+            this.tbSignPassword.Multiline = true;
+            this.tbSignPassword.Name = "tbSignPassword";
+            this.tbSignPassword.Size = new System.Drawing.Size(309, 39);
+            this.tbSignPassword.TabIndex = 6;
             // 
-            // lbSignDOB
+            // lbSignPassword
             // 
-            this.lbSignDOB.AutoSize = true;
-            this.lbSignDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbSignDOB.Location = new System.Drawing.Point(36, 412);
-            this.lbSignDOB.Name = "lbSignDOB";
-            this.lbSignDOB.Size = new System.Drawing.Size(60, 20);
-            this.lbSignDOB.TabIndex = 10;
-            this.lbSignDOB.Text = "D.O.B";
+            this.lbSignPassword.AutoSize = true;
+            this.lbSignPassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSignPassword.Location = new System.Drawing.Point(36, 229);
+            this.lbSignPassword.Name = "lbSignPassword";
+            this.lbSignPassword.Size = new System.Drawing.Size(91, 20);
+            this.lbSignPassword.TabIndex = 5;
+            this.lbSignPassword.Text = "Password";
             // 
-            // btSignSignUp
+            // tbSignEmail
             // 
-            this.btSignSignUp.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btSignSignUp.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.btSignSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btSignSignUp.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btSignSignUp.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btSignSignUp.Location = new System.Drawing.Point(40, 491);
-            this.btSignSignUp.Name = "btSignSignUp";
-            this.btSignSignUp.Size = new System.Drawing.Size(308, 45);
-            this.btSignSignUp.TabIndex = 11;
-            this.btSignSignUp.Text = "SignUp";
-            this.btSignSignUp.UseVisualStyleBackColor = false;
+            this.tbSignEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.tbSignEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbSignEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSignEmail.Location = new System.Drawing.Point(39, 173);
+            this.tbSignEmail.Multiline = true;
+            this.tbSignEmail.Name = "tbSignEmail";
+            this.tbSignEmail.Size = new System.Drawing.Size(309, 39);
+            this.tbSignEmail.TabIndex = 4;
+            // 
+            // lbSignEmail
+            // 
+            this.lbSignEmail.AutoSize = true;
+            this.lbSignEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSignEmail.Location = new System.Drawing.Point(36, 145);
+            this.lbSignEmail.Name = "lbSignEmail";
+            this.lbSignEmail.Size = new System.Drawing.Size(56, 20);
+            this.lbSignEmail.TabIndex = 3;
+            this.lbSignEmail.Text = "Email";
+            // 
+            // tbSignUsername
+            // 
+            this.tbSignUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(231)))), ((int)(((byte)(233)))));
+            this.tbSignUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbSignUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSignUsername.Location = new System.Drawing.Point(39, 95);
+            this.tbSignUsername.Multiline = true;
+            this.tbSignUsername.Name = "tbSignUsername";
+            this.tbSignUsername.Size = new System.Drawing.Size(309, 39);
+            this.tbSignUsername.TabIndex = 2;
+            // 
+            // lbSignUsername
+            // 
+            this.lbSignUsername.AutoSize = true;
+            this.lbSignUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbSignUsername.Location = new System.Drawing.Point(36, 67);
+            this.lbSignUsername.Name = "lbSignUsername";
+            this.lbSignUsername.Size = new System.Drawing.Size(94, 20);
+            this.lbSignUsername.TabIndex = 1;
+            this.lbSignUsername.Text = "Username";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Javanese Text", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.label1.Location = new System.Drawing.Point(163, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(102, 52);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "SignUp";
             // 
             // Signup
             // 
