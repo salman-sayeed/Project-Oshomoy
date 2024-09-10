@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace Oshomoy
 {
-    public partial class Login : UserControl
+    public partial class Login : UserControl //Form
     {
         public Login()
         {

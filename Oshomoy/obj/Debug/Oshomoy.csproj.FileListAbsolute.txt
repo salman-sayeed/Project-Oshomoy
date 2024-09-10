@@ -9,4 +9,3 @@ C:\Users\User\OneDrive\Desktop\pro c#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.
 C:\Users\User\OneDrive\Desktop\pro c#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.exe
 C:\Users\User\OneDrive\Desktop\pro c#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.pdb
 C:\Users\User\OneDrive\Desktop\pro c#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.Login.resources
-C:\Users\User\OneDrive\Desktop\pro c#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.Signup.resources
