@@ -43,17 +43,8 @@ namespace Oshomoy
                 Location = mousePose;
             }
         }
-        private void login1_Load(object sender, EventArgs e)
-        {
 
-        }
-
-        private void login1_Load_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void login1_Load_2(object sender, EventArgs e)
+        private void Form1_Load(object sender, EventArgs e)
         {
 
         }
