@@ -16,8 +16,7 @@ namespace Oshomoy
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Signup());
-
+            Application.Run(new Form1());
         }
     }
 }
