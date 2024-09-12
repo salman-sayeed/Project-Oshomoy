@@ -53,5 +53,10 @@ namespace Oshomoy
         {
 
         }
+
+        private void login1_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

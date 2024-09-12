@@ -17,12 +17,17 @@ namespace Oshomoy
             InitializeComponent();
         }
 
-        private void lbLogUsername_Click(object sender, EventArgs e)
+        private void Login_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void Login_Load(object sender, EventArgs e)
+        private void logPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void logPanel_Paint_1(object sender, PaintEventArgs e)
         {
 
         }
