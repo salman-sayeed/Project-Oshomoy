@@ -48,7 +48,7 @@
             // loginImage
             // 
             this.loginImage.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("loginImage.BackgroundImage")));
-            this.loginImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.loginImage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.loginImage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.loginImage.Location = new System.Drawing.Point(0, 0);
             this.loginImage.Name = "loginImage";
