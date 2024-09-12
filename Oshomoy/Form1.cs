@@ -58,5 +58,10 @@ namespace Oshomoy
         {
 
         }
+
+        private void topPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

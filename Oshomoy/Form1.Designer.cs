@@ -90,6 +90,7 @@
             this.topPanel.Name = "topPanel";
             this.topPanel.Size = new System.Drawing.Size(1000, 31);
             this.topPanel.TabIndex = 0;
+            this.topPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.topPanel_Paint);
             this.topPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mouseDown);
             this.topPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mouseMove);
             // 
