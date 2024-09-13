@@ -31,5 +31,10 @@ namespace Oshomoy
         {
 
         }
+
+        private void loginImage_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -55,11 +55,11 @@
             this.loginImage.Size = new System.Drawing.Size(668, 500);
             this.loginImage.TabIndex = 1;
             this.loginImage.TabStop = false;
+            this.loginImage.Click += new System.EventHandler(this.loginImage_Click);
             // 
             // Login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.loginImage);
             this.Controls.Add(this.logPanel);
             this.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
