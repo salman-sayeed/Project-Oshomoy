@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
+using System.Web.UI.WebControls;
 
 
 namespace Oshomoy
@@ -22,6 +23,8 @@ namespace Oshomoy
             lbWarnEmail.Hide(); 
             lbWarnPass.Hide();
             lbWarnConPass.Hide();
+
+            tbSignUserName.Focus();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -103,6 +106,21 @@ namespace Oshomoy
         }
 
         private void tbSignEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void logPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pbSignConPass1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbSignConPass2_Click(object sender, EventArgs e)
         {
 
         }

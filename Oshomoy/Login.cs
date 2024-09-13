@@ -22,6 +22,8 @@ namespace Oshomoy
 
             paassImg.Show();
             paassImg2.Hide();
+
+            tbLogin.Focus();
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -66,31 +68,48 @@ namespace Oshomoy
 
         private void btLogin_Click(object sender, EventArgs e)
         {
-            if(string.IsNullOrWhiteSpace(tbLogin.Text) && string.IsNullOrWhiteSpace(tbLogin2.Text)) 
+            lbWarn1.Hide();
+            lbWarn2.Hide();
+            bool hasError = false;
+
+            if (string.IsNullOrWhiteSpace(tbLogin.Text) && string.IsNullOrWhiteSpace(tbLogin2.Text))
             {
                 lbWarn1.Text = "Username can't be empty";
                 lbWarn1.Show();
                 lbWarn2.Text = "Password can't be empty";
                 lbWarn2.Show();
+                hasError = true;
             }
-            else if(string.IsNullOrWhiteSpace(tbLogin.Text)) 
+
+            else if (string.IsNullOrWhiteSpace(tbLogin.Text))
             {
                 lbWarn1.Text = "Username can't be empty";
                 lbWarn1.Show();
                 lbWarn2.Hide();
+                hasError = true;
             }
-            else if(string.IsNullOrWhiteSpace(tbLogin2.Text))
+
+            else if (string.IsNullOrWhiteSpace(tbLogin2.Text))
             {
                 lbWarn2.Text = "Password can't be empty";
                 lbWarn1.Hide();
                 lbWarn2.Show();
+                hasError = true;
             }
-            else 
+
+            if (!hasError)
             {
                 lbWarn1.Hide();
                 lbWarn2.Hide();
+
+                Form1 parentForm = this.Parent as Form1;
+                if (parentForm != null)
+                {
+                    parentForm.ShowSignup();
+                }
             }
         }
+
 
         private void lbWarn1_Click(object sender, EventArgs e)
         {
