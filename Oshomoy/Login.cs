@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Configuration;
+
 
 namespace Oshomoy
 {
@@ -17,6 +19,9 @@ namespace Oshomoy
             InitializeComponent();
             lbWarn1.Hide();
             lbWarn2.Hide();
+
+            paassImg.Show();
+            paassImg2.Hide();
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -61,23 +66,28 @@ namespace Oshomoy
 
         private void btLogin_Click(object sender, EventArgs e)
         {
-            if(tbLogin.Text.Length <= 0 && tbLogin2.Text.Length <= 0) 
+            if(string.IsNullOrWhiteSpace(tbLogin.Text) && string.IsNullOrWhiteSpace(tbLogin2.Text)) 
             {
                 lbWarn1.Text = "Username can't be empty";
                 lbWarn1.Show();
                 lbWarn2.Text = "Password can't be empty";
                 lbWarn2.Show();
             }
-            else if(tbLogin.Text.Length <= 0) 
+            else if(string.IsNullOrWhiteSpace(tbLogin.Text)) 
             {
                 lbWarn1.Text = "Username can't be empty";
                 lbWarn1.Show();
                 lbWarn2.Hide();
             }
-            else if(tbLogin2.Text.Length <= 0)
+            else if(string.IsNullOrWhiteSpace(tbLogin2.Text))
             {
                 lbWarn2.Text = "Password can't be empty";
+                lbWarn1.Hide();
                 lbWarn2.Show();
+            }
+            else 
+            {
+                lbWarn1.Hide();
                 lbWarn2.Hide();
             }
         }
@@ -85,6 +95,22 @@ namespace Oshomoy
         private void lbWarn1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        
+
+        private void paassImg_Click(object sender, EventArgs e)
+        {
+            tbLogin2.PasswordChar = '\0';
+            paassImg.Hide();
+            paassImg2.Show();
+        }
+
+        private void paassImg2_Click(object sender, EventArgs e)
+        {
+            tbLogin2.PasswordChar = '•';
+            paassImg.Show();
+            paassImg2.Hide();
         }
     }
 }

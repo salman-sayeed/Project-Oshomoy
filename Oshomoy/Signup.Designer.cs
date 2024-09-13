@@ -32,10 +32,13 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Signup));
             this.loginImage = new System.Windows.Forms.PictureBox();
             this.logPanel = new System.Windows.Forms.Panel();
+            this.lbWarnPass = new System.Windows.Forms.Label();
+            this.lbWarnEmail = new System.Windows.Forms.Label();
+            this.lbWarnUN = new System.Windows.Forms.Label();
             this.lbConfirmPass = new System.Windows.Forms.Label();
             this.tbConfirmPass = new System.Windows.Forms.TextBox();
             this.lbEmail = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbSignEmail = new System.Windows.Forms.TextBox();
             this.lbWelcometext = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.lbPass = new System.Windows.Forms.Label();
@@ -43,6 +46,7 @@
             this.lbUsername = new System.Windows.Forms.Label();
             this.tbSignUserName = new System.Windows.Forms.TextBox();
             this.lbGetStart = new System.Windows.Forms.Label();
+            this.lbWarnConPass = new System.Windows.Forms.Label();
             btRegister = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.loginImage)).BeginInit();
             this.logPanel.SuspendLayout();
@@ -57,12 +61,13 @@
             btRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             btRegister.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             btRegister.ForeColor = System.Drawing.Color.White;
-            btRegister.Location = new System.Drawing.Point(61, 394);
+            btRegister.Location = new System.Drawing.Point(61, 408);
             btRegister.Name = "btRegister";
             btRegister.Size = new System.Drawing.Size(223, 42);
             btRegister.TabIndex = 6;
             btRegister.Text = "Sign Up";
             btRegister.UseVisualStyleBackColor = false;
+            btRegister.Click += new System.EventHandler(this.btRegister_Click);
             // 
             // loginImage
             // 
@@ -78,10 +83,14 @@
             // logPanel
             // 
             this.logPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(134)))), ((int)(((byte)(148)))));
+            this.logPanel.Controls.Add(this.lbWarnConPass);
+            this.logPanel.Controls.Add(this.lbWarnPass);
+            this.logPanel.Controls.Add(this.lbWarnEmail);
+            this.logPanel.Controls.Add(this.lbWarnUN);
             this.logPanel.Controls.Add(this.lbConfirmPass);
             this.logPanel.Controls.Add(this.tbConfirmPass);
             this.logPanel.Controls.Add(this.lbEmail);
-            this.logPanel.Controls.Add(this.textBox1);
+            this.logPanel.Controls.Add(this.tbSignEmail);
             this.logPanel.Controls.Add(this.lbWelcometext);
             this.logPanel.Controls.Add(this.linkLabel1);
             this.logPanel.Controls.Add(btRegister);
@@ -97,23 +106,61 @@
             this.logPanel.Size = new System.Drawing.Size(332, 500);
             this.logPanel.TabIndex = 2;
             // 
+            // lbWarnPass
+            // 
+            this.lbWarnPass.AutoSize = true;
+            this.lbWarnPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(134)))), ((int)(((byte)(148)))));
+            this.lbWarnPass.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWarnPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(7)))), ((int)(((byte)(7)))));
+            this.lbWarnPass.Location = new System.Drawing.Point(42, 292);
+            this.lbWarnPass.Name = "lbWarnPass";
+            this.lbWarnPass.Size = new System.Drawing.Size(59, 16);
+            this.lbWarnPass.TabIndex = 17;
+            this.lbWarnPass.Text = "Test Text";
+            this.lbWarnPass.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // lbWarnEmail
+            // 
+            this.lbWarnEmail.AutoSize = true;
+            this.lbWarnEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(134)))), ((int)(((byte)(148)))));
+            this.lbWarnEmail.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWarnEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(7)))), ((int)(((byte)(7)))));
+            this.lbWarnEmail.Location = new System.Drawing.Point(42, 217);
+            this.lbWarnEmail.Name = "lbWarnEmail";
+            this.lbWarnEmail.Size = new System.Drawing.Size(59, 16);
+            this.lbWarnEmail.TabIndex = 16;
+            this.lbWarnEmail.Text = "Test Text";
+            this.lbWarnEmail.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // lbWarnUN
+            // 
+            this.lbWarnUN.AutoSize = true;
+            this.lbWarnUN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(134)))), ((int)(((byte)(148)))));
+            this.lbWarnUN.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWarnUN.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(7)))), ((int)(((byte)(7)))));
+            this.lbWarnUN.Location = new System.Drawing.Point(42, 142);
+            this.lbWarnUN.Name = "lbWarnUN";
+            this.lbWarnUN.Size = new System.Drawing.Size(59, 16);
+            this.lbWarnUN.TabIndex = 15;
+            this.lbWarnUN.Text = "Test Text";
+            // 
             // lbConfirmPass
             // 
             this.lbConfirmPass.AutoSize = true;
             this.lbConfirmPass.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbConfirmPass.ForeColor = System.Drawing.Color.White;
-            this.lbConfirmPass.Location = new System.Drawing.Point(40, 302);
+            this.lbConfirmPass.Location = new System.Drawing.Point(40, 311);
             this.lbConfirmPass.Name = "lbConfirmPass";
-            this.lbConfirmPass.Size = new System.Drawing.Size(87, 18);
+            this.lbConfirmPass.Size = new System.Drawing.Size(153, 18);
             this.lbConfirmPass.TabIndex = 13;
-            this.lbConfirmPass.Text = "Password";
+            this.lbConfirmPass.Text = "Confirm Password";
             // 
             // tbConfirmPass
             // 
             this.tbConfirmPass.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tbConfirmPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbConfirmPass.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbConfirmPass.Location = new System.Drawing.Point(43, 325);
+            this.tbConfirmPass.Location = new System.Drawing.Point(43, 336);
             this.tbConfirmPass.Multiline = true;
             this.tbConfirmPass.Name = "tbConfirmPass";
             this.tbConfirmPass.PasswordChar = '•';
@@ -131,23 +178,24 @@
             this.lbEmail.TabIndex = 11;
             this.lbEmail.Text = "Email";
             // 
-            // textBox1
+            // tbSignEmail
             // 
-            this.textBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(43, 184);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(250, 30);
-            this.textBox1.TabIndex = 10;
+            this.tbSignEmail.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tbSignEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbSignEmail.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSignEmail.Location = new System.Drawing.Point(43, 184);
+            this.tbSignEmail.Multiline = true;
+            this.tbSignEmail.Name = "tbSignEmail";
+            this.tbSignEmail.Size = new System.Drawing.Size(250, 30);
+            this.tbSignEmail.TabIndex = 10;
+            this.tbSignEmail.TextChanged += new System.EventHandler(this.tbSignEmail_TextChanged);
             // 
             // lbWelcometext
             // 
             this.lbWelcometext.AutoSize = true;
             this.lbWelcometext.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbWelcometext.ForeColor = System.Drawing.Color.White;
-            this.lbWelcometext.Location = new System.Drawing.Point(95, 54);
+            this.lbWelcometext.Location = new System.Drawing.Point(95, 47);
             this.lbWelcometext.Name = "lbWelcometext";
             this.lbWelcometext.Size = new System.Drawing.Size(140, 15);
             this.lbWelcometext.TabIndex = 9;
@@ -160,7 +208,7 @@
             this.linkLabel1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.linkLabel1.ForeColor = System.Drawing.Color.White;
             this.linkLabel1.LinkColor = System.Drawing.Color.White;
-            this.linkLabel1.Location = new System.Drawing.Point(70, 452);
+            this.linkLabel1.Location = new System.Drawing.Point(70, 462);
             this.linkLabel1.Name = "linkLabel1";
             this.linkLabel1.Size = new System.Drawing.Size(211, 15);
             this.linkLabel1.TabIndex = 8;
@@ -173,7 +221,7 @@
             this.lbPass.AutoSize = true;
             this.lbPass.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPass.ForeColor = System.Drawing.Color.White;
-            this.lbPass.Location = new System.Drawing.Point(42, 232);
+            this.lbPass.Location = new System.Drawing.Point(42, 236);
             this.lbPass.Name = "lbPass";
             this.lbPass.Size = new System.Drawing.Size(87, 18);
             this.lbPass.TabIndex = 4;
@@ -184,7 +232,7 @@
             this.tbSignPass.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tbSignPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbSignPass.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbSignPass.Location = new System.Drawing.Point(45, 255);
+            this.tbSignPass.Location = new System.Drawing.Point(45, 261);
             this.tbSignPass.Multiline = true;
             this.tbSignPass.Name = "tbSignPass";
             this.tbSignPass.PasswordChar = '•';
@@ -196,7 +244,7 @@
             this.lbUsername.AutoSize = true;
             this.lbUsername.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbUsername.ForeColor = System.Drawing.Color.White;
-            this.lbUsername.Location = new System.Drawing.Point(42, 92);
+            this.lbUsername.Location = new System.Drawing.Point(42, 84);
             this.lbUsername.Name = "lbUsername";
             this.lbUsername.Size = new System.Drawing.Size(90, 18);
             this.lbUsername.TabIndex = 2;
@@ -207,22 +255,36 @@
             this.tbSignUserName.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tbSignUserName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbSignUserName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbSignUserName.Location = new System.Drawing.Point(45, 116);
+            this.tbSignUserName.Location = new System.Drawing.Point(45, 109);
             this.tbSignUserName.Multiline = true;
             this.tbSignUserName.Name = "tbSignUserName";
             this.tbSignUserName.Size = new System.Drawing.Size(250, 30);
             this.tbSignUserName.TabIndex = 1;
+            this.tbSignUserName.TextChanged += new System.EventHandler(this.tbSignUserName_TextChanged);
             // 
             // lbGetStart
             // 
             this.lbGetStart.AutoSize = true;
             this.lbGetStart.Font = new System.Drawing.Font("Arial Rounded MT Bold", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbGetStart.ForeColor = System.Drawing.Color.White;
-            this.lbGetStart.Location = new System.Drawing.Point(72, 19);
+            this.lbGetStart.Location = new System.Drawing.Point(72, 12);
             this.lbGetStart.Name = "lbGetStart";
             this.lbGetStart.Size = new System.Drawing.Size(186, 34);
             this.lbGetStart.TabIndex = 0;
             this.lbGetStart.Text = "Get Started";
+            // 
+            // lbWarnConPass
+            // 
+            this.lbWarnConPass.AutoSize = true;
+            this.lbWarnConPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(134)))), ((int)(((byte)(148)))));
+            this.lbWarnConPass.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWarnConPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(7)))), ((int)(((byte)(7)))));
+            this.lbWarnConPass.Location = new System.Drawing.Point(42, 369);
+            this.lbWarnConPass.Name = "lbWarnConPass";
+            this.lbWarnConPass.Size = new System.Drawing.Size(59, 16);
+            this.lbWarnConPass.TabIndex = 18;
+            this.lbWarnConPass.Text = "Test Text";
+            this.lbWarnConPass.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // Signup
             // 
@@ -252,8 +314,12 @@
         private System.Windows.Forms.TextBox tbSignUserName;
         private System.Windows.Forms.Label lbGetStart;
         private System.Windows.Forms.Label lbEmail;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbSignEmail;
         private System.Windows.Forms.Label lbConfirmPass;
         private System.Windows.Forms.TextBox tbConfirmPass;
+        private System.Windows.Forms.Label lbWarnEmail;
+        private System.Windows.Forms.Label lbWarnUN;
+        private System.Windows.Forms.Label lbWarnPass;
+        private System.Windows.Forms.Label lbWarnConPass;
     }
 }
