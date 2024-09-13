@@ -33,8 +33,8 @@
             this.minimizeBox = new System.Windows.Forms.PictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.topPanel = new System.Windows.Forms.Panel();
-            this.login1 = new Oshomoy.Login();
             this.signup1 = new Oshomoy.Signup();
+            this.login1 = new Oshomoy.Login();
             ((System.ComponentModel.ISupportInitialize)(this.closeBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimizeBox)).BeginInit();
             this.topPanel.SuspendLayout();
@@ -95,6 +95,16 @@
             this.topPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mouseDown);
             this.topPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mouseMove);
             // 
+            // signup1
+            // 
+            this.signup1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.signup1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signup1.ForeColor = System.Drawing.Color.White;
+            this.signup1.Location = new System.Drawing.Point(0, 0);
+            this.signup1.Name = "signup1";
+            this.signup1.Size = new System.Drawing.Size(1000, 530);
+            this.signup1.TabIndex = 2;
+            // 
             // login1
             // 
             this.login1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -107,24 +117,14 @@
             this.login1.TabIndex = 1;
             this.login1.Load += new System.EventHandler(this.login1_Load_2);
             // 
-            // signup1
-            // 
-            this.signup1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.signup1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signup1.ForeColor = System.Drawing.Color.White;
-            this.signup1.Location = new System.Drawing.Point(0, 30);
-            this.signup1.Name = "signup1";
-            this.signup1.Size = new System.Drawing.Size(1000, 500);
-            this.signup1.TabIndex = 2;
-            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(47)))), ((int)(((byte)(62)))));
             this.ClientSize = new System.Drawing.Size(1000, 530);
-            this.Controls.Add(this.signup1);
             this.Controls.Add(this.login1);
             this.Controls.Add(this.topPanel);
+            this.Controls.Add(this.signup1);
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -146,8 +146,8 @@
         private System.Windows.Forms.PictureBox minimizeBox;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Panel topPanel;
-        private Login login1;
         private Signup signup1;
+        private Login login1;
     }
 }
 

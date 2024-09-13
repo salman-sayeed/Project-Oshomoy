@@ -21,3 +21,4 @@ D:\Programming\AIUB\C#\C# Project - Oshomoy\Oshomoy\obj\Debug\Oshomoy.csproj.Cor
 D:\Programming\AIUB\C#\C# Project - Oshomoy\Oshomoy\obj\Debug\Oshomoy.exe
 D:\Programming\AIUB\C#\C# Project - Oshomoy\Oshomoy\obj\Debug\Oshomoy.pdb
 D:\Programming\AIUB\C#\C# Project - Oshomoy\Oshomoy\obj\Debug\Oshomoy.Signup.resources
+D:\Programming\AIUB\C#\C# Project - Oshomoy\Oshomoy\obj\Debug\Oshomoy.Dashboard.resources
