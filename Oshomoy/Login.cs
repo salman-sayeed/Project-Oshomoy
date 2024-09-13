@@ -15,6 +15,8 @@ namespace Oshomoy
         public Login()
         {
             InitializeComponent();
+            lbWarn1.Hide();
+            lbWarn2.Hide();
         }
 
         private void Login_Load(object sender, EventArgs e)
@@ -54,6 +56,34 @@ namespace Oshomoy
             {
                 parentForm.ShowSignup();
             }
+
+        }
+
+        private void btLogin_Click(object sender, EventArgs e)
+        {
+            if(tbLogin.Text.Length <= 0 && tbLogin2.Text.Length <= 0) 
+            {
+                lbWarn1.Text = "Username can't be empty";
+                lbWarn1.Show();
+                lbWarn2.Text = "Password can't be empty";
+                lbWarn2.Show();
+            }
+            else if(tbLogin.Text.Length <= 0) 
+            {
+                lbWarn1.Text = "Username can't be empty";
+                lbWarn1.Show();
+                lbWarn2.Hide();
+            }
+            else if(tbLogin2.Text.Length <= 0)
+            {
+                lbWarn2.Text = "Password can't be empty";
+                lbWarn2.Show();
+                lbWarn2.Hide();
+            }
+        }
+
+        private void lbWarn1_Click(object sender, EventArgs e)
+        {
 
         }
     }

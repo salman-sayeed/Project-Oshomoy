@@ -28,10 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Signup));
             System.Windows.Forms.Button btRegister;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Signup));
             this.loginImage = new System.Windows.Forms.PictureBox();
             this.logPanel = new System.Windows.Forms.Panel();
+            this.lbConfirmPass = new System.Windows.Forms.Label();
+            this.tbConfirmPass = new System.Windows.Forms.TextBox();
+            this.lbEmail = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.lbWelcometext = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.lbPass = new System.Windows.Forms.Label();
@@ -39,14 +43,26 @@
             this.lbUsername = new System.Windows.Forms.Label();
             this.tbSignUserName = new System.Windows.Forms.TextBox();
             this.lbGetStart = new System.Windows.Forms.Label();
-            this.lbEmail = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.lbConfirmPass = new System.Windows.Forms.Label();
-            this.tbConfirmPass = new System.Windows.Forms.TextBox();
             btRegister = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.loginImage)).BeginInit();
             this.logPanel.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // btRegister
+            // 
+            btRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
+            btRegister.FlatAppearance.BorderSize = 0;
+            btRegister.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
+            btRegister.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(136)))), ((int)(((byte)(229)))));
+            btRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btRegister.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            btRegister.ForeColor = System.Drawing.Color.White;
+            btRegister.Location = new System.Drawing.Point(61, 394);
+            btRegister.Name = "btRegister";
+            btRegister.Size = new System.Drawing.Size(223, 42);
+            btRegister.TabIndex = 6;
+            btRegister.Text = "Sign Up";
+            btRegister.UseVisualStyleBackColor = false;
             // 
             // loginImage
             // 
@@ -81,6 +97,51 @@
             this.logPanel.Size = new System.Drawing.Size(332, 500);
             this.logPanel.TabIndex = 2;
             // 
+            // lbConfirmPass
+            // 
+            this.lbConfirmPass.AutoSize = true;
+            this.lbConfirmPass.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbConfirmPass.ForeColor = System.Drawing.Color.White;
+            this.lbConfirmPass.Location = new System.Drawing.Point(40, 302);
+            this.lbConfirmPass.Name = "lbConfirmPass";
+            this.lbConfirmPass.Size = new System.Drawing.Size(87, 18);
+            this.lbConfirmPass.TabIndex = 13;
+            this.lbConfirmPass.Text = "Password";
+            // 
+            // tbConfirmPass
+            // 
+            this.tbConfirmPass.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tbConfirmPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbConfirmPass.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbConfirmPass.Location = new System.Drawing.Point(43, 325);
+            this.tbConfirmPass.Multiline = true;
+            this.tbConfirmPass.Name = "tbConfirmPass";
+            this.tbConfirmPass.PasswordChar = '•';
+            this.tbConfirmPass.Size = new System.Drawing.Size(250, 30);
+            this.tbConfirmPass.TabIndex = 12;
+            // 
+            // lbEmail
+            // 
+            this.lbEmail.AutoSize = true;
+            this.lbEmail.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbEmail.ForeColor = System.Drawing.Color.White;
+            this.lbEmail.Location = new System.Drawing.Point(40, 161);
+            this.lbEmail.Name = "lbEmail";
+            this.lbEmail.Size = new System.Drawing.Size(51, 18);
+            this.lbEmail.TabIndex = 11;
+            this.lbEmail.Text = "Email";
+            // 
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(43, 184);
+            this.textBox1.Multiline = true;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(250, 30);
+            this.textBox1.TabIndex = 10;
+            // 
             // lbWelcometext
             // 
             this.lbWelcometext.AutoSize = true;
@@ -107,28 +168,12 @@
             this.linkLabel1.Text = "Already have an accoun? Login.";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
-            // btRegister
-            // 
-            btRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(165)))), ((int)(((byte)(245)))));
-            btRegister.FlatAppearance.BorderSize = 0;
-            btRegister.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(118)))), ((int)(((byte)(210)))));
-            btRegister.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(136)))), ((int)(((byte)(229)))));
-            btRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btRegister.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            btRegister.ForeColor = System.Drawing.Color.White;
-            btRegister.Location = new System.Drawing.Point(61, 394);
-            btRegister.Name = "btRegister";
-            btRegister.Size = new System.Drawing.Size(223, 42);
-            btRegister.TabIndex = 6;
-            btRegister.Text = "Sign Up";
-            btRegister.UseVisualStyleBackColor = false;
-            // 
             // lbPass
             // 
             this.lbPass.AutoSize = true;
             this.lbPass.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbPass.ForeColor = System.Drawing.Color.White;
-            this.lbPass.Location = new System.Drawing.Point(42, 228);
+            this.lbPass.Location = new System.Drawing.Point(42, 232);
             this.lbPass.Name = "lbPass";
             this.lbPass.Size = new System.Drawing.Size(87, 18);
             this.lbPass.TabIndex = 4;
@@ -151,7 +196,7 @@
             this.lbUsername.AutoSize = true;
             this.lbUsername.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbUsername.ForeColor = System.Drawing.Color.White;
-            this.lbUsername.Location = new System.Drawing.Point(42, 89);
+            this.lbUsername.Location = new System.Drawing.Point(42, 92);
             this.lbUsername.Name = "lbUsername";
             this.lbUsername.Size = new System.Drawing.Size(90, 18);
             this.lbUsername.TabIndex = 2;
@@ -178,51 +223,6 @@
             this.lbGetStart.Size = new System.Drawing.Size(186, 34);
             this.lbGetStart.TabIndex = 0;
             this.lbGetStart.Text = "Get Started";
-            // 
-            // lbEmail
-            // 
-            this.lbEmail.AutoSize = true;
-            this.lbEmail.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbEmail.ForeColor = System.Drawing.Color.White;
-            this.lbEmail.Location = new System.Drawing.Point(40, 157);
-            this.lbEmail.Name = "lbEmail";
-            this.lbEmail.Size = new System.Drawing.Size(51, 18);
-            this.lbEmail.TabIndex = 11;
-            this.lbEmail.Text = "Email";
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(43, 184);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(250, 30);
-            this.textBox1.TabIndex = 10;
-            // 
-            // lbConfirmPass
-            // 
-            this.lbConfirmPass.AutoSize = true;
-            this.lbConfirmPass.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbConfirmPass.ForeColor = System.Drawing.Color.White;
-            this.lbConfirmPass.Location = new System.Drawing.Point(40, 298);
-            this.lbConfirmPass.Name = "lbConfirmPass";
-            this.lbConfirmPass.Size = new System.Drawing.Size(87, 18);
-            this.lbConfirmPass.TabIndex = 13;
-            this.lbConfirmPass.Text = "Password";
-            // 
-            // tbConfirmPass
-            // 
-            this.tbConfirmPass.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.tbConfirmPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbConfirmPass.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbConfirmPass.Location = new System.Drawing.Point(43, 325);
-            this.tbConfirmPass.Multiline = true;
-            this.tbConfirmPass.Name = "tbConfirmPass";
-            this.tbConfirmPass.PasswordChar = '•';
-            this.tbConfirmPass.Size = new System.Drawing.Size(250, 30);
-            this.tbConfirmPass.TabIndex = 12;
             // 
             // Signup
             // 
