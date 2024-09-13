@@ -36,5 +36,25 @@ namespace Oshomoy
         {
 
         }
+
+        private void lbUsername_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbLogin_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            Form1 parentForm = this.Parent as Form1;
+            if (parentForm != null)
+            {
+                parentForm.ShowSignup();
+            }
+
+        }
     }
 }

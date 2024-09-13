@@ -17,6 +17,9 @@ namespace Oshomoy
         public Form1()
         {
             InitializeComponent();
+            signup1.Hide();
+            login1.Show();
+            login1.BringToFront();
         }
 
         private void closeBox_Click(object sender, EventArgs e)
@@ -44,8 +47,23 @@ namespace Oshomoy
             }
         }
 
+        public void ShowSignup()
+        {
+            login1.Hide(); 
+            signup1.Show();
+            signup1.BringToFront();
+        }
+
+        public void ShowLogin()
+        {
+            signup1.Hide();
+            login1.Show();
+            login1.BringToFront();
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
+            
 
         }
 
@@ -60,6 +78,11 @@ namespace Oshomoy
         }
 
         private void topPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void login1_Load_2(object sender, EventArgs e)
         {
 
         }
