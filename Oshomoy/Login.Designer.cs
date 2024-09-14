@@ -44,11 +44,17 @@
             this.tbLogin = new System.Windows.Forms.TextBox();
             this.lbGetStart = new System.Windows.Forms.Label();
             this.loginImage = new System.Windows.Forms.PictureBox();
+            this.gitHub = new System.Windows.Forms.PictureBox();
+            this.faceBook = new System.Windows.Forms.PictureBox();
+            this.linkedIn = new System.Windows.Forms.PictureBox();
             btLogin = new System.Windows.Forms.Button();
             this.logPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.paassImg2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.paassImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginImage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gitHub)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.faceBook)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.linkedIn)).BeginInit();
             this.SuspendLayout();
             // 
             // btLogin
@@ -71,6 +77,9 @@
             // logPanel
             // 
             this.logPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(134)))), ((int)(((byte)(148)))));
+            this.logPanel.Controls.Add(this.linkedIn);
+            this.logPanel.Controls.Add(this.faceBook);
+            this.logPanel.Controls.Add(this.gitHub);
             this.logPanel.Controls.Add(this.paassImg2);
             this.logPanel.Controls.Add(this.paassImg);
             this.logPanel.Controls.Add(this.lbWarn2);
@@ -197,7 +206,7 @@
             // 
             this.tbLogin2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tbLogin2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbLogin2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbLogin2.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbLogin2.Location = new System.Drawing.Point(45, 245);
             this.tbLogin2.Multiline = true;
             this.tbLogin2.Name = "tbLogin2";
@@ -221,7 +230,7 @@
             // 
             this.tbLogin.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tbLogin.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbLogin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbLogin.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbLogin.Location = new System.Drawing.Point(45, 165);
             this.tbLogin.Multiline = true;
             this.tbLogin.Name = "tbLogin";
@@ -252,6 +261,42 @@
             this.loginImage.TabStop = false;
             this.loginImage.Click += new System.EventHandler(this.loginImage_Click);
             // 
+            // gitHub
+            // 
+            this.gitHub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(134)))), ((int)(((byte)(148)))));
+            this.gitHub.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gitHub.BackgroundImage")));
+            this.gitHub.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.gitHub.Location = new System.Drawing.Point(125, 455);
+            this.gitHub.Name = "gitHub";
+            this.gitHub.Size = new System.Drawing.Size(25, 25);
+            this.gitHub.TabIndex = 19;
+            this.gitHub.TabStop = false;
+            this.gitHub.Click += new System.EventHandler(this.gitHub_Click);
+            // 
+            // faceBook
+            // 
+            this.faceBook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(134)))), ((int)(((byte)(148)))));
+            this.faceBook.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("faceBook.BackgroundImage")));
+            this.faceBook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.faceBook.Location = new System.Drawing.Point(169, 455);
+            this.faceBook.Name = "faceBook";
+            this.faceBook.Size = new System.Drawing.Size(25, 25);
+            this.faceBook.TabIndex = 20;
+            this.faceBook.TabStop = false;
+            this.faceBook.Click += new System.EventHandler(this.faceBook_Click);
+            // 
+            // linkedIn
+            // 
+            this.linkedIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(134)))), ((int)(((byte)(148)))));
+            this.linkedIn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("linkedIn.BackgroundImage")));
+            this.linkedIn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.linkedIn.Location = new System.Drawing.Point(213, 455);
+            this.linkedIn.Name = "linkedIn";
+            this.linkedIn.Size = new System.Drawing.Size(25, 25);
+            this.linkedIn.TabIndex = 21;
+            this.linkedIn.TabStop = false;
+            this.linkedIn.Click += new System.EventHandler(this.linkedIn_Click);
+            // 
             // Login
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -268,6 +313,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.paassImg2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.paassImg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginImage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gitHub)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.faceBook)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.linkedIn)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -288,5 +336,8 @@
         private System.Windows.Forms.Label lbWarn2;
         private System.Windows.Forms.PictureBox paassImg;
         private System.Windows.Forms.PictureBox paassImg2;
+        private System.Windows.Forms.PictureBox gitHub;
+        private System.Windows.Forms.PictureBox linkedIn;
+        private System.Windows.Forms.PictureBox faceBook;
     }
 }

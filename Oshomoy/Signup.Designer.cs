@@ -32,6 +32,10 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Signup));
             this.loginImage = new System.Windows.Forms.PictureBox();
             this.logPanel = new System.Windows.Forms.Panel();
+            this.signConPass2 = new System.Windows.Forms.PictureBox();
+            this.signConPass1 = new System.Windows.Forms.PictureBox();
+            this.signPass2 = new System.Windows.Forms.PictureBox();
+            this.signPass1 = new System.Windows.Forms.PictureBox();
             this.lbWarnConPass = new System.Windows.Forms.Label();
             this.lbWarnPass = new System.Windows.Forms.Label();
             this.lbWarnEmail = new System.Windows.Forms.Label();
@@ -50,6 +54,10 @@
             btRegister = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.loginImage)).BeginInit();
             this.logPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.signConPass2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.signConPass1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.signPass2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.signPass1)).BeginInit();
             this.SuspendLayout();
             // 
             // btRegister
@@ -83,6 +91,10 @@
             // logPanel
             // 
             this.logPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(134)))), ((int)(((byte)(148)))));
+            this.logPanel.Controls.Add(this.signConPass2);
+            this.logPanel.Controls.Add(this.signConPass1);
+            this.logPanel.Controls.Add(this.signPass2);
+            this.logPanel.Controls.Add(this.signPass1);
             this.logPanel.Controls.Add(this.lbWarnConPass);
             this.logPanel.Controls.Add(this.lbWarnPass);
             this.logPanel.Controls.Add(this.lbWarnEmail);
@@ -106,6 +118,54 @@
             this.logPanel.Size = new System.Drawing.Size(332, 500);
             this.logPanel.TabIndex = 2;
             this.logPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.logPanel_Paint);
+            // 
+            // signConPass2
+            // 
+            this.signConPass2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.signConPass2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("signConPass2.BackgroundImage")));
+            this.signConPass2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.signConPass2.Location = new System.Drawing.Point(260, 336);
+            this.signConPass2.Name = "signConPass2";
+            this.signConPass2.Size = new System.Drawing.Size(30, 30);
+            this.signConPass2.TabIndex = 21;
+            this.signConPass2.TabStop = false;
+            this.signConPass2.Click += new System.EventHandler(this.signConPass2_Click);
+            // 
+            // signConPass1
+            // 
+            this.signConPass1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.signConPass1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("signConPass1.BackgroundImage")));
+            this.signConPass1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.signConPass1.Location = new System.Drawing.Point(260, 336);
+            this.signConPass1.Name = "signConPass1";
+            this.signConPass1.Size = new System.Drawing.Size(30, 30);
+            this.signConPass1.TabIndex = 21;
+            this.signConPass1.TabStop = false;
+            this.signConPass1.Click += new System.EventHandler(this.signConPass1_Click);
+            // 
+            // signPass2
+            // 
+            this.signPass2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.signPass2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("signPass2.BackgroundImage")));
+            this.signPass2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.signPass2.Location = new System.Drawing.Point(260, 261);
+            this.signPass2.Name = "signPass2";
+            this.signPass2.Size = new System.Drawing.Size(30, 30);
+            this.signPass2.TabIndex = 19;
+            this.signPass2.TabStop = false;
+            this.signPass2.Click += new System.EventHandler(this.signPass2_Click_1);
+            // 
+            // signPass1
+            // 
+            this.signPass1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.signPass1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("signPass1.BackgroundImage")));
+            this.signPass1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.signPass1.Location = new System.Drawing.Point(260, 261);
+            this.signPass1.Name = "signPass1";
+            this.signPass1.Size = new System.Drawing.Size(30, 30);
+            this.signPass1.TabIndex = 20;
+            this.signPass1.TabStop = false;
+            this.signPass1.Click += new System.EventHandler(this.signPass1_Click);
             // 
             // lbWarnConPass
             // 
@@ -173,7 +233,7 @@
             // 
             this.tbConfirmPass.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tbConfirmPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbConfirmPass.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbConfirmPass.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbConfirmPass.Location = new System.Drawing.Point(45, 336);
             this.tbConfirmPass.Multiline = true;
             this.tbConfirmPass.Name = "tbConfirmPass";
@@ -196,7 +256,7 @@
             // 
             this.tbSignEmail.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tbSignEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbSignEmail.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSignEmail.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbSignEmail.Location = new System.Drawing.Point(45, 182);
             this.tbSignEmail.Multiline = true;
             this.tbSignEmail.Name = "tbSignEmail";
@@ -245,7 +305,7 @@
             // 
             this.tbSignPass.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tbSignPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbSignPass.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSignPass.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbSignPass.Location = new System.Drawing.Point(45, 261);
             this.tbSignPass.Multiline = true;
             this.tbSignPass.Name = "tbSignPass";
@@ -268,7 +328,7 @@
             // 
             this.tbSignUserName.BackColor = System.Drawing.Color.WhiteSmoke;
             this.tbSignUserName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbSignUserName.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbSignUserName.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbSignUserName.Location = new System.Drawing.Point(45, 109);
             this.tbSignUserName.Multiline = true;
             this.tbSignUserName.Name = "tbSignUserName";
@@ -299,6 +359,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.loginImage)).EndInit();
             this.logPanel.ResumeLayout(false);
             this.logPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.signConPass2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.signConPass1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.signPass2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.signPass1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -322,5 +386,9 @@
         private System.Windows.Forms.Label lbWarnUN;
         private System.Windows.Forms.Label lbWarnPass;
         private System.Windows.Forms.Label lbWarnConPass;
+        private System.Windows.Forms.PictureBox signPass2;
+        private System.Windows.Forms.PictureBox signPass1;
+        private System.Windows.Forms.PictureBox signConPass1;
+        private System.Windows.Forms.PictureBox signConPass2;
     }
 }

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
+using System.Data.SqlClient;
 
 
 namespace Oshomoy
@@ -66,57 +67,10 @@ namespace Oshomoy
 
         }
 
-        private void btLogin_Click(object sender, EventArgs e)
-        {
-            lbWarn1.Hide();
-            lbWarn2.Hide();
-            bool hasError = false;
-
-            if (string.IsNullOrWhiteSpace(tbLogin.Text) && string.IsNullOrWhiteSpace(tbLogin2.Text))
-            {
-                lbWarn1.Text = "Username can't be empty";
-                lbWarn1.Show();
-                lbWarn2.Text = "Password can't be empty";
-                lbWarn2.Show();
-                hasError = true;
-            }
-
-            else if (string.IsNullOrWhiteSpace(tbLogin.Text))
-            {
-                lbWarn1.Text = "Username can't be empty";
-                lbWarn1.Show();
-                lbWarn2.Hide();
-                hasError = true;
-            }
-
-            else if (string.IsNullOrWhiteSpace(tbLogin2.Text))
-            {
-                lbWarn2.Text = "Password can't be empty";
-                lbWarn1.Hide();
-                lbWarn2.Show();
-                hasError = true;
-            }
-
-            if (!hasError)
-            {
-                lbWarn1.Hide();
-                lbWarn2.Hide();
-
-                Form1 parentForm = this.Parent as Form1;
-                if (parentForm != null)
-                {
-                    parentForm.ShowSignup();
-                }
-            }
-        }
-
-
         private void lbWarn1_Click(object sender, EventArgs e)
         {
 
         }
-
-        
 
         private void paassImg_Click(object sender, EventArgs e)
         {
@@ -130,6 +84,111 @@ namespace Oshomoy
             tbLogin2.PasswordChar = '•';
             paassImg.Show();
             paassImg2.Hide();
+        }
+
+        private void gitHub_Click(object sender, EventArgs e)
+        {
+            string url = "https://github.com/salman-sayeed/Project-Oshomoy";
+            System.Diagnostics.Process.Start(url);
+        }
+
+        private void faceBook_Click(object sender, EventArgs e)
+        {
+            string url = "https://www.facebook.com/salmansayeed.25";
+            System.Diagnostics.Process.Start(url);
+        }
+
+        private void linkedIn_Click(object sender, EventArgs e)
+        {
+            string url = "https://www.linkedin.com/in/salmansayeed25";
+            System.Diagnostics.Process.Start(url);
+        }
+
+
+        private void btLogin_Click(object sender, EventArgs e)
+        {
+            lbWarn1.Hide();
+            lbWarn2.Hide();
+            bool hasError = false;
+
+            // Check for empty fields
+            if (string.IsNullOrWhiteSpace(tbLogin.Text) && string.IsNullOrWhiteSpace(tbLogin2.Text))
+            {
+                lbWarn1.Text = "Username can't be empty";
+                lbWarn1.Show();
+                lbWarn2.Text = "Password can't be empty";
+                lbWarn2.Show();
+                hasError = true;
+            }
+            else if (string.IsNullOrWhiteSpace(tbLogin.Text))
+            {
+                lbWarn1.Text = "Username can't be empty";
+                lbWarn1.Show();
+                lbWarn2.Hide();
+                hasError = true;
+            }
+            else if (string.IsNullOrWhiteSpace(tbLogin2.Text))
+            {
+                lbWarn2.Text = "Password can't be empty";
+                lbWarn1.Hide();
+                lbWarn2.Show();
+                hasError = true;
+            }
+
+            if (!hasError)
+            {
+                lbWarn1.Hide();
+                lbWarn2.Hide();
+
+                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\SALMAN\Documents\UserInfo.mdf;Integrated Security=True;Connect Timeout=30";
+
+                string query = "SELECT UserType FROM Users WHERE UserName = @UserName AND Password = @Password";
+
+                try
+                {
+                    using (SqlConnection connection = new SqlConnection(connectionString))
+                    {
+                        using (SqlCommand command = new SqlCommand(query, connection))
+                        {
+                            command.Parameters.AddWithValue("@UserName", tbLogin.Text);
+                            command.Parameters.AddWithValue("@Password", tbLogin2.Text); // Hashing is recommended for password
+
+                            connection.Open();
+
+                            var userType = command.ExecuteScalar() as string;
+
+                            if (userType != null)
+                            {
+                                Form1 parentForm = this.Parent as Form1;
+
+                                if (userType == "Admin")
+                                {
+                                    if (parentForm != null)
+                                    {
+                                        parentForm.ShowAdminDb(); 
+                                    }
+                                }
+                                else if (userType == "User")
+                                {
+                                    if (parentForm != null)
+                                    {
+                                        parentForm.ShowDashboard(); 
+                                    }
+                                }
+                            }
+                            else
+                            {
+                                lbWarn1.Text = "Invalid username or password";
+                                lbWarn1.Show();
+                            }
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred: " + ex.Message);
+                }
+            }
         }
     }
 }

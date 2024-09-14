@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Configuration;
 using System.Web.UI.WebControls;
+using System.Data.SqlClient;
 
 
 namespace Oshomoy
@@ -25,6 +26,11 @@ namespace Oshomoy
             lbWarnConPass.Hide();
 
             tbSignUserName.Focus();
+
+            signPass1.Show();
+            signPass2.Hide();
+            signConPass1.Show();
+            signConPass2.Hide();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -35,6 +41,60 @@ namespace Oshomoy
                 parentForm.ShowLogin();
             }
         }
+
+        private void tbSignUserName_TextChanged(object sender, EventArgs e)
+        {
+        
+        }
+
+        private void tbSignEmail_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void logPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pbSignConPass1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbSignConPass2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void signPass1_Click(object sender, EventArgs e)
+        {
+            tbSignPass.PasswordChar = '\0';
+            signPass1.Hide();
+            signPass2.Show();
+        }
+
+        private void signPass2_Click_1(object sender, EventArgs e)
+        {
+            tbSignPass.PasswordChar = '•';
+            signPass1.Show();
+            signPass2.Hide();
+        }
+
+        private void signConPass1_Click(object sender, EventArgs e)
+        {
+            tbConfirmPass.PasswordChar = '\0';
+            signConPass1.Hide();
+            signConPass2.Show();
+        }
+
+        private void signConPass2_Click(object sender, EventArgs e)
+        {
+            tbConfirmPass.PasswordChar = '•';
+            signConPass1.Show();
+            signConPass2.Hide();
+        }
+
 
         private void btRegister_Click(object sender, EventArgs e)
         {
@@ -83,46 +143,46 @@ namespace Oshomoy
             {
                 lbWarnConPass.Show();
                 lbWarnConPass.Text = "Passwords do not match";
+                hasError = true;
             }
             else if (!hasError)
             {
-                lbWarnUN.Hide();
-                lbWarnEmail.Hide();
-                lbWarnPass.Hide();
-                lbWarnConPass.Hide();
+                // Directly use the connection string
+                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\SALMAN\Documents\UserInfo.mdf;Integrated Security=True;Connect Timeout=30";
 
-                Form1 parentForm = this.Parent as Form1;
-                if (parentForm != null)
+                string query = "INSERT INTO Users (UserName, Email, Password, UserType) VALUES (@UserName, @Email, @Password, 'User')";
+
+                try
                 {
-                    parentForm.ShowLogin();
+                    using (SqlConnection connection = new SqlConnection(connectionString))
+                    {
+                        using (SqlCommand command = new SqlCommand(query, connection))
+                        {
+                            command.Parameters.AddWithValue("@UserName", tbSignUserName.Text);
+                            command.Parameters.AddWithValue("@Email", tbSignEmail.Text);
+                            command.Parameters.AddWithValue("@Password", tbSignPass.Text); // Ensure this is hashed
+
+                            connection.Open();
+                            command.ExecuteNonQuery();
+                        }
+                    }
+
+                    MessageBox.Show("Registration successful!");
+                    tbSignUserName.Clear();
+                    tbSignEmail.Clear();
+                    tbSignPass.Clear();
+                    tbConfirmPass.Clear();
+                    Form1 parentForm = this.Parent as Form1;
+                    if (parentForm != null)
+                    {
+                        parentForm.ShowLogin();
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred: " + ex.Message);
                 }
             }
-        }
-
-
-        private void tbSignUserName_TextChanged(object sender, EventArgs e)
-        {
-        
-        }
-
-        private void tbSignEmail_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void logPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pbSignConPass1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pbSignConPass2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

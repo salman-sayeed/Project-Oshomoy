@@ -22,3 +22,4 @@ D:\Programming\AIUB\C#\C# Project - Oshomoy\Oshomoy\obj\Debug\Oshomoy.csproj.Gen
 D:\Programming\AIUB\C#\C# Project - Oshomoy\Oshomoy\obj\Debug\Oshomoy.csproj.CoreCompileInputs.cache
 D:\Programming\AIUB\C#\C# Project - Oshomoy\Oshomoy\obj\Debug\Oshomoy.exe
 D:\Programming\AIUB\C#\C# Project - Oshomoy\Oshomoy\obj\Debug\Oshomoy.pdb
+D:\Programming\AIUB\C#\C# Project - Oshomoy\Oshomoy\obj\Debug\Oshomoy.AdminDb.resources

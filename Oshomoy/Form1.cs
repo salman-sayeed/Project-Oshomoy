@@ -18,6 +18,8 @@ namespace Oshomoy
         {
             InitializeComponent();
             signup1.Hide();
+            adminDb1.Hide();
+            dashboard1.Hide();
             login1.Show();
             login1.BringToFront();
         }
@@ -59,6 +61,24 @@ namespace Oshomoy
             signup1.Hide();
             login1.Show();
             login1.BringToFront();
+        }
+
+        public void ShowAdminDb()
+        {
+            signup1.Hide();
+            login1.Hide();
+            dashboard1.Hide();
+            adminDb1.Show();
+            adminDb1.BringToFront();
+        }
+
+        public void ShowDashboard()
+        {
+            signup1.Hide();
+            login1.Hide();
+            adminDb1.Hide();
+            dashboard1.Show();
+            dashboard1.BringToFront();
         }
 
         private void Form1_Load(object sender, EventArgs e)
