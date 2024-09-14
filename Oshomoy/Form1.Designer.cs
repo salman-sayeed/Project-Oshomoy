@@ -33,6 +33,7 @@
             this.minimizeBox = new System.Windows.Forms.PictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.topPanel = new System.Windows.Forms.Panel();
+            this.logo = new System.Windows.Forms.PictureBox();
             this.signup1 = new Oshomoy.Signup();
             this.login1 = new Oshomoy.Login();
             this.adminDb1 = new Oshomoy.AdminDb();
@@ -52,6 +53,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.closeBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimizeBox)).BeginInit();
             this.topPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.SuspendLayout();
             // 
             // closeBox
@@ -96,6 +98,7 @@
             // topPanel
             // 
             this.topPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(47)))), ((int)(((byte)(62)))));
+            this.topPanel.Controls.Add(this.logo);
             this.topPanel.Controls.Add(this.lblTitle);
             this.topPanel.Controls.Add(this.minimizeBox);
             this.topPanel.Controls.Add(this.closeBox);
@@ -108,6 +111,14 @@
             this.topPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.topPanel_Paint);
             this.topPanel.MouseDown += new System.Windows.Forms.MouseEventHandler(this.mouseDown);
             this.topPanel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.mouseMove);
+            // 
+            // logo
+            // 
+            this.logo.Location = new System.Drawing.Point(0, 0);
+            this.logo.Name = "logo";
+            this.logo.Size = new System.Drawing.Size(30, 30);
+            this.logo.TabIndex = 3;
+            this.logo.TabStop = false;
             // 
             // signup1
             // 
@@ -286,6 +297,7 @@
             this.Controls.Add(this.dashboard1);
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -295,6 +307,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.minimizeBox)).EndInit();
             this.topPanel.ResumeLayout(false);
             this.topPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -321,6 +334,7 @@
         private Login login5;
         private Signup signup5;
         private AdminDb adminDb4;
+        private System.Windows.Forms.PictureBox logo;
     }
 }
 
