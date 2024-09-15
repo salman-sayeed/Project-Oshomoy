@@ -145,7 +145,8 @@ namespace Oshomoy
                 lbWarnConPass.Text = "Passwords do not match";
                 hasError = true;
             }
-            else if (!hasError)
+
+             if (!hasError)
             {
                 // Directly use the connection string
                 string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\SALMAN\Documents\UserInfo.mdf;Integrated Security=True;Connect Timeout=30";
