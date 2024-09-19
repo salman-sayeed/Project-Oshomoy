@@ -40,6 +40,9 @@ namespace Oshomoy
             tbPassword.MaxLength = 16;
             tbConPassword.MaxLength = 16;
             tbUsername.KeyPress += TbUsername_KeyPress;
+            tbEmail.KeyPress += TbEmail_KeyPress;
+            tbPassword.KeyPress += TbPassword_KeyPress;
+            tbConPassword.KeyPress += TbConPassword_KeyPress;
             
         }
 
@@ -96,7 +99,30 @@ namespace Oshomoy
                 tbEmail.Focus();
             }
         }
-
+        private void TbEmail_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                e.Handled = true;
+                tbPassword.Focus();
+            }
+        }
+        private void TbPassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                e.Handled = true;
+                tbConPassword.Focus();
+            }
+        }
+        private void TbConPassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                e.Handled = true;
+                btRegister_Click(sender, e);
+            }
+        }
 
 
         private void btRegister_Click(object sender, EventArgs e)
