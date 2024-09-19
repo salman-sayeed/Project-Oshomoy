@@ -28,12 +28,19 @@ namespace Oshomoy
             lbWarnPass.Hide();
             lbWarnConPass.Hide();
 
-            tbSignUserName.Focus();
+            tbUsername.Focus();
 
             showPass1.Show();
             showPass2.Hide();
             showConPass1.Show();
             showConPass2.Hide();
+
+            tbUsername.MaxLength = 16;
+            tbEmail.MaxLength = 20;
+            tbPassword.MaxLength = 16;
+            tbConPassword.MaxLength = 16;
+            tbUsername.KeyPress += TbUsername_KeyPress;
+            
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -44,34 +51,30 @@ namespace Oshomoy
                 parentForm.ShowLogin();
             }
         }
-
         private void showPass1_Click(object sender, EventArgs e)
         {
-            tbSignPass.PasswordChar = '\0';
+            tbPassword.PasswordChar = '\0';
             showPass1.Hide();
             showPass2.Show();
         }
-
         private void showPass2_Click_1(object sender, EventArgs e)
         {
-            tbSignPass.PasswordChar = '•';
+            tbPassword.PasswordChar = '•';
             showPass1.Show();
             showPass2.Hide();
         }
         private void showConPass1_Click(object sender, EventArgs e)
         {
-            tbConfirmPass.PasswordChar = '\0';
+            tbConPassword.PasswordChar = '\0';
             showConPass1.Hide();
             showConPass2.Show();
         }
-
         private void showConPass2_Click(object sender, EventArgs e)
         {
-            tbConfirmPass.PasswordChar = '•';
+            tbConPassword.PasswordChar = '•';
             showConPass1.Show();
             showConPass2.Hide();
         }
-
         private bool IsValidEmail(string email)
         {
             try
@@ -85,6 +88,17 @@ namespace Oshomoy
             }
         }
 
+        private void TbUsername_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                e.Handled = true;
+                tbEmail.Focus();
+            }
+        }
+
+
+
         private void btRegister_Click(object sender, EventArgs e)
         {
             lbWarnUN.Hide();
@@ -94,48 +108,48 @@ namespace Oshomoy
 
             bool hasError = false;
 
-            if (string.IsNullOrWhiteSpace(tbSignUserName.Text))
+            if (string.IsNullOrWhiteSpace(tbUsername.Text))
             {
                 lbWarnUN.Show();
                 lbWarnUN.Text = "Username can't be empty";
                 hasError = true;
             }
 
-            if (string.IsNullOrWhiteSpace(tbSignEmail.Text))
+            if (string.IsNullOrWhiteSpace(tbEmail.Text))
             {
                 lbWarnEmail.Show();
                 lbWarnEmail.Text = "Email can't be empty";
                 hasError = true;
             }
 
-            if(!IsValidEmail(tbSignEmail.Text))
+            if(!IsValidEmail(tbEmail.Text))
             {
                 lbWarnEmail.Show();
                 lbWarnEmail.Text = "Invalid Email";
                 hasError = true;
             }
 
-            if (string.IsNullOrWhiteSpace(tbSignPass.Text))
+            if (string.IsNullOrWhiteSpace(tbPassword.Text))
             {
                 lbWarnPass.Show();
                 lbWarnPass.Text = "Password can't be empty";
                 hasError = true;
             }
-            else if (tbSignPass.Text.Length < 8)
+            else if (tbPassword.Text.Length < 8)
             {
                 lbWarnPass.Show();
                 lbWarnPass.Text = "Password must be at least 8 characters long";
                 hasError = true;
             }
 
-            if (string.IsNullOrWhiteSpace(tbConfirmPass.Text))
+            if (string.IsNullOrWhiteSpace(tbConPassword.Text))
             {
                 lbWarnConPass.Show();
                 lbWarnConPass.Text = "Confirm Password can't be empty";
                 hasError = true;
             }
 
-            if (!hasError && tbSignPass.Text != tbConfirmPass.Text)
+            if (!hasError && tbPassword.Text != tbConPassword.Text)
             {
                 lbWarnConPass.Show();
                 lbWarnConPass.Text = "Passwords do not match";
@@ -152,9 +166,9 @@ namespace Oshomoy
                     {
                         using (SqlCommand command = new SqlCommand(query, connection))
                         {
-                            command.Parameters.AddWithValue("@UserName", tbSignUserName.Text);
-                            command.Parameters.AddWithValue("@Email", tbSignEmail.Text);
-                            command.Parameters.AddWithValue("@Password", tbSignPass.Text);
+                            command.Parameters.AddWithValue("@UserName", tbUsername.Text);
+                            command.Parameters.AddWithValue("@Email", tbEmail.Text);
+                            command.Parameters.AddWithValue("@Password", tbPassword.Text);
 
                             connection.Open();
                             command.ExecuteNonQuery();
@@ -162,10 +176,10 @@ namespace Oshomoy
                     }
 
                     MessageBox.Show("Registration successful!");
-                    tbSignUserName.Clear();
-                    tbSignEmail.Clear();
-                    tbSignPass.Clear();
-                    tbConfirmPass.Clear();
+                    tbUsername.Clear();
+                    tbEmail.Clear();
+                    tbPassword.Clear();
+                    tbConPassword.Clear();
                     Form1 parentForm = this.Parent as Form1;
                     if (parentForm != null)
                     {
@@ -179,6 +193,5 @@ namespace Oshomoy
             }
         }
 
-        
     }
 }

@@ -13,50 +13,32 @@ using System.Data.SqlClient;
 
 namespace Oshomoy
 {
-    public partial class Login : UserControl //Form
+    public partial class Login : UserControl
     {
+        string connectionString;
         public Login()
         {
             InitializeComponent();
+            connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\SALMAN\Documents\UserInfo.mdf;Integrated Security=True;Connect Timeout=30";
+
             lbWarn1.Hide();
             lbWarn2.Hide();
 
             paassImg.Show();
             paassImg2.Hide();
 
-            tbLogin.Focus();
+            tbUsername.Focus();
+
+            tbUsername.MaxLength = 16;
+            tbPassword.MaxLength = 16;
+            tbUsername.KeyPress += TbUsername_KeyPress;
+            tbPassword.KeyPress += TbPassword_KeyPress;
         }
 
         private void Login_Load(object sender, EventArgs e)
         {
 
         }
-
-        private void logPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void logPanel_Paint_1(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void loginImage_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbUsername_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tbLogin_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Form1 parentForm = this.Parent as Form1;
@@ -67,21 +49,16 @@ namespace Oshomoy
 
         }
 
-        private void lbWarn1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void paassImg_Click(object sender, EventArgs e)
         {
-            tbLogin2.PasswordChar = '\0';
+            tbPassword.PasswordChar = '\0';
             paassImg.Hide();
             paassImg2.Show();
         }
 
         private void paassImg2_Click(object sender, EventArgs e)
         {
-            tbLogin2.PasswordChar = '•';
+            tbPassword.PasswordChar = '•';
             paassImg.Show();
             paassImg2.Hide();
         }
@@ -104,6 +81,23 @@ namespace Oshomoy
             System.Diagnostics.Process.Start(url);
         }
 
+        private void TbUsername_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                e.Handled = true;
+                tbPassword.Focus();
+            }
+        }
+
+        private void TbPassword_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == (char)Keys.Enter)
+            {
+                e.Handled = true;
+                btLogin_Click (sender, e);
+            }
+        }
 
         private void btLogin_Click(object sender, EventArgs e)
         {
@@ -111,8 +105,7 @@ namespace Oshomoy
             lbWarn2.Hide();
             bool hasError = false;
 
-            // Check for empty fields
-            if (string.IsNullOrWhiteSpace(tbLogin.Text) && string.IsNullOrWhiteSpace(tbLogin2.Text))
+            if (string.IsNullOrWhiteSpace(tbUsername.Text) && string.IsNullOrWhiteSpace(tbPassword.Text))
             {
                 lbWarn1.Text = "Username can't be empty";
                 lbWarn1.Show();
@@ -120,14 +113,14 @@ namespace Oshomoy
                 lbWarn2.Show();
                 hasError = true;
             }
-            else if (string.IsNullOrWhiteSpace(tbLogin.Text))
+            else if (string.IsNullOrWhiteSpace(tbUsername.Text))
             {
                 lbWarn1.Text = "Username can't be empty";
                 lbWarn1.Show();
                 lbWarn2.Hide();
                 hasError = true;
             }
-            else if (string.IsNullOrWhiteSpace(tbLogin2.Text))
+            else if (string.IsNullOrWhiteSpace(tbPassword.Text))
             {
                 lbWarn2.Text = "Password can't be empty";
                 lbWarn1.Hide();
@@ -140,8 +133,6 @@ namespace Oshomoy
                 lbWarn1.Hide();
                 lbWarn2.Hide();
 
-                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\SALMAN\Documents\UserInfo.mdf;Integrated Security=True;Connect Timeout=30";
-
                 string query = "SELECT UserType FROM Users WHERE UserName = @UserName AND Password = @Password";
 
                 try
@@ -150,8 +141,8 @@ namespace Oshomoy
                     {
                         using (SqlCommand command = new SqlCommand(query, connection))
                         {
-                            command.Parameters.AddWithValue("@UserName", tbLogin.Text);
-                            command.Parameters.AddWithValue("@Password", tbLogin2.Text); // Hashing is recommended for password
+                            command.Parameters.AddWithValue("@UserName", tbUsername.Text);
+                            command.Parameters.AddWithValue("@Password", tbPassword.Text); // Hashing is recommended for password
 
                             connection.Open();
 

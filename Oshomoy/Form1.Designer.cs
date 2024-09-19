@@ -34,22 +34,22 @@
             this.lblTitle = new System.Windows.Forms.Label();
             this.topPanel = new System.Windows.Forms.Panel();
             this.logo = new System.Windows.Forms.PictureBox();
-            this.signup1 = new Oshomoy.Signup();
-            this.login1 = new Oshomoy.Login();
-            this.adminDb1 = new Oshomoy.AdminDb();
-            this.signup2 = new Oshomoy.Signup();
-            this.login2 = new Oshomoy.Login();
-            this.adminDb2 = new Oshomoy.AdminDb();
-            this.dashboard1 = new Oshomoy.Dashboard();
-            this.login3 = new Oshomoy.Login();
-            this.signup3 = new Oshomoy.Signup();
-            this.adminDb3 = new Oshomoy.AdminDb();
-            this.signup4 = new Oshomoy.Signup();
-            this.login4 = new Oshomoy.Login();
-            this.dashboard2 = new Oshomoy.Dashboard();
-            this.login5 = new Oshomoy.Login();
-            this.signup5 = new Oshomoy.Signup();
             this.adminDb4 = new Oshomoy.AdminDb();
+            this.signup5 = new Oshomoy.Signup();
+            this.login5 = new Oshomoy.Login();
+            this.dashboard2 = new Oshomoy.Dashboard();
+            this.login4 = new Oshomoy.Login();
+            this.signup4 = new Oshomoy.Signup();
+            this.adminDb2 = new Oshomoy.AdminDb();
+            this.login2 = new Oshomoy.Login();
+            this.signup2 = new Oshomoy.Signup();
+            this.adminDb1 = new Oshomoy.AdminDb();
+            this.login1 = new Oshomoy.Login();
+            this.signup1 = new Oshomoy.Signup();
+            this.adminDb3 = new Oshomoy.AdminDb();
+            this.signup3 = new Oshomoy.Signup();
+            this.login3 = new Oshomoy.Login();
+            this.dashboard1 = new Oshomoy.Dashboard();
             ((System.ComponentModel.ISupportInitialize)(this.closeBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimizeBox)).BeginInit();
             this.topPanel.SuspendLayout();
@@ -97,7 +97,7 @@
             // 
             // topPanel
             // 
-            this.topPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(47)))), ((int)(((byte)(62)))));
+            this.topPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.topPanel.Controls.Add(this.logo);
             this.topPanel.Controls.Add(this.lblTitle);
             this.topPanel.Controls.Add(this.minimizeBox);
@@ -120,15 +120,101 @@
             this.logo.TabIndex = 3;
             this.logo.TabStop = false;
             // 
-            // signup1
+            // adminDb4
             // 
-            this.signup1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.signup1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signup1.ForeColor = System.Drawing.Color.White;
-            this.signup1.Location = new System.Drawing.Point(0, 0);
-            this.signup1.Name = "signup1";
-            this.signup1.Size = new System.Drawing.Size(1000, 530);
-            this.signup1.TabIndex = 2;
+            this.adminDb4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.adminDb4.Location = new System.Drawing.Point(0, 30);
+            this.adminDb4.Name = "adminDb4";
+            this.adminDb4.Size = new System.Drawing.Size(1000, 500);
+            this.adminDb4.TabIndex = 16;
+            // 
+            // signup5
+            // 
+            this.signup5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.signup5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signup5.ForeColor = System.Drawing.Color.White;
+            this.signup5.Location = new System.Drawing.Point(0, 30);
+            this.signup5.Name = "signup5";
+            this.signup5.Size = new System.Drawing.Size(1000, 500);
+            this.signup5.TabIndex = 15;
+            // 
+            // login5
+            // 
+            this.login5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.login5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.login5.ForeColor = System.Drawing.SystemColors.Control;
+            this.login5.Location = new System.Drawing.Point(0, 30);
+            this.login5.Margin = new System.Windows.Forms.Padding(4);
+            this.login5.Name = "login5";
+            this.login5.Size = new System.Drawing.Size(1000, 500);
+            this.login5.TabIndex = 14;
+            // 
+            // dashboard2
+            // 
+            this.dashboard2.BackColor = System.Drawing.SystemColors.Control;
+            this.dashboard2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dashboard2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashboard2.Location = new System.Drawing.Point(0, 30);
+            this.dashboard2.Name = "dashboard2";
+            this.dashboard2.Size = new System.Drawing.Size(1000, 500);
+            this.dashboard2.TabIndex = 13;
+            // 
+            // login4
+            // 
+            this.login4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.login4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.login4.ForeColor = System.Drawing.SystemColors.Control;
+            this.login4.Location = new System.Drawing.Point(0, 30);
+            this.login4.Margin = new System.Windows.Forms.Padding(4);
+            this.login4.Name = "login4";
+            this.login4.Size = new System.Drawing.Size(1000, 500);
+            this.login4.TabIndex = 12;
+            // 
+            // signup4
+            // 
+            this.signup4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.signup4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signup4.ForeColor = System.Drawing.Color.White;
+            this.signup4.Location = new System.Drawing.Point(0, 30);
+            this.signup4.Name = "signup4";
+            this.signup4.Size = new System.Drawing.Size(1000, 500);
+            this.signup4.TabIndex = 11;
+            // 
+            // adminDb2
+            // 
+            this.adminDb2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.adminDb2.Location = new System.Drawing.Point(0, 30);
+            this.adminDb2.Name = "adminDb2";
+            this.adminDb2.Size = new System.Drawing.Size(1000, 500);
+            this.adminDb2.TabIndex = 6;
+            // 
+            // login2
+            // 
+            this.login2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.login2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.login2.ForeColor = System.Drawing.SystemColors.Control;
+            this.login2.Location = new System.Drawing.Point(0, 30);
+            this.login2.Margin = new System.Windows.Forms.Padding(4);
+            this.login2.Name = "login2";
+            this.login2.Size = new System.Drawing.Size(1000, 500);
+            this.login2.TabIndex = 5;
+            // 
+            // signup2
+            // 
+            this.signup2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signup2.ForeColor = System.Drawing.Color.White;
+            this.signup2.Location = new System.Drawing.Point(12, 105);
+            this.signup2.Name = "signup2";
+            this.signup2.Size = new System.Drawing.Size(1000, 500);
+            this.signup2.TabIndex = 4;
+            // 
+            // adminDb1
+            // 
+            this.adminDb1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.adminDb1.Location = new System.Drawing.Point(0, 30);
+            this.adminDb1.Name = "adminDb1";
+            this.adminDb1.Size = new System.Drawing.Size(1000, 500);
+            this.adminDb1.TabIndex = 3;
             // 
             // login1
             // 
@@ -142,50 +228,31 @@
             this.login1.TabIndex = 1;
             this.login1.Load += new System.EventHandler(this.login1_Load_2);
             // 
-            // adminDb1
+            // signup1
             // 
-            this.adminDb1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.adminDb1.Location = new System.Drawing.Point(0, 30);
-            this.adminDb1.Name = "adminDb1";
-            this.adminDb1.Size = new System.Drawing.Size(1000, 500);
-            this.adminDb1.TabIndex = 3;
+            this.signup1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.signup1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signup1.ForeColor = System.Drawing.Color.White;
+            this.signup1.Location = new System.Drawing.Point(0, 0);
+            this.signup1.Name = "signup1";
+            this.signup1.Size = new System.Drawing.Size(1000, 530);
+            this.signup1.TabIndex = 2;
             // 
-            // signup2
+            // adminDb3
             // 
-            this.signup2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signup2.ForeColor = System.Drawing.Color.White;
-            this.signup2.Location = new System.Drawing.Point(12, 105);
-            this.signup2.Name = "signup2";
-            this.signup2.Size = new System.Drawing.Size(1000, 500);
-            this.signup2.TabIndex = 4;
+            this.adminDb3.Location = new System.Drawing.Point(0, 0);
+            this.adminDb3.Name = "adminDb3";
+            this.adminDb3.Size = new System.Drawing.Size(1000, 500);
+            this.adminDb3.TabIndex = 10;
             // 
-            // login2
+            // signup3
             // 
-            this.login2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.login2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.login2.ForeColor = System.Drawing.SystemColors.Control;
-            this.login2.Location = new System.Drawing.Point(0, 30);
-            this.login2.Margin = new System.Windows.Forms.Padding(4);
-            this.login2.Name = "login2";
-            this.login2.Size = new System.Drawing.Size(1000, 500);
-            this.login2.TabIndex = 5;
-            // 
-            // adminDb2
-            // 
-            this.adminDb2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.adminDb2.Location = new System.Drawing.Point(0, 30);
-            this.adminDb2.Name = "adminDb2";
-            this.adminDb2.Size = new System.Drawing.Size(1000, 500);
-            this.adminDb2.TabIndex = 6;
-            // 
-            // dashboard1
-            // 
-            this.dashboard1.BackColor = System.Drawing.SystemColors.Control;
-            this.dashboard1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dashboard1.Location = new System.Drawing.Point(0, 0);
-            this.dashboard1.Name = "dashboard1";
-            this.dashboard1.Size = new System.Drawing.Size(1000, 500);
-            this.dashboard1.TabIndex = 7;
+            this.signup3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signup3.ForeColor = System.Drawing.Color.White;
+            this.signup3.Location = new System.Drawing.Point(0, 0);
+            this.signup3.Name = "signup3";
+            this.signup3.Size = new System.Drawing.Size(1000, 500);
+            this.signup3.TabIndex = 9;
             // 
             // login3
             // 
@@ -197,86 +264,19 @@
             this.login3.Size = new System.Drawing.Size(1000, 500);
             this.login3.TabIndex = 8;
             // 
-            // signup3
+            // dashboard1
             // 
-            this.signup3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signup3.ForeColor = System.Drawing.Color.White;
-            this.signup3.Location = new System.Drawing.Point(0, 0);
-            this.signup3.Name = "signup3";
-            this.signup3.Size = new System.Drawing.Size(1000, 500);
-            this.signup3.TabIndex = 9;
-            // 
-            // adminDb3
-            // 
-            this.adminDb3.Location = new System.Drawing.Point(0, 0);
-            this.adminDb3.Name = "adminDb3";
-            this.adminDb3.Size = new System.Drawing.Size(1000, 500);
-            this.adminDb3.TabIndex = 10;
-            // 
-            // signup4
-            // 
-            this.signup4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.signup4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signup4.ForeColor = System.Drawing.Color.White;
-            this.signup4.Location = new System.Drawing.Point(0, 30);
-            this.signup4.Name = "signup4";
-            this.signup4.Size = new System.Drawing.Size(1000, 500);
-            this.signup4.TabIndex = 11;
-            // 
-            // login4
-            // 
-            this.login4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.login4.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.login4.ForeColor = System.Drawing.SystemColors.Control;
-            this.login4.Location = new System.Drawing.Point(0, 30);
-            this.login4.Margin = new System.Windows.Forms.Padding(4);
-            this.login4.Name = "login4";
-            this.login4.Size = new System.Drawing.Size(1000, 500);
-            this.login4.TabIndex = 12;
-            // 
-            // dashboard2
-            // 
-            this.dashboard2.BackColor = System.Drawing.SystemColors.Control;
-            this.dashboard2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dashboard2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dashboard2.Location = new System.Drawing.Point(0, 30);
-            this.dashboard2.Name = "dashboard2";
-            this.dashboard2.Size = new System.Drawing.Size(1000, 500);
-            this.dashboard2.TabIndex = 13;
-            // 
-            // login5
-            // 
-            this.login5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.login5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.login5.ForeColor = System.Drawing.SystemColors.Control;
-            this.login5.Location = new System.Drawing.Point(0, 30);
-            this.login5.Margin = new System.Windows.Forms.Padding(4);
-            this.login5.Name = "login5";
-            this.login5.Size = new System.Drawing.Size(1000, 500);
-            this.login5.TabIndex = 14;
-            // 
-            // signup5
-            // 
-            this.signup5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.signup5.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signup5.ForeColor = System.Drawing.Color.White;
-            this.signup5.Location = new System.Drawing.Point(0, 30);
-            this.signup5.Name = "signup5";
-            this.signup5.Size = new System.Drawing.Size(1000, 500);
-            this.signup5.TabIndex = 15;
-            // 
-            // adminDb4
-            // 
-            this.adminDb4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.adminDb4.Location = new System.Drawing.Point(0, 30);
-            this.adminDb4.Name = "adminDb4";
-            this.adminDb4.Size = new System.Drawing.Size(1000, 500);
-            this.adminDb4.TabIndex = 16;
+            this.dashboard1.BackColor = System.Drawing.SystemColors.Control;
+            this.dashboard1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashboard1.Location = new System.Drawing.Point(0, 0);
+            this.dashboard1.Name = "dashboard1";
+            this.dashboard1.Size = new System.Drawing.Size(1000, 500);
+            this.dashboard1.TabIndex = 7;
             // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(47)))), ((int)(((byte)(62)))));
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(32)))), ((int)(((byte)(32)))));
             this.ClientSize = new System.Drawing.Size(1000, 530);
             this.Controls.Add(this.adminDb4);
             this.Controls.Add(this.signup5);

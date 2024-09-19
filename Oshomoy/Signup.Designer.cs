@@ -41,15 +41,15 @@
             this.lbWarnEmail = new System.Windows.Forms.Label();
             this.lbWarnUN = new System.Windows.Forms.Label();
             this.lbConfirmPass = new System.Windows.Forms.Label();
-            this.tbConfirmPass = new System.Windows.Forms.TextBox();
+            this.tbConPassword = new System.Windows.Forms.TextBox();
             this.lbEmail = new System.Windows.Forms.Label();
-            this.tbSignEmail = new System.Windows.Forms.TextBox();
+            this.tbEmail = new System.Windows.Forms.TextBox();
             this.lbWelcometext = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.lbPass = new System.Windows.Forms.Label();
-            this.tbSignPass = new System.Windows.Forms.TextBox();
+            this.tbPassword = new System.Windows.Forms.TextBox();
             this.lbUsername = new System.Windows.Forms.Label();
-            this.tbSignUserName = new System.Windows.Forms.TextBox();
+            this.tbUsername = new System.Windows.Forms.TextBox();
             this.lbGetStart = new System.Windows.Forms.Label();
             btRegister = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.loginImage)).BeginInit();
@@ -101,16 +101,16 @@
             this.logPanel.Controls.Add(this.lbWarnEmail);
             this.logPanel.Controls.Add(this.lbWarnUN);
             this.logPanel.Controls.Add(this.lbConfirmPass);
-            this.logPanel.Controls.Add(this.tbConfirmPass);
+            this.logPanel.Controls.Add(this.tbConPassword);
             this.logPanel.Controls.Add(this.lbEmail);
-            this.logPanel.Controls.Add(this.tbSignEmail);
+            this.logPanel.Controls.Add(this.tbEmail);
             this.logPanel.Controls.Add(this.lbWelcometext);
             this.logPanel.Controls.Add(this.linkLabel1);
             this.logPanel.Controls.Add(btRegister);
             this.logPanel.Controls.Add(this.lbPass);
-            this.logPanel.Controls.Add(this.tbSignPass);
+            this.logPanel.Controls.Add(this.tbPassword);
             this.logPanel.Controls.Add(this.lbUsername);
-            this.logPanel.Controls.Add(this.tbSignUserName);
+            this.logPanel.Controls.Add(this.tbUsername);
             this.logPanel.Controls.Add(this.lbGetStart);
             this.logPanel.Dock = System.Windows.Forms.DockStyle.Right;
             this.logPanel.ForeColor = System.Drawing.SystemColors.Control;
@@ -232,17 +232,17 @@
             this.lbConfirmPass.TabIndex = 18;
             this.lbConfirmPass.Text = "Confirm Password";
             // 
-            // tbConfirmPass
+            // tbConPassword
             // 
-            this.tbConfirmPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
-            this.tbConfirmPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbConfirmPass.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbConfirmPass.Location = new System.Drawing.Point(45, 343);
-            this.tbConfirmPass.Multiline = true;
-            this.tbConfirmPass.Name = "tbConfirmPass";
-            this.tbConfirmPass.PasswordChar = '•';
-            this.tbConfirmPass.Size = new System.Drawing.Size(250, 30);
-            this.tbConfirmPass.TabIndex = 3;
+            this.tbConPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this.tbConPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbConPassword.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbConPassword.Location = new System.Drawing.Point(45, 343);
+            this.tbConPassword.Multiline = true;
+            this.tbConPassword.Name = "tbConPassword";
+            this.tbConPassword.PasswordChar = '•';
+            this.tbConPassword.Size = new System.Drawing.Size(250, 30);
+            this.tbConPassword.TabIndex = 3;
             // 
             // lbEmail
             // 
@@ -255,16 +255,16 @@
             this.lbEmail.TabIndex = 14;
             this.lbEmail.Text = "Email";
             // 
-            // tbSignEmail
+            // tbEmail
             // 
-            this.tbSignEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
-            this.tbSignEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbSignEmail.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbSignEmail.Location = new System.Drawing.Point(45, 201);
-            this.tbSignEmail.Multiline = true;
-            this.tbSignEmail.Name = "tbSignEmail";
-            this.tbSignEmail.Size = new System.Drawing.Size(250, 30);
-            this.tbSignEmail.TabIndex = 1;
+            this.tbEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this.tbEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbEmail.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbEmail.Location = new System.Drawing.Point(45, 201);
+            this.tbEmail.Multiline = true;
+            this.tbEmail.Name = "tbEmail";
+            this.tbEmail.Size = new System.Drawing.Size(250, 30);
+            this.tbEmail.TabIndex = 1;
             // 
             // lbWelcometext
             // 
@@ -304,17 +304,17 @@
             this.lbPass.TabIndex = 16;
             this.lbPass.Text = "Password";
             // 
-            // tbSignPass
+            // tbPassword
             // 
-            this.tbSignPass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
-            this.tbSignPass.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbSignPass.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbSignPass.Location = new System.Drawing.Point(45, 274);
-            this.tbSignPass.Multiline = true;
-            this.tbSignPass.Name = "tbSignPass";
-            this.tbSignPass.PasswordChar = '•';
-            this.tbSignPass.Size = new System.Drawing.Size(250, 30);
-            this.tbSignPass.TabIndex = 2;
+            this.tbPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this.tbPassword.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbPassword.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbPassword.Location = new System.Drawing.Point(45, 274);
+            this.tbPassword.Multiline = true;
+            this.tbPassword.Name = "tbPassword";
+            this.tbPassword.PasswordChar = '•';
+            this.tbPassword.Size = new System.Drawing.Size(250, 30);
+            this.tbPassword.TabIndex = 2;
             // 
             // lbUsername
             // 
@@ -327,16 +327,16 @@
             this.lbUsername.TabIndex = 12;
             this.lbUsername.Text = "Username";
             // 
-            // tbSignUserName
+            // tbUsername
             // 
-            this.tbSignUserName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
-            this.tbSignUserName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbSignUserName.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbSignUserName.Location = new System.Drawing.Point(45, 128);
-            this.tbSignUserName.Multiline = true;
-            this.tbSignUserName.Name = "tbSignUserName";
-            this.tbSignUserName.Size = new System.Drawing.Size(250, 30);
-            this.tbSignUserName.TabIndex = 0;
+            this.tbUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this.tbUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbUsername.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbUsername.Location = new System.Drawing.Point(45, 128);
+            this.tbUsername.Multiline = true;
+            this.tbUsername.Name = "tbUsername";
+            this.tbUsername.Size = new System.Drawing.Size(250, 30);
+            this.tbUsername.TabIndex = 0;
             // 
             // lbGetStart
             // 
@@ -376,14 +376,14 @@
         private System.Windows.Forms.Label lbWelcometext;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label lbPass;
-        private System.Windows.Forms.TextBox tbSignPass;
+        private System.Windows.Forms.TextBox tbPassword;
         private System.Windows.Forms.Label lbUsername;
-        private System.Windows.Forms.TextBox tbSignUserName;
+        private System.Windows.Forms.TextBox tbUsername;
         private System.Windows.Forms.Label lbGetStart;
         private System.Windows.Forms.Label lbEmail;
-        private System.Windows.Forms.TextBox tbSignEmail;
+        private System.Windows.Forms.TextBox tbEmail;
         private System.Windows.Forms.Label lbConfirmPass;
-        private System.Windows.Forms.TextBox tbConfirmPass;
+        private System.Windows.Forms.TextBox tbConPassword;
         private System.Windows.Forms.Label lbWarnEmail;
         private System.Windows.Forms.Label lbWarnUN;
         private System.Windows.Forms.Label lbWarnPass;

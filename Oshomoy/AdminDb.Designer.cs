@@ -28,11 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.admPanel = new System.Windows.Forms.Panel();
             this.SuspendLayout();
+            // 
+            // admPanel
+            // 
+            this.admPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.admPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.admPanel.Location = new System.Drawing.Point(0, 0);
+            this.admPanel.Name = "admPanel";
+            this.admPanel.Size = new System.Drawing.Size(248, 500);
+            this.admPanel.TabIndex = 0;
             // 
             // AdminDb
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.Controls.Add(this.admPanel);
             this.Name = "AdminDb";
             this.Size = new System.Drawing.Size(1000, 500);
             this.ResumeLayout(false);
@@ -40,5 +51,7 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel admPanel;
     }
 }
