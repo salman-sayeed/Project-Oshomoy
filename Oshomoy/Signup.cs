@@ -16,9 +16,12 @@ namespace Oshomoy
 {
     public partial class Signup : UserControl
     {
+        string connectionString;
         public Signup()
         {
             InitializeComponent();
+
+            connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\SALMAN\Documents\UserInfo.mdf;Integrated Security=True;Connect Timeout=30";
 
             lbWarnUN.Hide();
             lbWarnEmail.Hide(); 
@@ -27,10 +30,10 @@ namespace Oshomoy
 
             tbSignUserName.Focus();
 
-            signPass1.Show();
-            signPass2.Hide();
-            signConPass1.Show();
-            signConPass2.Hide();
+            showPass1.Show();
+            showPass2.Hide();
+            showConPass1.Show();
+            showConPass2.Hide();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
@@ -42,59 +45,45 @@ namespace Oshomoy
             }
         }
 
-        private void tbSignUserName_TextChanged(object sender, EventArgs e)
-        {
-        
-        }
-
-        private void tbSignEmail_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void logPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void pbSignConPass1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pbSignConPass2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void signPass1_Click(object sender, EventArgs e)
+        private void showPass1_Click(object sender, EventArgs e)
         {
             tbSignPass.PasswordChar = '\0';
-            signPass1.Hide();
-            signPass2.Show();
+            showPass1.Hide();
+            showPass2.Show();
         }
 
-        private void signPass2_Click_1(object sender, EventArgs e)
+        private void showPass2_Click_1(object sender, EventArgs e)
         {
             tbSignPass.PasswordChar = '•';
-            signPass1.Show();
-            signPass2.Hide();
+            showPass1.Show();
+            showPass2.Hide();
         }
-
-        private void signConPass1_Click(object sender, EventArgs e)
+        private void showConPass1_Click(object sender, EventArgs e)
         {
             tbConfirmPass.PasswordChar = '\0';
-            signConPass1.Hide();
-            signConPass2.Show();
+            showConPass1.Hide();
+            showConPass2.Show();
         }
 
-        private void signConPass2_Click(object sender, EventArgs e)
+        private void showConPass2_Click(object sender, EventArgs e)
         {
             tbConfirmPass.PasswordChar = '•';
-            signConPass1.Show();
-            signConPass2.Hide();
+            showConPass1.Show();
+            showConPass2.Hide();
         }
 
+        private bool IsValidEmail(string email)
+        {
+            try
+            {
+                var addr = new System.Net.Mail.MailAddress(email);
+                return addr.Address == email;
+            }
+            catch
+            {
+                return false;
+            }
+        }
 
         private void btRegister_Click(object sender, EventArgs e)
         {
@@ -116,6 +105,13 @@ namespace Oshomoy
             {
                 lbWarnEmail.Show();
                 lbWarnEmail.Text = "Email can't be empty";
+                hasError = true;
+            }
+
+            if(!IsValidEmail(tbSignEmail.Text))
+            {
+                lbWarnEmail.Show();
+                lbWarnEmail.Text = "Invalid Email";
                 hasError = true;
             }
 
@@ -148,9 +144,6 @@ namespace Oshomoy
 
              if (!hasError)
             {
-                // Directly use the connection string
-                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\SALMAN\Documents\UserInfo.mdf;Integrated Security=True;Connect Timeout=30";
-
                 string query = "INSERT INTO Users (UserName, Email, Password, UserType) VALUES (@UserName, @Email, @Password, 'User')";
 
                 try
@@ -161,7 +154,7 @@ namespace Oshomoy
                         {
                             command.Parameters.AddWithValue("@UserName", tbSignUserName.Text);
                             command.Parameters.AddWithValue("@Email", tbSignEmail.Text);
-                            command.Parameters.AddWithValue("@Password", tbSignPass.Text); // Ensure this is hashed
+                            command.Parameters.AddWithValue("@Password", tbSignPass.Text);
 
                             connection.Open();
                             command.ExecuteNonQuery();
@@ -185,5 +178,7 @@ namespace Oshomoy
                 }
             }
         }
+
+        
     }
 }

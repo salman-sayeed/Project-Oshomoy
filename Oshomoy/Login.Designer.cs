@@ -31,6 +31,9 @@
             System.Windows.Forms.Button btLogin;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.logPanel = new System.Windows.Forms.Panel();
+            this.linkedIn = new System.Windows.Forms.PictureBox();
+            this.faceBook = new System.Windows.Forms.PictureBox();
+            this.gitHub = new System.Windows.Forms.PictureBox();
             this.paassImg2 = new System.Windows.Forms.PictureBox();
             this.paassImg = new System.Windows.Forms.PictureBox();
             this.lbWarn2 = new System.Windows.Forms.Label();
@@ -44,17 +47,14 @@
             this.tbLogin = new System.Windows.Forms.TextBox();
             this.lbGetStart = new System.Windows.Forms.Label();
             this.loginImage = new System.Windows.Forms.PictureBox();
-            this.gitHub = new System.Windows.Forms.PictureBox();
-            this.faceBook = new System.Windows.Forms.PictureBox();
-            this.linkedIn = new System.Windows.Forms.PictureBox();
             btLogin = new System.Windows.Forms.Button();
             this.logPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.linkedIn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.faceBook)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gitHub)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.paassImg2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.paassImg)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginImage)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gitHub)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.faceBook)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.linkedIn)).BeginInit();
             this.SuspendLayout();
             // 
             // btLogin
@@ -76,7 +76,7 @@
             // 
             // logPanel
             // 
-            this.logPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(134)))), ((int)(((byte)(148)))));
+            this.logPanel.BackColor = System.Drawing.Color.White;
             this.logPanel.Controls.Add(this.linkedIn);
             this.logPanel.Controls.Add(this.faceBook);
             this.logPanel.Controls.Add(this.gitHub);
@@ -101,26 +101,67 @@
             this.logPanel.TabIndex = 0;
             this.logPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.logPanel_Paint_1);
             // 
+            // linkedIn
+            // 
+            this.linkedIn.BackColor = System.Drawing.Color.White;
+            this.linkedIn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("linkedIn.BackgroundImage")));
+            this.linkedIn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.linkedIn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.linkedIn.Location = new System.Drawing.Point(213, 455);
+            this.linkedIn.Name = "linkedIn";
+            this.linkedIn.Size = new System.Drawing.Size(25, 25);
+            this.linkedIn.TabIndex = 21;
+            this.linkedIn.TabStop = false;
+            this.linkedIn.Click += new System.EventHandler(this.linkedIn_Click);
+            // 
+            // faceBook
+            // 
+            this.faceBook.BackColor = System.Drawing.Color.White;
+            this.faceBook.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("faceBook.BackgroundImage")));
+            this.faceBook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.faceBook.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.faceBook.Location = new System.Drawing.Point(169, 455);
+            this.faceBook.Name = "faceBook";
+            this.faceBook.Size = new System.Drawing.Size(25, 25);
+            this.faceBook.TabIndex = 20;
+            this.faceBook.TabStop = false;
+            this.faceBook.Click += new System.EventHandler(this.faceBook_Click);
+            // 
+            // gitHub
+            // 
+            this.gitHub.BackColor = System.Drawing.Color.White;
+            this.gitHub.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gitHub.BackgroundImage")));
+            this.gitHub.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.gitHub.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.gitHub.Location = new System.Drawing.Point(125, 455);
+            this.gitHub.Name = "gitHub";
+            this.gitHub.Size = new System.Drawing.Size(25, 25);
+            this.gitHub.TabIndex = 19;
+            this.gitHub.TabStop = false;
+            this.gitHub.Click += new System.EventHandler(this.gitHub_Click);
+            // 
             // paassImg2
             // 
-            this.paassImg2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.paassImg2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
             this.paassImg2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("paassImg2.BackgroundImage")));
             this.paassImg2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.paassImg2.Location = new System.Drawing.Point(260, 245);
+            this.paassImg2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.paassImg2.Location = new System.Drawing.Point(264, 248);
             this.paassImg2.Name = "paassImg2";
-            this.paassImg2.Size = new System.Drawing.Size(30, 30);
+            this.paassImg2.Size = new System.Drawing.Size(25, 25);
             this.paassImg2.TabIndex = 18;
             this.paassImg2.TabStop = false;
             this.paassImg2.Click += new System.EventHandler(this.paassImg2_Click);
             // 
             // paassImg
             // 
-            this.paassImg.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.paassImg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
             this.paassImg.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("paassImg.BackgroundImage")));
             this.paassImg.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.paassImg.Location = new System.Drawing.Point(260, 245);
+            this.paassImg.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.paassImg.Location = new System.Drawing.Point(264, 248);
             this.paassImg.Name = "paassImg";
-            this.paassImg.Size = new System.Drawing.Size(30, 30);
+            this.paassImg.Size = new System.Drawing.Size(25, 25);
             this.paassImg.TabIndex = 17;
             this.paassImg.TabStop = false;
             this.paassImg.Click += new System.EventHandler(this.paassImg_Click);
@@ -128,9 +169,9 @@
             // lbWarn2
             // 
             this.lbWarn2.AutoSize = true;
-            this.lbWarn2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(134)))), ((int)(((byte)(148)))));
+            this.lbWarn2.BackColor = System.Drawing.Color.White;
             this.lbWarn2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWarn2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(7)))), ((int)(((byte)(7)))));
+            this.lbWarn2.ForeColor = System.Drawing.Color.Red;
             this.lbWarn2.Location = new System.Drawing.Point(42, 278);
             this.lbWarn2.Name = "lbWarn2";
             this.lbWarn2.Size = new System.Drawing.Size(59, 16);
@@ -140,10 +181,10 @@
             // lbWarn1
             // 
             this.lbWarn1.AutoSize = true;
-            this.lbWarn1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(134)))), ((int)(((byte)(148)))));
+            this.lbWarn1.BackColor = System.Drawing.Color.White;
             this.lbWarn1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.lbWarn1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWarn1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(7)))), ((int)(((byte)(7)))));
+            this.lbWarn1.ForeColor = System.Drawing.Color.Red;
             this.lbWarn1.Location = new System.Drawing.Point(42, 197);
             this.lbWarn1.Name = "lbWarn1";
             this.lbWarn1.Size = new System.Drawing.Size(59, 16);
@@ -155,8 +196,8 @@
             // 
             this.lbWelcometext.AutoSize = true;
             this.lbWelcometext.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbWelcometext.ForeColor = System.Drawing.Color.White;
-            this.lbWelcometext.Location = new System.Drawing.Point(79, 84);
+            this.lbWelcometext.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(109)))));
+            this.lbWelcometext.Location = new System.Drawing.Point(84, 85);
             this.lbWelcometext.Name = "lbWelcometext";
             this.lbWelcometext.Size = new System.Drawing.Size(166, 15);
             this.lbWelcometext.TabIndex = 11;
@@ -164,12 +205,14 @@
             // 
             // lbLinkSign
             // 
-            this.lbLinkSign.ActiveLinkColor = System.Drawing.Color.White;
+            this.lbLinkSign.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(109)))));
             this.lbLinkSign.AutoSize = true;
             this.lbLinkSign.BackColor = System.Drawing.Color.Transparent;
+            this.lbLinkSign.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(109)))));
             this.lbLinkSign.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbLinkSign.ForeColor = System.Drawing.Color.White;
-            this.lbLinkSign.LinkColor = System.Drawing.Color.White;
+            this.lbLinkSign.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(109)))));
+            this.lbLinkSign.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.lbLinkSign.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(109)))));
             this.lbLinkSign.Location = new System.Drawing.Point(70, 411);
             this.lbLinkSign.Name = "lbLinkSign";
             this.lbLinkSign.Size = new System.Drawing.Size(219, 15);
@@ -182,8 +225,10 @@
             // 
             this.lbForgPass.ActiveLinkColor = System.Drawing.Color.White;
             this.lbForgPass.AutoSize = true;
-            this.lbForgPass.ForeColor = System.Drawing.Color.White;
-            this.lbForgPass.LinkColor = System.Drawing.Color.White;
+            this.lbForgPass.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(109)))));
+            this.lbForgPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(109)))));
+            this.lbForgPass.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.lbForgPass.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(109)))));
             this.lbForgPass.Location = new System.Drawing.Point(111, 383);
             this.lbForgPass.Name = "lbForgPass";
             this.lbForgPass.Size = new System.Drawing.Size(130, 16);
@@ -195,7 +240,7 @@
             // 
             this.lbPass.AutoSize = true;
             this.lbPass.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbPass.ForeColor = System.Drawing.Color.White;
+            this.lbPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(109)))));
             this.lbPass.Location = new System.Drawing.Point(42, 221);
             this.lbPass.Name = "lbPass";
             this.lbPass.Size = new System.Drawing.Size(87, 18);
@@ -204,7 +249,7 @@
             // 
             // tbLogin2
             // 
-            this.tbLogin2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tbLogin2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
             this.tbLogin2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbLogin2.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbLogin2.Location = new System.Drawing.Point(45, 245);
@@ -218,7 +263,7 @@
             // 
             this.lbUsername.AutoSize = true;
             this.lbUsername.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbUsername.ForeColor = System.Drawing.Color.White;
+            this.lbUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(109)))));
             this.lbUsername.Location = new System.Drawing.Point(42, 141);
             this.lbUsername.Name = "lbUsername";
             this.lbUsername.Size = new System.Drawing.Size(90, 18);
@@ -228,7 +273,7 @@
             // 
             // tbLogin
             // 
-            this.tbLogin.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.tbLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
             this.tbLogin.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.tbLogin.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbLogin.Location = new System.Drawing.Point(45, 165);
@@ -241,11 +286,11 @@
             // lbGetStart
             // 
             this.lbGetStart.AutoSize = true;
-            this.lbGetStart.Font = new System.Drawing.Font("Arial Rounded MT Bold", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbGetStart.ForeColor = System.Drawing.Color.White;
-            this.lbGetStart.Location = new System.Drawing.Point(46, 49);
+            this.lbGetStart.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbGetStart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
+            this.lbGetStart.Location = new System.Drawing.Point(37, 47);
             this.lbGetStart.Name = "lbGetStart";
-            this.lbGetStart.Size = new System.Drawing.Size(243, 34);
+            this.lbGetStart.Size = new System.Drawing.Size(268, 38);
             this.lbGetStart.TabIndex = 10;
             this.lbGetStart.Text = "Welcome Back!";
             // 
@@ -261,42 +306,6 @@
             this.loginImage.TabStop = false;
             this.loginImage.Click += new System.EventHandler(this.loginImage_Click);
             // 
-            // gitHub
-            // 
-            this.gitHub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(134)))), ((int)(((byte)(148)))));
-            this.gitHub.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gitHub.BackgroundImage")));
-            this.gitHub.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.gitHub.Location = new System.Drawing.Point(125, 455);
-            this.gitHub.Name = "gitHub";
-            this.gitHub.Size = new System.Drawing.Size(25, 25);
-            this.gitHub.TabIndex = 19;
-            this.gitHub.TabStop = false;
-            this.gitHub.Click += new System.EventHandler(this.gitHub_Click);
-            // 
-            // faceBook
-            // 
-            this.faceBook.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(134)))), ((int)(((byte)(148)))));
-            this.faceBook.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("faceBook.BackgroundImage")));
-            this.faceBook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.faceBook.Location = new System.Drawing.Point(169, 455);
-            this.faceBook.Name = "faceBook";
-            this.faceBook.Size = new System.Drawing.Size(25, 25);
-            this.faceBook.TabIndex = 20;
-            this.faceBook.TabStop = false;
-            this.faceBook.Click += new System.EventHandler(this.faceBook_Click);
-            // 
-            // linkedIn
-            // 
-            this.linkedIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(134)))), ((int)(((byte)(148)))));
-            this.linkedIn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("linkedIn.BackgroundImage")));
-            this.linkedIn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.linkedIn.Location = new System.Drawing.Point(213, 455);
-            this.linkedIn.Name = "linkedIn";
-            this.linkedIn.Size = new System.Drawing.Size(25, 25);
-            this.linkedIn.TabIndex = 21;
-            this.linkedIn.TabStop = false;
-            this.linkedIn.Click += new System.EventHandler(this.linkedIn_Click);
-            // 
             // Login
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -310,12 +319,12 @@
             this.Load += new System.EventHandler(this.Login_Load);
             this.logPanel.ResumeLayout(false);
             this.logPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.linkedIn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.faceBook)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gitHub)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.paassImg2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.paassImg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.loginImage)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gitHub)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.faceBook)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.linkedIn)).EndInit();
             this.ResumeLayout(false);
 
         }

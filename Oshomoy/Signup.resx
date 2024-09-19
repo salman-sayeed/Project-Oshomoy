@@ -1051,7 +1051,7 @@
         SXHUGXMF4z/gz69mE+V88ujO/Td8qSqTyXS1uqvr/wDOWbvOq0Bc9AAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="signConPass2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="showConPass2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAE6
         8wABOvMBFwsyzAAAQYdJREFUeF7t3QmcZGV59n/A4IIoRkXZnKoeRkURN4xrElHJQghCV9Fxe6MmKlGD
@@ -1337,7 +1337,7 @@
         AElFTkSuQmCC
 </value>
   </data>
-  <data name="signConPass1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="showConPass1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAE6
         8wABOvMBFwsyzAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAADV6SURBVHhe7d0H
@@ -1572,7 +1572,7 @@
         Dya5WA7YsfnnAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="signPass2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="showPass2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAE6
         8wABOvMBFwsyzAAAQYdJREFUeF7t3QmcZGV59n/A4IIoRkXZnKoeRkURN4xrElHJQghCV9Fxe6MmKlGD
@@ -1858,7 +1858,7 @@
         AElFTkSuQmCC
 </value>
   </data>
-  <data name="signPass1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="showPass1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAE6
         8wABOvMBFwsyzAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAADV6SURBVHhe7d0H
