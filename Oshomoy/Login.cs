@@ -133,7 +133,7 @@ namespace Oshomoy
                 lbWarn1.Hide();
                 lbWarn2.Hide();
 
-                string query = "SELECT UserType FROM Users WHERE UserName = @UserName AND Password = @Password";
+                string query = "SELECT UserId, UserType FROM Users WHERE UserName = @UserName AND Password = @Password";
 
                 try
                 {
@@ -142,35 +142,39 @@ namespace Oshomoy
                         using (SqlCommand command = new SqlCommand(query, connection))
                         {
                             command.Parameters.AddWithValue("@UserName", tbUsername.Text);
-                            command.Parameters.AddWithValue("@Password", tbPassword.Text); // Hashing is recommended for password
+                            command.Parameters.AddWithValue("@Password", tbPassword.Text);
 
                             connection.Open();
 
-                            var userType = command.ExecuteScalar() as string;
-
-                            if (userType != null)
+                            using (SqlDataReader reader = command.ExecuteReader())
                             {
-                                Form1 parentForm = this.Parent as Form1;
-
-                                if (userType == "Admin")
+                                if (reader.Read())
                                 {
-                                    if (parentForm != null)
+                                    int userId = reader.GetInt32(0); 
+                                    string userType = reader.GetString(1);
+
+                                    Form1 parentForm = this.Parent as Form1;
+
+                                    if (userType == "Admin")
                                     {
-                                        parentForm.ShowAdminDb(); 
+                                        if (parentForm != null)
+                                        {
+                                            parentForm.ShowAdminDb(userId);
+                                        }
+                                    }
+                                    else if (userType == "User")
+                                    {
+                                        if (parentForm != null)
+                                        {
+                                            parentForm.ShowDashboard(userId);
+                                        }
                                     }
                                 }
-                                else if (userType == "User")
+                                else
                                 {
-                                    if (parentForm != null)
-                                    {
-                                        parentForm.ShowDashboard(); 
-                                    }
+                                    lbWarn1.Text = "Invalid username or password";
+                                    lbWarn1.Show();
                                 }
-                            }
-                            else
-                            {
-                                lbWarn1.Text = "Invalid username or password";
-                                lbWarn1.Show();
                             }
                         }
                     }
@@ -181,6 +185,7 @@ namespace Oshomoy
                 }
             }
         }
+
 
     }
 }

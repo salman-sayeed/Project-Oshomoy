@@ -63,22 +63,28 @@ namespace Oshomoy
             login1.BringToFront();
         }
 
-        public void ShowAdminDb()
+        public void ShowAdminDb(int userId)
         {
             signup1.Hide();
             login1.Hide();
             dashboard1.Hide();
             adminDb1.Show();
             adminDb1.BringToFront();
+
+            adminDb1.UserId = userId;
+            adminDb1.LoadAdminData();
         }
 
-        public void ShowDashboard()
+        public void ShowDashboard(int userId)
         {
             signup1.Hide();
             login1.Hide();
             adminDb1.Hide();
             dashboard1.Show();
             dashboard1.BringToFront();
+
+            dashboard1.UserId = userId;
+            dashboard1.LoadUserData();
         }
 
         private void Form1_Load(object sender, EventArgs e)

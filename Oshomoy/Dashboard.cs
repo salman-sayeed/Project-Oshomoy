@@ -12,9 +12,18 @@ namespace Oshomoy
 {
     public partial class Dashboard : UserControl
     {
+        string connectionString;
+        public int UserId { get; set; }
         public Dashboard()
         {
             InitializeComponent();
+            connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\SALMAN\Documents\UserInfo.mdf;Integrated Security=True;Connect Timeout=30";
+
+        }
+        public void LoadUserData()
+        {
+            showUsername.Text = "";
+            showEmail.Text = "";
         }
     }
 }
