@@ -48,39 +48,33 @@ namespace Oshomoy
             }
 
         }
-
         private void paassImg_Click(object sender, EventArgs e)
         {
             tbPassword.PasswordChar = '\0';
             paassImg.Hide();
             paassImg2.Show();
         }
-
         private void paassImg2_Click(object sender, EventArgs e)
         {
             tbPassword.PasswordChar = '•';
             paassImg.Show();
             paassImg2.Hide();
         }
-
         private void gitHub_Click(object sender, EventArgs e)
         {
             string url = "https://github.com/salman-sayeed/Project-Oshomoy";
             System.Diagnostics.Process.Start(url);
         }
-
         private void faceBook_Click(object sender, EventArgs e)
         {
             string url = "https://www.facebook.com/salmansayeed.25";
             System.Diagnostics.Process.Start(url);
         }
-
         private void linkedIn_Click(object sender, EventArgs e)
         {
             string url = "https://www.linkedin.com/in/salmansayeed25";
             System.Diagnostics.Process.Start(url);
         }
-
         private void TbUsername_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter)
@@ -89,7 +83,6 @@ namespace Oshomoy
                 tbPassword.Focus();
             }
         }
-
         private void TbPassword_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (e.KeyChar == (char)Keys.Enter)
@@ -98,6 +91,7 @@ namespace Oshomoy
                 btLogin_Click (sender, e);
             }
         }
+
 
         private void btLogin_Click(object sender, EventArgs e)
         {
@@ -153,6 +147,8 @@ namespace Oshomoy
                                     int userId = reader.GetInt32(0); 
                                     string userType = reader.GetString(1);
 
+                                    tbUsername.Clear();
+                                    tbPassword.Clear();
                                     Form1 parentForm = this.Parent as Form1;
 
                                     if (userType == "Admin")

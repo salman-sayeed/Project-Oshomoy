@@ -23,3 +23,6 @@ D:\Programming\AIUB\C#\C# Project - Oshomoy\Oshomoy\obj\Debug\Oshomoy.csproj.Cor
 D:\Programming\AIUB\C#\C# Project - Oshomoy\Oshomoy\obj\Debug\Oshomoy.exe
 D:\Programming\AIUB\C#\C# Project - Oshomoy\Oshomoy\obj\Debug\Oshomoy.pdb
 D:\Programming\AIUB\C#\C# Project - Oshomoy\Oshomoy\obj\Debug\Oshomoy.AdminDb.resources
+D:\Programming\AIUB\C#\C# Project - Oshomoy\Oshomoy\obj\Debug\Oshomoy.ForgetPassword.resources
+D:\Programming\AIUB\C#\C# Project - Oshomoy\Oshomoy\obj\Debug\Oshomoy.Adm1Panel.resources
+D:\Programming\AIUB\C#\C# Project - Oshomoy\Oshomoy\obj\Debug\Oshomoy.Adm2Panel.resources

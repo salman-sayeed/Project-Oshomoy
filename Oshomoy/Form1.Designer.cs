@@ -61,7 +61,7 @@
             this.closeBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.closeBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("closeBox.BackgroundImage")));
             this.closeBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.closeBox.Location = new System.Drawing.Point(962, 6);
+            this.closeBox.Location = new System.Drawing.Point(962, 5);
             this.closeBox.Margin = new System.Windows.Forms.Padding(2);
             this.closeBox.Name = "closeBox";
             this.closeBox.Size = new System.Drawing.Size(20, 20);
@@ -74,7 +74,7 @@
             this.minimizeBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.minimizeBox.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("minimizeBox.BackgroundImage")));
             this.minimizeBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.minimizeBox.Location = new System.Drawing.Point(923, 6);
+            this.minimizeBox.Location = new System.Drawing.Point(923, 5);
             this.minimizeBox.Margin = new System.Windows.Forms.Padding(2);
             this.minimizeBox.Name = "minimizeBox";
             this.minimizeBox.Size = new System.Drawing.Size(20, 20);
@@ -127,6 +127,7 @@
             this.adminDb4.Name = "adminDb4";
             this.adminDb4.Size = new System.Drawing.Size(1000, 500);
             this.adminDb4.TabIndex = 16;
+            this.adminDb4.UserId = 0;
             // 
             // signup5
             // 
@@ -158,6 +159,7 @@
             this.dashboard2.Name = "dashboard2";
             this.dashboard2.Size = new System.Drawing.Size(1000, 500);
             this.dashboard2.TabIndex = 13;
+            this.dashboard2.UserId = 0;
             // 
             // login4
             // 
@@ -187,6 +189,7 @@
             this.adminDb2.Name = "adminDb2";
             this.adminDb2.Size = new System.Drawing.Size(1000, 500);
             this.adminDb2.TabIndex = 6;
+            this.adminDb2.UserId = 0;
             // 
             // login2
             // 
@@ -215,6 +218,7 @@
             this.adminDb1.Name = "adminDb1";
             this.adminDb1.Size = new System.Drawing.Size(1000, 500);
             this.adminDb1.TabIndex = 3;
+            this.adminDb1.UserId = 0;
             // 
             // login1
             // 
@@ -244,6 +248,7 @@
             this.adminDb3.Name = "adminDb3";
             this.adminDb3.Size = new System.Drawing.Size(1000, 500);
             this.adminDb3.TabIndex = 10;
+            this.adminDb3.UserId = 0;
             // 
             // signup3
             // 
@@ -272,6 +277,7 @@
             this.dashboard1.Name = "dashboard1";
             this.dashboard1.Size = new System.Drawing.Size(1000, 500);
             this.dashboard1.TabIndex = 7;
+            this.dashboard1.UserId = 0;
             // 
             // Form1
             // 

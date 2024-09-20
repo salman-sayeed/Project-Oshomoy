@@ -124,7 +124,7 @@
   <data name="linkedIn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAAOyhJREFUeF7t3Qe0XVW5/v9Ltwvqlau3CUgNLcBV6dKliLGg/wtCuNQoVUBQBKUJ
+        DAAACwwBP0AiyAAAOyhJREFUeF7t3Qe0XVW5/v9Ltwvqlau3CUgNLcBV6dKliLGg/wtCuNQoVUBQBKUJ
         OLh/LggCiUho0gkIEqogJaEHCBBASkBqQBJIQWmu3/Oec3I85TnJKXvvudZcX8f4jGFeztl77rnXWu9z
         9l5rrn9aaqmlAJTbwvJZWU02l2/LHnKIHCunyQXyO7lRJsp98qRMlek9vCNFD1Hr+XPPyJ/kXonHjMeO
         5/itxHPGcx8sMZbtZDOJMX5GYszutQAoCVsE0DL/LMPlq7K3HC/nyS3yqLwqPZv1/Pzd1JrNPWeM/RGJ
@@ -382,7 +382,7 @@
   <data name="faceBook.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAgsNJREFUeF7t3QmYZHV1Pv6/+xJjNGbVLMKwM8MyoAyK/EREjeNCUNTgghogSqIE
+        vQAADr0BR/uQrQAAgsNJREFUeF7t3QmYZHV1Pv6/+xJjNGbVLMKwM8MyoAyK/EREjeNCUNTgghogSqIE
         NOIWFCRoRNEYV9ySCBiIIEIwbjESFVQggoLILoLIosAwILJN/c/bU29x+vRb1dXdt7preed5Ps/93nNv
         fbunu6reU/feqv7/Wq2WmZmZTRhZNDMzs/Emi2ZmZjbeZNHMzMzGmyyamZnZeJNFMzMzG2+yaGZmZuNN
         FmmDDTYws9H1W+ER4XcD/y0P24btwo5hm/b6svDY8EcBt4EHBTWvmQ05lemVLJKa1MwW1cPCRmFVeHbY
@@ -946,7 +946,7 @@
   <data name="gitHub.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAASp5JREFUeF7t3Qe8FGWW93ExzexO2tmZXWYIt8vq9l7gAioXJI8XSToYWBQDrqCg
+        vQAADr0BR/uQrQAASp5JREFUeF7t3Qe8FGWW93ExzexO2tmZXWYIt8vq9l7gAioXJI8XSToYWBQDrqCg
         KPIacYwsKy46BmSAV15GUVTGjOPIKJgBCY4JUQwYEEEQydnRMdV7nuZhvRYHuaGrusLv//l8P+hNXV31
         POdUd1fYy/M8AACQMuoXAQBAsqlfBAAAyaZ+EQAAJJv6RQAAkGzqFwEAQLKpXwQAAMmmfhEAACSb+kUA
         AJBs6hcBAECyEUISkkaNGv1TSUnJz7PZbGP5181kMq0OOOCAQ13X7VaV4zi95et9qzJf8/+c+V3zN8zf

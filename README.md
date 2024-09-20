@@ -1,9 +1,14 @@
-# **Oshomoy**
+# OSHOMOY
+![MicrosoftSQLServer](https://img.shields.io/badge/Microsoft%20SQL%20Server-CC2927?style=for-the-badge&logo=microsoft%20sql%20server&logoColor=white)
 
-**Version: 1.0
-Language: C#
-UI Framework: Winforms
- Author: Salman Sayeed, SM Nahid Hassan**
+[![GitHub license](https://badgen.net/github/license/Naereen/Strapdown.js)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)
 
-[LinkedIn](https://www.linkedin.com/in/salmansayeed25/)  
-[GitHub]((https://github.com/salman-sayeed)) 
+
+### Members
+| Name        | Socials                         |
+|-------------|---------------------------------|
+| Salman Sayeed | [LinkedIn](https://linkedin.com/in/yourprofile) |
+| John Doe    | [Twitter](https://twitter.com/johndoe)        |
+| Jane Smith  | [GitHub](https://github.com/janesmith)       |
+
+
