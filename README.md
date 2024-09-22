@@ -5,11 +5,11 @@
 
 
 ### Members
-| Name              | Institution        | Socials                         |
-|-------------------|--------------------|---------------------------------|
-| Salman Sayeed     |                    | [GitHub](https://github.com/salman-sayeed) |
-| S.M.Nahid Hassan  |                    | [GitHub](https://github.com/Nahid-Hassan1) |
-| Sadikul Islam     |                    | [GitHub](https://github.com/Sadikul-Hub)   |
+| Name              | Institution                                                           | Socials                                    |
+|-------------------|-----------------------------------------------------------------------|--------------------------------------------|
+| Salman Sayeed     | [American International University-Bangladesh](https://www.aiub.edu/) | [GitHub](https://github.com/salman-sayeed) |
+| S.M.Nahid Hassan  | [American International University-Bangladesh](https://www.aiub.edu/) | [GitHub](https://github.com/Nahid-Hassan1) |
+| Sadikul Islam     | [American International University-Bangladesh](https://www.aiub.edu/) | [GitHub](https://github.com/Sadikul-Hub)   |
 
 
 
