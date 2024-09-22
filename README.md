@@ -5,10 +5,12 @@
 
 
 ### Members
-| Name        | Socials                         |
-|-------------|---------------------------------|
-| Salman Sayeed | [LinkedIn](https://linkedin.com/in/yourprofile) |
-| John Doe    | [Twitter](https://twitter.com/johndoe)        |
-| Jane Smith  | [GitHub](https://github.com/janesmith)       |
+| Name              | Institution        | Socials                         |
+|-------------------|--------------------|---------------------------------|
+| Salman Sayeed     |                    | [GitHub](https://github.com/salman-sayeed) |
+| S.M.Nahid Hassan  |                    | [GitHub](https://github.com/Nahid-Hassan1) |
+| Sadikul Islam     |                    | [GitHub](https://github.com/Sadikul-Hub)   |
+
+
 
 
