@@ -15,6 +15,7 @@ namespace Oshomoy
         public ForgetPassword()
         {
             InitializeComponent();
+            lbWarn1.Hide();
         }
     }
 }
