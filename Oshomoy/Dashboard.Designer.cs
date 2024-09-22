@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
-            this.userMidPanel = new System.Windows.Forms.Panel();
             this.userSidePanel = new System.Windows.Forms.Panel();
             this.showEmail = new System.Windows.Forms.Button();
             this.showUsername = new System.Windows.Forms.Button();
@@ -37,15 +36,6 @@
             this.userSidePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userPfp)).BeginInit();
             this.SuspendLayout();
-            // 
-            // userMidPanel
-            // 
-            this.userMidPanel.BackColor = System.Drawing.Color.DimGray;
-            this.userMidPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.userMidPanel.Location = new System.Drawing.Point(250, 0);
-            this.userMidPanel.Name = "userMidPanel";
-            this.userMidPanel.Size = new System.Drawing.Size(750, 500);
-            this.userMidPanel.TabIndex = 3;
             // 
             // userSidePanel
             // 
@@ -108,7 +98,6 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.Controls.Add(this.userMidPanel);
             this.Controls.Add(this.userSidePanel);
             this.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Dashboard";
@@ -120,8 +109,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel userMidPanel;
         private System.Windows.Forms.Panel userSidePanel;
         private System.Windows.Forms.Button showEmail;
         private System.Windows.Forms.Button showUsername;

@@ -104,6 +104,9 @@ namespace Oshomoy
             dashboard1.LoadUserData();
         }
 
-        
+        private void adminDb1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
