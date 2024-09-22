@@ -108,5 +108,24 @@ namespace Oshomoy
         {
 
         }
+
+        public void ShowForgetPassword()
+        {
+            
+            this.Controls.Clear();
+            ForgetPassword forgetPassword = new ForgetPassword();
+            forgetPassword.Dock = DockStyle.Fill; 
+            this.Controls.Add(forgetPassword);
+        }
+
+        public void ShowLogin2()
+        {
+            
+            this.Controls.Clear();
+            Login loginControl = new Login();
+            loginControl.Dock = DockStyle.Fill; 
+            this.Controls.Add(loginControl);
+        }
+
     }
 }
