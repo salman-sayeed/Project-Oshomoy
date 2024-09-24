@@ -96,9 +96,9 @@
             this.logPanel.Controls.Add(this.lbGetStart);
             this.logPanel.Dock = System.Windows.Forms.DockStyle.Right;
             this.logPanel.ForeColor = System.Drawing.SystemColors.Control;
-            this.logPanel.Location = new System.Drawing.Point(668, 0);
+            this.logPanel.Location = new System.Drawing.Point(662, 0);
             this.logPanel.Name = "logPanel";
-            this.logPanel.Size = new System.Drawing.Size(332, 500);
+            this.logPanel.Size = new System.Drawing.Size(332, 503);
             this.logPanel.TabIndex = 0;
             // 
             // linkedIn
@@ -174,7 +174,7 @@
             this.lbWarn2.ForeColor = System.Drawing.Color.Red;
             this.lbWarn2.Location = new System.Drawing.Point(42, 278);
             this.lbWarn2.Name = "lbWarn2";
-            this.lbWarn2.Size = new System.Drawing.Size(59, 16);
+            this.lbWarn2.Size = new System.Drawing.Size(69, 19);
             this.lbWarn2.TabIndex = 15;
             this.lbWarn2.Text = "Test Text";
             // 
@@ -187,7 +187,7 @@
             this.lbWarn1.ForeColor = System.Drawing.Color.Red;
             this.lbWarn1.Location = new System.Drawing.Point(42, 197);
             this.lbWarn1.Name = "lbWarn1";
-            this.lbWarn1.Size = new System.Drawing.Size(59, 16);
+            this.lbWarn1.Size = new System.Drawing.Size(69, 19);
             this.lbWarn1.TabIndex = 14;
             this.lbWarn1.Text = "Test Text";
             // 
@@ -198,7 +198,7 @@
             this.lbWelcometext.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(109)))));
             this.lbWelcometext.Location = new System.Drawing.Point(84, 85);
             this.lbWelcometext.Name = "lbWelcometext";
-            this.lbWelcometext.Size = new System.Drawing.Size(166, 15);
+            this.lbWelcometext.Size = new System.Drawing.Size(212, 20);
             this.lbWelcometext.TabIndex = 11;
             this.lbWelcometext.Text = "We are happy to see you.";
             // 
@@ -212,9 +212,9 @@
             this.lbLinkSign.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(109)))));
             this.lbLinkSign.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.lbLinkSign.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(109)))));
-            this.lbLinkSign.Location = new System.Drawing.Point(70, 411);
+            this.lbLinkSign.Location = new System.Drawing.Point(57, 418);
             this.lbLinkSign.Name = "lbLinkSign";
-            this.lbLinkSign.Size = new System.Drawing.Size(219, 15);
+            this.lbLinkSign.Size = new System.Drawing.Size(279, 20);
             this.lbLinkSign.TabIndex = 5;
             this.lbLinkSign.TabStop = true;
             this.lbLinkSign.Text = "Don\'t have an account? Register!";
@@ -228,9 +228,9 @@
             this.lbForgPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(109)))));
             this.lbForgPass.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.lbForgPass.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(109)))));
-            this.lbForgPass.Location = new System.Drawing.Point(111, 383);
+            this.lbForgPass.Location = new System.Drawing.Point(98, 382);
             this.lbForgPass.Name = "lbForgPass";
-            this.lbForgPass.Size = new System.Drawing.Size(130, 16);
+            this.lbForgPass.Size = new System.Drawing.Size(158, 20);
             this.lbForgPass.TabIndex = 4;
             this.lbForgPass.TabStop = true;
             this.lbForgPass.Text = "Forgot password?";
@@ -242,7 +242,7 @@
             this.lbPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(109)))));
             this.lbPass.Location = new System.Drawing.Point(42, 221);
             this.lbPass.Name = "lbPass";
-            this.lbPass.Size = new System.Drawing.Size(87, 18);
+            this.lbPass.Size = new System.Drawing.Size(107, 23);
             this.lbPass.TabIndex = 13;
             this.lbPass.Text = "Password";
             // 
@@ -265,7 +265,7 @@
             this.lbUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(109)))));
             this.lbUsername.Location = new System.Drawing.Point(42, 141);
             this.lbUsername.Name = "lbUsername";
-            this.lbUsername.Size = new System.Drawing.Size(90, 18);
+            this.lbUsername.Size = new System.Drawing.Size(111, 23);
             this.lbUsername.TabIndex = 12;
             this.lbUsername.Text = "Username";
             // 
@@ -287,7 +287,7 @@
             this.lbGetStart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
             this.lbGetStart.Location = new System.Drawing.Point(37, 47);
             this.lbGetStart.Name = "lbGetStart";
-            this.lbGetStart.Size = new System.Drawing.Size(268, 38);
+            this.lbGetStart.Size = new System.Drawing.Size(338, 49);
             this.lbGetStart.TabIndex = 10;
             this.lbGetStart.Text = "Welcome Back!";
             // 
@@ -298,7 +298,7 @@
             this.loginImage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.loginImage.Location = new System.Drawing.Point(0, 0);
             this.loginImage.Name = "loginImage";
-            this.loginImage.Size = new System.Drawing.Size(668, 500);
+            this.loginImage.Size = new System.Drawing.Size(662, 503);
             this.loginImage.TabIndex = 1;
             this.loginImage.TabStop = false;
             // 
@@ -311,7 +311,7 @@
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Login";
-            this.Size = new System.Drawing.Size(1000, 500);
+            this.Size = new System.Drawing.Size(994, 503);
             this.Load += new System.EventHandler(this.Login_Load);
             this.logPanel.ResumeLayout(false);
             this.logPanel.PerformLayout();

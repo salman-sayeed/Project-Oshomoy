@@ -33,12 +33,16 @@ namespace Oshomoy
             tbPassword.MaxLength = 16;
             tbUsername.KeyPress += TbUsername_KeyPress;
             tbPassword.KeyPress += TbPassword_KeyPress;
+
+            lbForgPass.Click += LbForgPass_Click;
         }
 
         private void Login_Load(object sender, EventArgs e)
         {
 
         }
+
+
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             Form1 parentForm = this.Parent as Form1;
@@ -48,6 +52,16 @@ namespace Oshomoy
             }
 
         }
+
+        private void LbForgPass_Click(object sender, EventArgs e)
+        {
+            Form1 parentForm = this.Parent as Form1;
+            if (parentForm != null)
+            {
+                parentForm.ShowForgetPassword(); 
+            }
+        }
+
         private void paassImg_Click(object sender, EventArgs e)
         {
             tbPassword.PasswordChar = '\0';

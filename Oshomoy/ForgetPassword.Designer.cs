@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.Button btLogin;
+            System.Windows.Forms.Button btnReset;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ForgetPassword));
             this.loginImage = new System.Windows.Forms.PictureBox();
             this.linkedIn = new System.Windows.Forms.PictureBox();
@@ -38,10 +38,10 @@
             this.lbWelcometext = new System.Windows.Forms.Label();
             this.lbForgPass = new System.Windows.Forms.LinkLabel();
             this.lbUsername = new System.Windows.Forms.Label();
-            this.tbUsername = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.lbGetStart = new System.Windows.Forms.Label();
             this.logPanel = new System.Windows.Forms.Panel();
-            btLogin = new System.Windows.Forms.Button();
+            btnReset = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.loginImage)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.linkedIn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.faceBook)).BeginInit();
@@ -49,22 +49,23 @@
             this.logPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btLogin
+            // btnReset
             // 
-            btLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
-            btLogin.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
-            btLogin.FlatAppearance.BorderSize = 0;
-            btLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
-            btLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(118)))), ((int)(((byte)(255)))));
-            btLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btLogin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            btLogin.ForeColor = System.Drawing.Color.White;
-            btLogin.Location = new System.Drawing.Point(45, 230);
-            btLogin.Name = "btLogin";
-            btLogin.Size = new System.Drawing.Size(250, 42);
-            btLogin.TabIndex = 2;
-            btLogin.Text = "Re-set Password";
-            btLogin.UseVisualStyleBackColor = false;
+            btnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
+            btnReset.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
+            btnReset.FlatAppearance.BorderSize = 0;
+            btnReset.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(149)))), ((int)(((byte)(255)))));
+            btnReset.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(77)))), ((int)(((byte)(118)))), ((int)(((byte)(255)))));
+            btnReset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            btnReset.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            btnReset.ForeColor = System.Drawing.Color.White;
+            btnReset.Location = new System.Drawing.Point(45, 230);
+            btnReset.Name = "btnReset";
+            btnReset.Size = new System.Drawing.Size(250, 42);
+            btnReset.TabIndex = 2;
+            btnReset.Text = "Reset Password";
+            btnReset.UseVisualStyleBackColor = false;
+            btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
             // loginImage
             // 
@@ -122,7 +123,7 @@
             this.lbWarn1.ForeColor = System.Drawing.Color.Red;
             this.lbWarn1.Location = new System.Drawing.Point(42, 197);
             this.lbWarn1.Name = "lbWarn1";
-            this.lbWarn1.Size = new System.Drawing.Size(59, 16);
+            this.lbWarn1.Size = new System.Drawing.Size(69, 19);
             this.lbWarn1.TabIndex = 14;
             this.lbWarn1.Text = "Test Text";
             // 
@@ -133,7 +134,7 @@
             this.lbWelcometext.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(109)))));
             this.lbWelcometext.Location = new System.Drawing.Point(58, 78);
             this.lbWelcometext.Name = "lbWelcometext";
-            this.lbWelcometext.Size = new System.Drawing.Size(186, 36);
+            this.lbWelcometext.Size = new System.Drawing.Size(227, 46);
             this.lbWelcometext.TabIndex = 11;
             this.lbWelcometext.Text = "Enter your credentials\r\n\r\n";
             // 
@@ -148,10 +149,11 @@
             this.lbForgPass.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(109)))));
             this.lbForgPass.Location = new System.Drawing.Point(106, 297);
             this.lbForgPass.Name = "lbForgPass";
-            this.lbForgPass.Size = new System.Drawing.Size(113, 16);
+            this.lbForgPass.Size = new System.Drawing.Size(144, 20);
             this.lbForgPass.TabIndex = 4;
             this.lbForgPass.TabStop = true;
             this.lbForgPass.Text = "Go back to sign in";
+            this.lbForgPass.Click += new System.EventHandler(this.btnSign_Click);
             // 
             // lbUsername
             // 
@@ -160,31 +162,32 @@
             this.lbUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(109)))));
             this.lbUsername.Location = new System.Drawing.Point(42, 141);
             this.lbUsername.Name = "lbUsername";
-            this.lbUsername.Size = new System.Drawing.Size(56, 18);
+            this.lbUsername.Size = new System.Drawing.Size(70, 23);
             this.lbUsername.TabIndex = 12;
             this.lbUsername.Text = "E-mail";
             // 
-            // tbUsername
+            // txtEmail
             // 
-            this.tbUsername.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
-            this.tbUsername.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tbUsername.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbUsername.Location = new System.Drawing.Point(45, 165);
-            this.tbUsername.Multiline = true;
-            this.tbUsername.Name = "tbUsername";
-            this.tbUsername.Size = new System.Drawing.Size(250, 30);
-            this.tbUsername.TabIndex = 0;
+            this.txtEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(232)))), ((int)(((byte)(232)))));
+            this.txtEmail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEmail.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEmail.Location = new System.Drawing.Point(45, 165);
+            this.txtEmail.Multiline = true;
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(250, 30);
+            this.txtEmail.TabIndex = 0;
             // 
             // lbGetStart
             // 
             this.lbGetStart.AutoSize = true;
             this.lbGetStart.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbGetStart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
-            this.lbGetStart.Location = new System.Drawing.Point(26, 31);
+            this.lbGetStart.Location = new System.Drawing.Point(37, 21);
             this.lbGetStart.Name = "lbGetStart";
-            this.lbGetStart.Size = new System.Drawing.Size(257, 33);
+            this.lbGetStart.Size = new System.Drawing.Size(324, 43);
             this.lbGetStart.TabIndex = 10;
             this.lbGetStart.Text = "Forget Password";
+            this.lbGetStart.Click += new System.EventHandler(this.lbGetStart_Click);
             // 
             // logPanel
             // 
@@ -195,9 +198,9 @@
             this.logPanel.Controls.Add(this.lbWarn1);
             this.logPanel.Controls.Add(this.lbWelcometext);
             this.logPanel.Controls.Add(this.lbForgPass);
-            this.logPanel.Controls.Add(btLogin);
+            this.logPanel.Controls.Add(btnReset);
             this.logPanel.Controls.Add(this.lbUsername);
-            this.logPanel.Controls.Add(this.tbUsername);
+            this.logPanel.Controls.Add(this.txtEmail);
             this.logPanel.Controls.Add(this.lbGetStart);
             this.logPanel.Dock = System.Windows.Forms.DockStyle.Right;
             this.logPanel.ForeColor = System.Drawing.SystemColors.Control;
@@ -233,7 +236,8 @@
         private System.Windows.Forms.Label lbWelcometext;
         private System.Windows.Forms.LinkLabel lbForgPass;
         private System.Windows.Forms.Label lbUsername;
-        private System.Windows.Forms.TextBox tbUsername;
+        private System.Windows.Forms.TextBox txtEmail;
+        private System.Windows.Forms.Button btnReset;
         private System.Windows.Forms.Label lbGetStart;
         private System.Windows.Forms.Panel logPanel;
     }
