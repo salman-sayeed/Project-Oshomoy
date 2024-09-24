@@ -44,3 +44,10 @@ C:\Users\redwa\Source\Repos\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.csproj.Gen
 C:\Users\redwa\Source\Repos\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.csproj.CoreCompileInputs.cache
 C:\Users\redwa\Source\Repos\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.exe
 C:\Users\redwa\Source\Repos\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.pdb
+C:\Users\User\OneDrive\Desktop\pro c#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.Adm2Panel.resources
+C:\Users\User\OneDrive\Desktop\pro c#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.AdminDb.resources
+C:\Users\User\OneDrive\Desktop\pro c#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.Adm1Panel.resources
+C:\Users\User\OneDrive\Desktop\pro c#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.Dashboard.resources
+C:\Users\User\OneDrive\Desktop\pro c#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.ForgetPassword.resources
+C:\Users\User\OneDrive\Desktop\pro c#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.PaymentSelect.resources
+C:\Users\User\OneDrive\Desktop\pro c#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.Signup.resources
