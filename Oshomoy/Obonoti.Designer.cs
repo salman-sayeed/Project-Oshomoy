@@ -63,6 +63,7 @@
             this.btObonotiNext.TabIndex = 5;
             this.btObonotiNext.Text = "Next";
             this.btObonotiNext.UseVisualStyleBackColor = true;
+            this.btObonotiNext.Click += new System.EventHandler(this.btObonotiNext_Click_1);
             // 
             // lbWarnObonotiPhone
             // 
@@ -85,6 +86,7 @@
             this.lblAmount.TabIndex = 16;
             this.lblAmount.Text = "Amount";
             this.lblAmount.UseVisualStyleBackColor = true;
+//            this.lblAmount.Click += new System.EventHandler(this.lblAmount_Click);
             // 
             // tbAmount
             // 

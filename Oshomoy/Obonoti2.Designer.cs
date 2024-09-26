@@ -148,6 +148,7 @@
             // 
             // tbObonotiPassword
             // 
+            this.tbObonotiPassword.BackColor = System.Drawing.Color.White;
             this.tbObonotiPassword.Location = new System.Drawing.Point(468, 205);
             this.tbObonotiPassword.Multiline = true;
             this.tbObonotiPassword.Name = "tbObonotiPassword";

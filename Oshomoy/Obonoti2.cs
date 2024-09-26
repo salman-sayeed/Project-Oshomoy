@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Oshomoy
 {
     public partial class Obonoti2 : UserControl
@@ -59,18 +60,19 @@ namespace Oshomoy
         {
             lbWarnObonotiPassword.Hide();
             lblConfirmPasswordObonoti.Hide();
-
-
+            
+            
             bool hasError = false;
 
             if (string.IsNullOrWhiteSpace(tbObonotiPassword.Text))
             {
                 lbWarnObonotiPassword.Show();
                 lbWarnObonotiPassword.Text = "Password can't be empty";
+               
                 hasError = true;
             }
 
-            else if (tbObonotiPassword.MaxLength < 8)
+            else if (tbObonotiPassword.Text.Length < 8)
             {
                 lbWarnObonotiPassword.Show();
                 lbWarnObonotiPassword.Text = "Password must be at least 8 characters long";
@@ -91,6 +93,8 @@ namespace Oshomoy
                 hasError = true;
             }
 
+
+
             if(!hasError)
             {
                 MessageBox.Show("Confirmation Successful");
@@ -101,3 +105,4 @@ namespace Oshomoy
         }
     }
 }
+

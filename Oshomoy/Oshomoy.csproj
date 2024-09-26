@@ -106,6 +106,12 @@
     <Compile Include="Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
+    <Compile Include="Obonoti2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Obonoti2.Designer.cs">
+      <DependentUpon>Obonoti2.cs</DependentUpon>
+    </Compile>
     <Compile Include="PaymentSelect.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -119,6 +125,12 @@
     </Compile>
     <Compile Include="Signup.Designer.cs">
       <DependentUpon>Signup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Obonoti.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Obonoti.Designer.cs">
+      <DependentUpon>Obonoti.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Adm2Panel.resx">
       <DependentUpon>Adm2Panel.cs</DependentUpon>
@@ -140,6 +152,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Obonoti.resx">
+      <DependentUpon>Obonoti.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Obonoti2.resx">
+      <DependentUpon>Obonoti2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PaymentSelect.resx">
       <DependentUpon>PaymentSelect.cs</DependentUpon>
