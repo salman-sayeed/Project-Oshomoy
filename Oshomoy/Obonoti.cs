@@ -15,7 +15,7 @@ namespace Oshomoy
     {
         public UserControl1()
         {
-            InitializeComponent();
+             InitializeComponent();
             
             lbWarnObonotiPhone.Hide(); 
             lbWarnAmount.Hide();
@@ -73,6 +73,8 @@ namespace Oshomoy
                 lbWarnAmount.Text = "Amount must be greater than zero";
                 hasError = true;
             }
+
+
 
         }
 

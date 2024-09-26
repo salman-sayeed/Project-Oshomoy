@@ -178,7 +178,7 @@
             this.lbWarnConPass.ForeColor = System.Drawing.Color.Red;
             this.lbWarnConPass.Location = new System.Drawing.Point(42, 376);
             this.lbWarnConPass.Name = "lbWarnConPass";
-            this.lbWarnConPass.Size = new System.Drawing.Size(59, 16);
+            this.lbWarnConPass.Size = new System.Drawing.Size(69, 19);
             this.lbWarnConPass.TabIndex = 19;
             this.lbWarnConPass.Text = "Test Text";
             this.lbWarnConPass.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -191,7 +191,7 @@
             this.lbWarnPass.ForeColor = System.Drawing.Color.Red;
             this.lbWarnPass.Location = new System.Drawing.Point(42, 305);
             this.lbWarnPass.Name = "lbWarnPass";
-            this.lbWarnPass.Size = new System.Drawing.Size(59, 16);
+            this.lbWarnPass.Size = new System.Drawing.Size(69, 19);
             this.lbWarnPass.TabIndex = 17;
             this.lbWarnPass.Text = "Test Text";
             this.lbWarnPass.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -204,7 +204,7 @@
             this.lbWarnEmail.ForeColor = System.Drawing.Color.Red;
             this.lbWarnEmail.Location = new System.Drawing.Point(42, 234);
             this.lbWarnEmail.Name = "lbWarnEmail";
-            this.lbWarnEmail.Size = new System.Drawing.Size(59, 16);
+            this.lbWarnEmail.Size = new System.Drawing.Size(69, 19);
             this.lbWarnEmail.TabIndex = 15;
             this.lbWarnEmail.Text = "Test Text";
             this.lbWarnEmail.TextAlign = System.Drawing.ContentAlignment.TopRight;
@@ -217,7 +217,7 @@
             this.lbWarnUN.ForeColor = System.Drawing.Color.Red;
             this.lbWarnUN.Location = new System.Drawing.Point(42, 161);
             this.lbWarnUN.Name = "lbWarnUN";
-            this.lbWarnUN.Size = new System.Drawing.Size(59, 16);
+            this.lbWarnUN.Size = new System.Drawing.Size(69, 19);
             this.lbWarnUN.TabIndex = 13;
             this.lbWarnUN.Text = "Test Text";
             // 
@@ -228,7 +228,7 @@
             this.lbConfirmPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(109)))));
             this.lbConfirmPass.Location = new System.Drawing.Point(42, 322);
             this.lbConfirmPass.Name = "lbConfirmPass";
-            this.lbConfirmPass.Size = new System.Drawing.Size(153, 18);
+            this.lbConfirmPass.Size = new System.Drawing.Size(190, 23);
             this.lbConfirmPass.TabIndex = 18;
             this.lbConfirmPass.Text = "Confirm Password";
             // 
@@ -251,7 +251,7 @@
             this.lbEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(109)))));
             this.lbEmail.Location = new System.Drawing.Point(42, 180);
             this.lbEmail.Name = "lbEmail";
-            this.lbEmail.Size = new System.Drawing.Size(51, 18);
+            this.lbEmail.Size = new System.Drawing.Size(63, 23);
             this.lbEmail.TabIndex = 14;
             this.lbEmail.Text = "Email";
             // 
@@ -273,7 +273,7 @@
             this.lbWelcometext.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(109)))));
             this.lbWelcometext.Location = new System.Drawing.Point(94, 62);
             this.lbWelcometext.Name = "lbWelcometext";
-            this.lbWelcometext.Size = new System.Drawing.Size(140, 15);
+            this.lbWelcometext.Size = new System.Drawing.Size(175, 20);
             this.lbWelcometext.TabIndex = 11;
             this.lbWelcometext.Text = "Create your account";
             // 
@@ -287,7 +287,7 @@
             this.linkLabel1.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(109)))));
             this.linkLabel1.Location = new System.Drawing.Point(66, 462);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(215, 15);
+            this.linkLabel1.Size = new System.Drawing.Size(274, 20);
             this.linkLabel1.TabIndex = 5;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Already have an accoun? Sign In";
@@ -300,7 +300,7 @@
             this.lbPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(109)))));
             this.lbPass.Location = new System.Drawing.Point(42, 253);
             this.lbPass.Name = "lbPass";
-            this.lbPass.Size = new System.Drawing.Size(87, 18);
+            this.lbPass.Size = new System.Drawing.Size(107, 23);
             this.lbPass.TabIndex = 16;
             this.lbPass.Text = "Password";
             // 
@@ -323,7 +323,7 @@
             this.lbUsername.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(109)))));
             this.lbUsername.Location = new System.Drawing.Point(42, 105);
             this.lbUsername.Name = "lbUsername";
-            this.lbUsername.Size = new System.Drawing.Size(90, 18);
+            this.lbUsername.Size = new System.Drawing.Size(111, 23);
             this.lbUsername.TabIndex = 12;
             this.lbUsername.Text = "Username";
             // 
@@ -345,7 +345,7 @@
             this.lbGetStart.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(138)))), ((int)(((byte)(255)))));
             this.lbGetStart.Location = new System.Drawing.Point(52, 19);
             this.lbGetStart.Name = "lbGetStart";
-            this.lbGetStart.Size = new System.Drawing.Size(226, 43);
+            this.lbGetStart.Size = new System.Drawing.Size(288, 54);
             this.lbGetStart.TabIndex = 10;
             this.lbGetStart.Text = "Get Started";
             // 

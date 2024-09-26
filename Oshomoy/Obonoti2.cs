@@ -59,7 +59,7 @@ namespace Oshomoy
         private void btnConfirm_Click(object sender, EventArgs e)
         {
             lbWarnObonotiPassword.Hide();
-            lblConfirmPasswordObonoti.Hide();
+            lblWarnObonotiConPass.Hide();
             
             
             bool hasError = false;
@@ -72,7 +72,7 @@ namespace Oshomoy
                 hasError = true;
             }
 
-            else if (tbObonotiPassword.Text.Length < 8)
+            else if (tbObonotiPassword.MaxLength < 8)
             {
                 lbWarnObonotiPassword.Show();
                 lbWarnObonotiPassword.Text = "Password must be at least 8 characters long";

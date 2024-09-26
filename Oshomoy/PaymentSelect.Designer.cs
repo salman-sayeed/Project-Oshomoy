@@ -37,17 +37,11 @@
             this.btnPaymentBaki = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lNagad = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnPaymentBank = new System.Windows.Forms.Button();
-            this.lBank = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panelBkash.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.pNagad.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panelBkash
@@ -56,7 +50,7 @@
             this.panelBkash.Controls.Add(this.btnPaymentObonoti);
             this.panelBkash.Controls.Add(this.pictureBox1);
             this.panelBkash.Controls.Add(this.lBkash);
-            this.panelBkash.Location = new System.Drawing.Point(58, 120);
+            this.panelBkash.Location = new System.Drawing.Point(103, 96);
             this.panelBkash.Name = "panelBkash";
             this.panelBkash.Size = new System.Drawing.Size(255, 367);
             this.panelBkash.TabIndex = 0;
@@ -98,7 +92,7 @@
             this.pNagad.Controls.Add(this.btnPaymentBaki);
             this.pNagad.Controls.Add(this.pictureBox2);
             this.pNagad.Controls.Add(this.lNagad);
-            this.pNagad.Location = new System.Drawing.Point(373, 120);
+            this.pNagad.Location = new System.Drawing.Point(663, 96);
             this.pNagad.Name = "pNagad";
             this.pNagad.Size = new System.Drawing.Size(255, 367);
             this.pNagad.TabIndex = 1;
@@ -134,51 +128,12 @@
             this.lNagad.TabIndex = 4;
             this.lNagad.Text = "Baki";
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel2.Controls.Add(this.btnPaymentBank);
-            this.panel2.Controls.Add(this.lBank);
-            this.panel2.Controls.Add(this.pictureBox3);
-            this.panel2.Location = new System.Drawing.Point(701, 120);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(255, 367);
-            this.panel2.TabIndex = 2;
-            // 
-            // btnPaymentBank
-            // 
-            this.btnPaymentBank.Location = new System.Drawing.Point(73, 285);
-            this.btnPaymentBank.Name = "btnPaymentBank";
-            this.btnPaymentBank.Size = new System.Drawing.Size(119, 38);
-            this.btnPaymentBank.TabIndex = 3;
-            this.btnPaymentBank.Text = "Payment";
-            this.btnPaymentBank.UseVisualStyleBackColor = true;
-            // 
-            // lBank
-            // 
-            this.lBank.AutoSize = true;
-            this.lBank.BackColor = System.Drawing.Color.DarkCyan;
-            this.lBank.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lBank.Location = new System.Drawing.Point(99, 14);
-            this.lBank.Name = "lBank";
-            this.lBank.Size = new System.Drawing.Size(71, 28);
-            this.lBank.TabIndex = 5;
-            this.lBank.Text = "Bank";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Location = new System.Drawing.Point(48, 52);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(174, 212);
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Salmon;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(301, 23);
+            this.label1.Location = new System.Drawing.Point(284, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(441, 43);
             this.label1.TabIndex = 6;
@@ -189,7 +144,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.LightBlue;
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.pNagad);
             this.Controls.Add(this.panelBkash);
             this.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -201,9 +155,6 @@
             this.pNagad.ResumeLayout(false);
             this.pNagad.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -213,16 +164,12 @@
 
         private System.Windows.Forms.Panel panelBkash;
         private System.Windows.Forms.Panel pNagad;
-        private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label lBkash;
         private System.Windows.Forms.Label lNagad;
-        private System.Windows.Forms.Label lBank;
         private System.Windows.Forms.Button btnPaymentObonoti;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnPaymentBaki;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button btnPaymentBank;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label1;
     }
 }
