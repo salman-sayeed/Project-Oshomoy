@@ -203,5 +203,146 @@ namespace Oshomoy
                 MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btMakeAdmin_Click(object sender, EventArgs e)
+        {
+            string userId = tbUserId.Text.Trim();
+
+            if (string.IsNullOrEmpty(userId))
+            {
+                MessageBox.Show("Please enter the User ID.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    string updateQuery = "UPDATE Users SET UserType = @UserType WHERE UserID = @UserID";
+
+                    using (SqlCommand command = new SqlCommand(updateQuery, connection))
+                    {
+                        command.Parameters.AddWithValue("@UserType", "Admin");
+                        command.Parameters.AddWithValue("@UserID", userId);
+
+                        int rowsAffected = command.ExecuteNonQuery();
+
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("User promoted to Admin successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                            tbUserId.Clear();
+                            LoadUserData();
+                        }
+                        else
+                        {
+                            MessageBox.Show("User not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btMakeUser_Click(object sender, EventArgs e)
+        {
+            string userId = tbUserId.Text.Trim();
+
+            if (string.IsNullOrEmpty(userId))
+            {
+                MessageBox.Show("Please enter the User ID.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    string updateQuery = "UPDATE Users SET UserType = @UserType WHERE UserID = @UserID";
+
+                    using (SqlCommand command = new SqlCommand(updateQuery, connection))
+                    {
+                        command.Parameters.AddWithValue("@UserType", "User");
+                        command.Parameters.AddWithValue("@UserID", userId);
+
+                        int rowsAffected = command.ExecuteNonQuery();
+
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("User demoted to regular user successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                            tbUserId.Clear();
+                            LoadUserData();
+                        }
+                        else
+                        {
+                            MessageBox.Show("User not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btDeleteUser_Click(object sender, EventArgs e)
+        {
+            string userId = tbUserId.Text.Trim();
+
+            if (string.IsNullOrEmpty(userId))
+            {
+                MessageBox.Show("Please enter the User ID.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            DialogResult dialogResult = MessageBox.Show("Are you sure you want to delete this user?", "Delete Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (dialogResult == DialogResult.No)
+            {
+                return;
+            }
+
+            try
+            {
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    string deleteQuery = "DELETE FROM Users WHERE UserID = @UserID";
+
+                    using (SqlCommand command = new SqlCommand(deleteQuery, connection))
+                    {
+                        command.Parameters.AddWithValue("@UserID", userId);
+
+                        int rowsAffected = command.ExecuteNonQuery();
+
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("User deleted successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                            tbUserId.Clear();
+                            LoadUserData();
+                        }
+                        else
+                        {
+                            MessageBox.Show("User not found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
     }
 }
