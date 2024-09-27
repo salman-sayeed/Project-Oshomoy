@@ -111,6 +111,19 @@ namespace Oshomoy
             }
         }
 
-     
+        private void indicator3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void indicator2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void indicator1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

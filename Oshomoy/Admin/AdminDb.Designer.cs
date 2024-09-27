@@ -95,6 +95,7 @@
             this.indicator3.Name = "indicator3";
             this.indicator3.Size = new System.Drawing.Size(5, 40);
             this.indicator3.TabIndex = 37;
+            this.indicator3.Paint += new System.Windows.Forms.PaintEventHandler(this.indicator3_Paint);
             // 
             // indicator2
             // 
@@ -103,6 +104,7 @@
             this.indicator2.Name = "indicator2";
             this.indicator2.Size = new System.Drawing.Size(5, 40);
             this.indicator2.TabIndex = 36;
+            this.indicator2.Paint += new System.Windows.Forms.PaintEventHandler(this.indicator2_Paint);
             // 
             // indicator1
             // 
@@ -111,6 +113,7 @@
             this.indicator1.Name = "indicator1";
             this.indicator1.Size = new System.Drawing.Size(5, 40);
             this.indicator1.TabIndex = 35;
+            this.indicator1.Paint += new System.Windows.Forms.PaintEventHandler(this.indicator1_Paint);
             // 
             // admBtn2
             // 
