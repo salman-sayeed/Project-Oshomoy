@@ -83,6 +83,12 @@
       <DependentUpon>Adm2Panel.cs</DependentUpon>
     </Compile>
     <Compile Include="Data Access\DataAccess.cs" />
+    <Compile Include="Payment\Confirmation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Payment\Confirmation.Designer.cs">
+      <DependentUpon>Confirmation.cs</DependentUpon>
+    </Compile>
     <Compile Include="User\Dashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -101,12 +107,6 @@
     <Compile Include="Register &amp; Login\Login.Designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
-    <Compile Include="Payment\Obonoti2.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Payment\Obonoti2.Designer.cs">
-      <DependentUpon>Obonoti2.cs</DependentUpon>
-    </Compile>
     <Compile Include="Payment\PaymentSelect.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -120,12 +120,6 @@
     </Compile>
     <Compile Include="Register &amp; Login\Signup.Designer.cs">
       <DependentUpon>Signup.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Payment\Obonoti.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Payment\Obonoti.Designer.cs">
-      <DependentUpon>Obonoti.cs</DependentUpon>
     </Compile>
     <Compile Include="User\User1Panel.cs">
       <SubType>UserControl</SubType>
@@ -148,6 +142,9 @@
     <EmbeddedResource Include="Admin\Adm1Panel.resx">
       <DependentUpon>Adm1Panel.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Payment\Confirmation.resx">
+      <DependentUpon>Confirmation.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -156,12 +153,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Register &amp; Login\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Payment\Obonoti.resx">
-      <DependentUpon>Obonoti.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Payment\Obonoti2.resx">
-      <DependentUpon>Obonoti2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Payment\PaymentSelect.resx">
       <DependentUpon>PaymentSelect.cs</DependentUpon>

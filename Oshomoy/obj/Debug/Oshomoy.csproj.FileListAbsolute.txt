@@ -83,8 +83,6 @@ D:\Programming\AIUB\C#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.Adm1Panel.resou
 D:\Programming\AIUB\C#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.Dashboard.resources
 D:\Programming\AIUB\C#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.Form1.resources
 D:\Programming\AIUB\C#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.Login.resources
-D:\Programming\AIUB\C#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.UserControl1.resources
-D:\Programming\AIUB\C#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.Obonoti2.resources
 D:\Programming\AIUB\C#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.PaymentSelect.resources
 D:\Programming\AIUB\C#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.Properties.Resources.resources
 D:\Programming\AIUB\C#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.Signup.resources
@@ -94,3 +92,4 @@ D:\Programming\AIUB\C#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.csproj.Generate
 D:\Programming\AIUB\C#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.csproj.CoreCompileInputs.cache
 D:\Programming\AIUB\C#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.exe
 D:\Programming\AIUB\C#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.pdb
+D:\Programming\AIUB\C#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.Payment.Confirmation.resources

@@ -56,9 +56,10 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbNagadPin = new System.Windows.Forms.TextBox();
+            this.tbNagadPhone = new System.Windows.Forms.TextBox();
+            this.tbNagadAmount = new System.Windows.Forms.TextBox();
+            this.confirmation1 = new Oshomoy.Payment.Confirmation();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -76,7 +77,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(175, 22);
+            this.label1.Location = new System.Drawing.Point(175, 34);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(367, 24);
             this.label1.TabIndex = 0;
@@ -90,7 +91,7 @@
             this.panel1.Controls.Add(this.label6);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(61, 69);
+            this.panel1.Location = new System.Drawing.Point(61, 81);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(250, 350);
             this.panel1.TabIndex = 1;
@@ -156,7 +157,7 @@
             this.panel3.Controls.Add(this.tbBkashPin);
             this.panel3.Controls.Add(this.tbBkashPhone);
             this.panel3.Controls.Add(this.tbBkashAmount);
-            this.panel3.Location = new System.Drawing.Point(61, 216);
+            this.panel3.Location = new System.Drawing.Point(61, 228);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(250, 136);
             this.panel3.TabIndex = 3;
@@ -218,7 +219,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(32)))), ((int)(((byte)(83)))));
-            this.panel2.Location = new System.Drawing.Point(61, 142);
+            this.panel2.Location = new System.Drawing.Point(61, 154);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(250, 10);
             this.panel2.TabIndex = 2;
@@ -227,7 +228,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.Gainsboro;
             this.panel4.Controls.Add(this.bkashConfirm);
-            this.panel4.Location = new System.Drawing.Point(61, 352);
+            this.panel4.Location = new System.Drawing.Point(61, 364);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(250, 36);
             this.panel4.TabIndex = 3;
@@ -243,6 +244,7 @@
             this.bkashConfirm.TabIndex = 4;
             this.bkashConfirm.Text = "Confirm";
             this.bkashConfirm.UseVisualStyleBackColor = true;
+            this.bkashConfirm.Click += new System.EventHandler(this.bkashConfirm_Click);
             // 
             // panel8
             // 
@@ -252,7 +254,7 @@
             this.panel8.Controls.Add(this.label11);
             this.panel8.Controls.Add(this.pictureBox6);
             this.panel8.Controls.Add(this.panel5);
-            this.panel8.Location = new System.Drawing.Point(433, 69);
+            this.panel8.Location = new System.Drawing.Point(433, 81);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(250, 350);
             this.panel8.TabIndex = 5;
@@ -269,6 +271,7 @@
             this.nagadConfirm.TabIndex = 5;
             this.nagadConfirm.Text = "Confirm";
             this.nagadConfirm.UseVisualStyleBackColor = false;
+            this.nagadConfirm.Click += new System.EventHandler(this.nagadConfirm_Click);
             // 
             // pictureBox5
             // 
@@ -316,10 +319,10 @@
             this.panel6.Controls.Add(this.label7);
             this.panel6.Controls.Add(this.label8);
             this.panel6.Controls.Add(this.label9);
-            this.panel6.Controls.Add(this.textBox1);
-            this.panel6.Controls.Add(this.textBox2);
-            this.panel6.Controls.Add(this.textBox3);
-            this.panel6.Location = new System.Drawing.Point(433, 259);
+            this.panel6.Controls.Add(this.tbNagadPin);
+            this.panel6.Controls.Add(this.tbNagadPhone);
+            this.panel6.Controls.Add(this.tbNagadAmount);
+            this.panel6.Location = new System.Drawing.Point(433, 271);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(250, 121);
             this.panel6.TabIndex = 9;
@@ -357,31 +360,40 @@
             this.label9.TabIndex = 9;
             this.label9.Text = "Amount";
             // 
-            // textBox1
+            // tbNagadPin
             // 
-            this.textBox1.Location = new System.Drawing.Point(92, 84);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(148, 25);
-            this.textBox1.TabIndex = 8;
+            this.tbNagadPin.Location = new System.Drawing.Point(92, 84);
+            this.tbNagadPin.Name = "tbNagadPin";
+            this.tbNagadPin.Size = new System.Drawing.Size(148, 25);
+            this.tbNagadPin.TabIndex = 8;
             // 
-            // textBox2
+            // tbNagadPhone
             // 
-            this.textBox2.Location = new System.Drawing.Point(92, 51);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(148, 25);
-            this.textBox2.TabIndex = 7;
+            this.tbNagadPhone.Location = new System.Drawing.Point(92, 51);
+            this.tbNagadPhone.Name = "tbNagadPhone";
+            this.tbNagadPhone.Size = new System.Drawing.Size(148, 25);
+            this.tbNagadPhone.TabIndex = 7;
             // 
-            // textBox3
+            // tbNagadAmount
             // 
-            this.textBox3.Location = new System.Drawing.Point(92, 18);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(148, 25);
-            this.textBox3.TabIndex = 6;
+            this.tbNagadAmount.Location = new System.Drawing.Point(92, 18);
+            this.tbNagadAmount.Name = "tbNagadAmount";
+            this.tbNagadAmount.Size = new System.Drawing.Size(148, 25);
+            this.tbNagadAmount.TabIndex = 6;
+            // 
+            // confirmation1
+            // 
+            this.confirmation1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(50)))), ((int)(((byte)(65)))));
+            this.confirmation1.Location = new System.Drawing.Point(221, 61);
+            this.confirmation1.Name = "confirmation1";
+            this.confirmation1.Size = new System.Drawing.Size(300, 400);
+            this.confirmation1.TabIndex = 10;
             // 
             // PaymentSelect
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
+            this.Controls.Add(this.confirmation1);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -440,8 +452,9 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbNagadPin;
+        private System.Windows.Forms.TextBox tbNagadPhone;
+        private System.Windows.Forms.TextBox tbNagadAmount;
+        private Payment.Confirmation confirmation1;
     }
 }

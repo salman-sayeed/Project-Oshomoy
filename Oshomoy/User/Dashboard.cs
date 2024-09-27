@@ -36,6 +36,7 @@ namespace Oshomoy
 
             paymentSelect1.Show();
             paymentSelect1.BringToFront(); 
+
         }
         public void LoadUserData()
         {
