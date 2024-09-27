@@ -51,3 +51,6 @@ C:\Users\User\OneDrive\Desktop\pro c#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.
 C:\Users\User\OneDrive\Desktop\pro c#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.ForgetPassword.resources
 C:\Users\User\OneDrive\Desktop\pro c#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.PaymentSelect.resources
 C:\Users\User\OneDrive\Desktop\pro c#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.Signup.resources
+D:\Programming\AIUB\C#\C# Project - Oshomoy\Oshomoy\obj\Debug\Oshomoy.UserControl1.resources
+D:\Programming\AIUB\C#\C# Project - Oshomoy\Oshomoy\obj\Debug\Oshomoy.Obonoti2.resources
+D:\Programming\AIUB\C#\C# Project - Oshomoy\Oshomoy\obj\Debug\Oshomoy.PaymentSelect.resources
