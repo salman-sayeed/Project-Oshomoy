@@ -82,6 +82,7 @@
     <Compile Include="Admin\Adm2Panel.Designer.cs">
       <DependentUpon>Adm2Panel.cs</DependentUpon>
     </Compile>
+    <Compile Include="Data Access\DataAccess.cs" />
     <Compile Include="User\Dashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -126,6 +127,18 @@
     <Compile Include="Payment\Obonoti.Designer.cs">
       <DependentUpon>Obonoti.cs</DependentUpon>
     </Compile>
+    <Compile Include="User\User1Panel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User\User1Panel.Designer.cs">
+      <DependentUpon>User1Panel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\User2Panel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User\User2Panel.Designer.cs">
+      <DependentUpon>User2Panel.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Admin\Adm2Panel.resx">
       <DependentUpon>Adm2Panel.cs</DependentUpon>
     </EmbeddedResource>
@@ -164,6 +177,12 @@
     </Compile>
     <EmbeddedResource Include="Register &amp; Login\Signup.resx">
       <DependentUpon>Signup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\User1Panel.resx">
+      <DependentUpon>User1Panel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\User2Panel.resx">
+      <DependentUpon>User2Panel.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

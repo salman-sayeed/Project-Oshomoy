@@ -73,3 +73,24 @@ D:\Programming\AIUB\C#\New folder\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.cspr
 D:\Programming\AIUB\C#\New folder\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.csproj.CoreCompileInputs.cache
 D:\Programming\AIUB\C#\New folder\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.exe
 D:\Programming\AIUB\C#\New folder\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.pdb
+D:\Programming\AIUB\C#\Project-Oshomoy\Oshomoy\bin\Debug\Oshomoy.exe.config
+D:\Programming\AIUB\C#\Project-Oshomoy\Oshomoy\bin\Debug\Oshomoy.exe
+D:\Programming\AIUB\C#\Project-Oshomoy\Oshomoy\bin\Debug\Oshomoy.pdb
+D:\Programming\AIUB\C#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.csproj.AssemblyReference.cache
+D:\Programming\AIUB\C#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.Adm2Panel.resources
+D:\Programming\AIUB\C#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.AdminDb.resources
+D:\Programming\AIUB\C#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.Adm1Panel.resources
+D:\Programming\AIUB\C#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.Dashboard.resources
+D:\Programming\AIUB\C#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.Form1.resources
+D:\Programming\AIUB\C#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.Login.resources
+D:\Programming\AIUB\C#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.UserControl1.resources
+D:\Programming\AIUB\C#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.Obonoti2.resources
+D:\Programming\AIUB\C#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.PaymentSelect.resources
+D:\Programming\AIUB\C#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.Properties.Resources.resources
+D:\Programming\AIUB\C#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.Signup.resources
+D:\Programming\AIUB\C#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.User.User1Panel.resources
+D:\Programming\AIUB\C#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.User.User2Panel.resources
+D:\Programming\AIUB\C#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.csproj.GenerateResource.cache
+D:\Programming\AIUB\C#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.csproj.CoreCompileInputs.cache
+D:\Programming\AIUB\C#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.exe
+D:\Programming\AIUB\C#\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.pdb

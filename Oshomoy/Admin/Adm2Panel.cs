@@ -48,7 +48,6 @@ namespace Oshomoy
         {
             try
             {
-                // Regex for validating email addresses
                 var emailPattern = @"^[^@\s]+@[^@\s]+\.[^@\s]+$";
                 return System.Text.RegularExpressions.Regex.IsMatch(email, emailPattern);
             }

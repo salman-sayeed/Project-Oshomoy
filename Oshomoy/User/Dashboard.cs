@@ -15,11 +15,18 @@ namespace Oshomoy
     {
         string connectionString;
         public int UserId { get; set; }
+        
         public Dashboard()
         {
             InitializeComponent();
             connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\SALMAN\Documents\UserInfo.mdf;Integrated Security=True;Connect Timeout=30";
+            
+            indicator1.Show();
+            indicator2.Hide();
 
+            user2Panel1.Hide();
+            user1Panel1.Show();
+            user1Panel1.BringToFront();
         }
 
         public void LoadUserData()
@@ -68,6 +75,34 @@ namespace Oshomoy
             {
                 parentForm.ShowLogin();
             }
+        }
+
+        private void userBtn1_Click(object sender, EventArgs e)
+        {
+            indicator1.Show();
+            indicator2.Hide();
+
+            user2Panel1.Hide();
+
+            user1Panel1.Show();
+            user1Panel1.BringToFront();
+
+            LoadUserData();
+        }
+
+        private void UserBtn3_Click(object sender, EventArgs e)
+        {
+            indicator1.Hide();
+            indicator2.Show();
+
+            user1Panel1.Hide();
+
+            user2Panel1.Show();
+            user2Panel1.BringToFront();
+
+            user2Panel1.UserId = this.UserId;
+
+            LoadUserData();
         }
     }
 }

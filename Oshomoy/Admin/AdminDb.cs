@@ -22,7 +22,6 @@ namespace Oshomoy
             
             indicator1.Show();
             indicator2.Hide();
-            indicator3.Hide();
 
             adm2Panel1.Hide();
             adm1Panel1.Show();
@@ -71,7 +70,7 @@ namespace Oshomoy
         {
             indicator1.Show();
             indicator2.Hide();
-            indicator3.Hide();
+
 
             adm2Panel1.Hide();
 
@@ -83,23 +82,13 @@ namespace Oshomoy
         {
             indicator1.Hide();
             indicator2.Show();
-            indicator3.Hide();
+
 
             adm1Panel1.Hide();
 
             adm2Panel1.Show();
             adm2Panel1.BringToFront();
 
-        }
-
-        private void admBtn3_Click(object sender, EventArgs e)
-        {
-            indicator1.Hide();
-            indicator2.Hide();
-            indicator3.Show();
-
-            adm1Panel1.Hide();
-            adm2Panel1.Hide();
         }
 
         private void btSignout_Click(object sender, EventArgs e)
@@ -111,19 +100,5 @@ namespace Oshomoy
             }
         }
 
-        private void indicator3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void indicator2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void indicator1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }
