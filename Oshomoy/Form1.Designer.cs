@@ -116,7 +116,6 @@
             this.adminDb1.Size = new System.Drawing.Size(1000, 530);
             this.adminDb1.TabIndex = 3;
             this.adminDb1.UserId = 0;
-            this.adminDb1.Load += new System.EventHandler(this.adminDb1_Load);
             // 
             // login1
             // 
@@ -157,10 +156,10 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(1000, 530);
             this.Controls.Add(this.topPanel);
-            this.Controls.Add(this.dashboard1);
             this.Controls.Add(this.adminDb1);
             this.Controls.Add(this.login1);
             this.Controls.Add(this.signup1);
+            this.Controls.Add(this.dashboard1);
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
