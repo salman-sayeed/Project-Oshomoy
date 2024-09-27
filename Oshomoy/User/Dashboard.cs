@@ -20,15 +20,23 @@ namespace Oshomoy
         {
             InitializeComponent();
             connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\SALMAN\Documents\UserInfo.mdf;Integrated Security=True;Connect Timeout=30";
-            
+
             indicator1.Show();
             indicator2.Hide();
 
+            paymentSelect1.Hide();
             user2Panel1.Hide();
             user1Panel1.Show();
             user1Panel1.BringToFront();
         }
+        public void ShowPayment()
+        {
+            user2Panel1.Hide();
+            user2Panel1.Hide();
 
+            paymentSelect1.Show();
+            paymentSelect1.BringToFront(); 
+        }
         public void LoadUserData()
         {
             showUsername.Text = "";
@@ -83,6 +91,7 @@ namespace Oshomoy
             indicator2.Hide();
 
             user2Panel1.Hide();
+            paymentSelect1.Hide();
 
             user1Panel1.Show();
             user1Panel1.BringToFront();
@@ -96,6 +105,7 @@ namespace Oshomoy
             indicator2.Show();
 
             user1Panel1.Hide();
+            paymentSelect1.Hide();
 
             user2Panel1.Show();
             user2Panel1.BringToFront();
@@ -104,5 +114,7 @@ namespace Oshomoy
 
             LoadUserData();
         }
+
+        
     }
 }
