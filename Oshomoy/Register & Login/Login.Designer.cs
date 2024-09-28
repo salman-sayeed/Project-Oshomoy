@@ -40,7 +40,6 @@
             this.lbWarn1 = new System.Windows.Forms.Label();
             this.lbWelcometext = new System.Windows.Forms.Label();
             this.lbLinkSign = new System.Windows.Forms.LinkLabel();
-            this.lbForgPass = new System.Windows.Forms.LinkLabel();
             this.lbPass = new System.Windows.Forms.Label();
             this.tbPassword = new System.Windows.Forms.TextBox();
             this.lbUsername = new System.Windows.Forms.Label();
@@ -87,7 +86,6 @@
             this.logPanel.Controls.Add(this.lbWarn1);
             this.logPanel.Controls.Add(this.lbWelcometext);
             this.logPanel.Controls.Add(this.lbLinkSign);
-            this.logPanel.Controls.Add(this.lbForgPass);
             this.logPanel.Controls.Add(btLogin);
             this.logPanel.Controls.Add(this.lbPass);
             this.logPanel.Controls.Add(this.tbPassword);
@@ -107,7 +105,7 @@
             this.linkedIn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("linkedIn.BackgroundImage")));
             this.linkedIn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.linkedIn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.linkedIn.Location = new System.Drawing.Point(213, 455);
+            this.linkedIn.Location = new System.Drawing.Point(212, 447);
             this.linkedIn.Name = "linkedIn";
             this.linkedIn.Size = new System.Drawing.Size(25, 25);
             this.linkedIn.TabIndex = 21;
@@ -120,7 +118,7 @@
             this.faceBook.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("faceBook.BackgroundImage")));
             this.faceBook.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.faceBook.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.faceBook.Location = new System.Drawing.Point(169, 455);
+            this.faceBook.Location = new System.Drawing.Point(168, 447);
             this.faceBook.Name = "faceBook";
             this.faceBook.Size = new System.Drawing.Size(25, 25);
             this.faceBook.TabIndex = 20;
@@ -133,7 +131,7 @@
             this.gitHub.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gitHub.BackgroundImage")));
             this.gitHub.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.gitHub.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.gitHub.Location = new System.Drawing.Point(125, 455);
+            this.gitHub.Location = new System.Drawing.Point(124, 447);
             this.gitHub.Name = "gitHub";
             this.gitHub.Size = new System.Drawing.Size(25, 25);
             this.gitHub.TabIndex = 19;
@@ -212,29 +210,13 @@
             this.lbLinkSign.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(109)))));
             this.lbLinkSign.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
             this.lbLinkSign.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(109)))));
-            this.lbLinkSign.Location = new System.Drawing.Point(57, 418);
+            this.lbLinkSign.Location = new System.Drawing.Point(65, 383);
             this.lbLinkSign.Name = "lbLinkSign";
             this.lbLinkSign.Size = new System.Drawing.Size(219, 15);
             this.lbLinkSign.TabIndex = 5;
             this.lbLinkSign.TabStop = true;
             this.lbLinkSign.Text = "Don\'t have an account? Register!";
             this.lbLinkSign.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
-            // 
-            // lbForgPass
-            // 
-            this.lbForgPass.ActiveLinkColor = System.Drawing.Color.White;
-            this.lbForgPass.AutoSize = true;
-            this.lbForgPass.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(109)))));
-            this.lbForgPass.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(109)))));
-            this.lbForgPass.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.lbForgPass.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(109)))));
-            this.lbForgPass.Location = new System.Drawing.Point(98, 382);
-            this.lbForgPass.Name = "lbForgPass";
-            this.lbForgPass.Size = new System.Drawing.Size(130, 16);
-            this.lbForgPass.TabIndex = 4;
-            this.lbForgPass.TabStop = true;
-            this.lbForgPass.Text = "Forgot password?";
-            this.lbForgPass.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbForgPass_LinkClicked);
             // 
             // lbPass
             // 
@@ -335,7 +317,6 @@
         private System.Windows.Forms.TextBox tbUsername;
         private System.Windows.Forms.Label lbPass;
         private System.Windows.Forms.TextBox tbPassword;
-        private System.Windows.Forms.LinkLabel lbForgPass;
         private System.Windows.Forms.LinkLabel lbLinkSign;
         private System.Windows.Forms.Label lbWelcometext;
         private System.Windows.Forms.Label lbWarn1;

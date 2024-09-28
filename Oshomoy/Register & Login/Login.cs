@@ -34,7 +34,6 @@ namespace Oshomoy
             tbUsername.KeyPress += TbUsername_KeyPress;
             tbPassword.KeyPress += TbPassword_KeyPress;
 
-            lbForgPass.Click += LbForgPass_Click;
         }
 
         private void Login_Load(object sender, EventArgs e)
