@@ -102,6 +102,8 @@
             // 
             // logo
             // 
+            this.logo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("logo.BackgroundImage")));
+            this.logo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.logo.Location = new System.Drawing.Point(0, 0);
             this.logo.Name = "logo";
             this.logo.Size = new System.Drawing.Size(30, 30);
