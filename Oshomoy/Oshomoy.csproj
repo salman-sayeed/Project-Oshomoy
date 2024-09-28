@@ -49,6 +49,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.ConfigurationManager, Version=8.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Configuration.ConfigurationManager.8.0.0\lib\net462\System.Configuration.ConfigurationManager.dll</HintPath>
+    </Reference>
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
@@ -69,12 +73,6 @@
     </Compile>
     <Compile Include="Admin\AdminDb.Designer.cs">
       <DependentUpon>AdminDb.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Admin\Adm1Panel.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Admin\Adm1Panel.Designer.cs">
-      <DependentUpon>Adm1Panel.cs</DependentUpon>
     </Compile>
     <Compile Include="Admin\Adm2Panel.cs">
       <SubType>UserControl</SubType>
@@ -139,9 +137,6 @@
     <EmbeddedResource Include="Admin\AdminDb.resx">
       <DependentUpon>AdminDb.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Admin\Adm1Panel.resx">
-      <DependentUpon>Adm1Panel.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Payment\Confirmation.resx">
       <DependentUpon>Confirmation.cs</DependentUpon>
     </EmbeddedResource>
@@ -175,6 +170,7 @@
     <EmbeddedResource Include="User\User2Panel.resx">
       <DependentUpon>User2Panel.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

@@ -99,7 +99,6 @@ D:\AIUB\Projects\Project-Oshomoy\Oshomoy\bin\Debug\Oshomoy.pdb
 D:\AIUB\Projects\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.csproj.AssemblyReference.cache
 D:\AIUB\Projects\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.Adm2Panel.resources
 D:\AIUB\Projects\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.AdminDb.resources
-D:\AIUB\Projects\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.Adm1Panel.resources
 D:\AIUB\Projects\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.Payment.Confirmation.resources
 D:\AIUB\Projects\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.Dashboard.resources
 D:\AIUB\Projects\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.Form1.resources
@@ -113,3 +112,6 @@ D:\AIUB\Projects\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.csproj.GenerateResour
 D:\AIUB\Projects\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.csproj.CoreCompileInputs.cache
 D:\AIUB\Projects\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.exe
 D:\AIUB\Projects\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.pdb
+D:\AIUB\Projects\Project-Oshomoy\Oshomoy\bin\Debug\System.Configuration.ConfigurationManager.dll
+D:\AIUB\Projects\Project-Oshomoy\Oshomoy\bin\Debug\System.Configuration.ConfigurationManager.xml
+D:\AIUB\Projects\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.csproj.Up2Date
