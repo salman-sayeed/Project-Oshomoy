@@ -43,24 +43,24 @@
 <h2 style="display: inline-block;">Screenshots</h2> <br>
 
 <center> 
-<img src="https://imgur.com/qFNPq2y.png" alt="Login" height="400">
+<img src="https://imgur.com/qFNPq2y.png" alt="Login" height="300">
 <p> Login Page </p> <br>
         
-<img src="https://imgur.com/DMCrn2H.png" alt="Register" height="400">
+<img src="https://imgur.com/DMCrn2H.png" alt="Register" height="300">
 <p> Register Page </p> <br>
 
-<img src="https://imgur.com/dHyQeg8.png" alt="User Dashboard" height="400">
+<img src="https://imgur.com/dHyQeg8.png" alt="User Dashboard" height="300">
 <p> User Dashboard </p> <br>
 
-<img src="https://imgur.com/OEWVevw.png" alt="User Payment" height="400">
+<img src="https://imgur.com/OEWVevw.png" alt="User Payment" height="300">
 <p> User Payment </p> <br>
 
-<img src="https://imgur.com/InONwmu.png" alt="User Payment Success" height="400">
+<img src="https://imgur.com/InONwmu.png" alt="User Payment Success" height="300">
 <p> Login User Payment Success </p> <br>
 
-<img src="https://imgur.com/MMGERv7.png" alt="User Settings" height="400">
+<img src="https://imgur.com/MMGERv7.png" alt="User Settings" height="300">
 <p> User Settings Page </p> <br>
 
-<img src="https://imgur.com/TltSAs4.png" alt="Admin Dashboard" height="400">
+<img src="https://imgur.com/TltSAs4.png" alt="Admin Dashboard" height="300">
 <p> Admin Dashboard Page </p> <br>
 </center>
