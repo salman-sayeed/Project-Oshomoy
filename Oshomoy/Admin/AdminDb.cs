@@ -20,12 +20,9 @@ namespace Oshomoy
             InitializeComponent();
             connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\SALMAN\Documents\UserInfo.mdf;Integrated Security=True;Connect Timeout=30";
             
-            indicator1.Show();
-            indicator2.Hide();
-
-            adm2Panel1.Hide();
-            adm1Panel1.Show();
-            adm1Panel1.BringToFront();
+            indicator2.Show();
+            adm2Panel1.Show();
+            adm2Panel1.BringToFront();
         }
         public void LoadAdminData()
         {
@@ -66,25 +63,10 @@ namespace Oshomoy
             }
         }
 
-        private void admBtn1_Click(object sender, EventArgs e)
-        {
-            indicator1.Show();
-            indicator2.Hide();
-
-
-            adm2Panel1.Hide();
-
-            adm1Panel1.Show();
-            adm1Panel1.BringToFront();
-        }
 
         private void admBtn2_Click(object sender, EventArgs e)
         {
-            indicator1.Hide();
             indicator2.Show();
-
-
-            adm1Panel1.Hide();
 
             adm2Panel1.Show();
             adm2Panel1.BringToFront();

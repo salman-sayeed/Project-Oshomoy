@@ -1,0 +1,67 @@
+[33m247ea25[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m userString centralized using App.config
+[33m8553dd1[m Forgot Password revamped
+[33me2dfb82[m Payment updated
+[33m0a73a46[m Bkash & Nagad revamped
+[33m11ea460[m payment select
+[33m9c566e2[m User dashboard
+[33m4f28aab[m Removed Payment options
+[33m6ef9e91[m Removed forgetPassword and fixed Dashboard
+[33mf856916[m minor change
+[33mde34f83[m Organized solution
+[33m2ddb461[m Recipr Gui added
+[33m444ddf6[m Recipt.cs
+[33maa969c6[m Nogod backend added
+[33m7946bc0[m minor change in Bkash
+[33mdb31bca[m Bkash payment method Backend; Obonoti, Obonoti2
+[33mbd8cbd2[m payment
+[33m2df7c84[m payment
+[33m28d653b[m Added Warning Label For The Email TextBox in ForgotPassword Form
+[33m4a8d018[m Update README.md
+[33me5126a7[m Merge branch 'main' of https://github.com/salman-sayeed/Project-Oshomoy
+[33m70baee8[m minor changes
+[33m276303e[m Payment Select UI added
+[33m8657f6b[m PaySelect Created!
+[33m66d3bed[m Payment Selection page added
+[33m90de951[m Minor changes
+[33mabac97c[m Minor edits
+[33m6107610[m forget pass gui added
+[33m1513c82[m minor changes
+[33mad39e79[m Admin dashboard crud operation added
+[33mbc041f2[m new panels added to Admin Dasboard
+[33m23eabc8[m Added Forget passeword
+[33m7cadbdd[m minor changes
+[33m0582959[m minor changes
+[33mdb8d2f0[m revamped the whole UI
+[33md5a371b[m minor bug fix
+[33m3ac369d[m minor bugs
+[33m3016356[m logo added
+[33m84cb719[m login and sigup full backend added
+[33m667cd7a[m minor changes
+[33m18d4bb6[m added login and signup backend
+[33m4cf0110[m Login code added
+[33m4216b36[m dashboard added
+[33m2ffa2a0[m login & signup refrencing added
+[33mcd6f6d4[m Fixed autoscaling issue
+[33m0f79c00[m minor gui changes
+[33m6eb182a[m login GUI & login bg added
+[33me3af3c9[m Fixed minor issues
+[33mb6590c0[m enhanced login gui
+[33mef0453b[m Login UI
+[33m31ca25e[m Added fixed Login.cs
+[33ma8b077b[m Error fixing
+[33m963932f[m restored
+[33m336f3b4[m referencing issue
+[33meee4b7e[m login.cs
+[33m64aaf14[m Signup Cursor changed
+[33m27a016e[m Sign Up UI
+[33m7641a69[m added Signup Control
+[33m39bf81f[m minor changes
+[33mf994470[m revamped Login Control
+[33m2fbd0d1[m added login control
+[33m3eb661f[m remove textbox
+[33m4ca813f[m Added a textbox
+[33m1e8226b[m Author name changed
+[33m3f88835[m New author added
+[33m105077b[m Minor changes
+[33ma4a4c8b[m Added modern GUI
+[33ma7f4048[m Initial commit
