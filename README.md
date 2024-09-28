@@ -1,5 +1,5 @@
 
-<center> <img src="https://i.imgur.com/vFvLwQd.png" alt="Oshomoy.png" height="300"> </center>
+ <img src="https://i.imgur.com/vFvLwQd.png" alt="Oshomoy.png" height="300">
 
 # OSHOMOY    [![GitHub license](https://badgen.net/github/license/Naereen/Strapdown.js)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE) ![Release](https://img.shields.io/badge/release-1.0-1590cd?style=flat&logo=) 
 
@@ -42,7 +42,6 @@
 <img src="https://imgur.com/a3sEt4D.png" height="15" > 
 <h2 style="display: inline-block;">Screenshots</h2> <br>
 
-<center> 
 <img src="https://imgur.com/qFNPq2y.png" alt="Login" height="300">
 <p> Login Page </p> <br>
         
@@ -63,4 +62,3 @@
 
 <img src="https://imgur.com/TltSAs4.png" alt="Admin Dashboard" height="300">
 <p> Admin Dashboard Page </p> <br>
-</center>
