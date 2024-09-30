@@ -7,12 +7,21 @@ namespace Oshomoy
 {
     public partial class PaymentSelect : UserControl
     {
+        public int Amount { get; set; }
         public PaymentSelect()
         {
             InitializeComponent();
 
             confirmation1.Hide();
+
         }
+
+        public void UpdateAmounts()
+        {
+            tbBkashAmount.Text = Amount.ToString();
+            tbNagadAmount.Text = Amount.ToString();
+        }
+
 
         private void bkashConfirm_Click(object sender, EventArgs e)
         {

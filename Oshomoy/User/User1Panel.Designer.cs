@@ -38,7 +38,8 @@
             this.lbWarn = new System.Windows.Forms.Label();
             this.rbYearly = new System.Windows.Forms.RadioButton();
             this.rbMonthly = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.rbOneTime = new System.Windows.Forms.RadioButton();
+            this.lbWarn2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btCheckout
@@ -58,6 +59,7 @@
             this.btCheckout.TabIndex = 5;
             this.btCheckout.Text = "Checkout";
             this.btCheckout.UseVisualStyleBackColor = false;
+            this.btCheckout.Click += new System.EventHandler(this.btCheckout_Click);
             // 
             // tbDonation
             // 
@@ -90,7 +92,7 @@
             this.checkBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkBox1.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox1.ForeColor = System.Drawing.Color.Black;
-            this.checkBox1.Location = new System.Drawing.Point(65, 345);
+            this.checkBox1.Location = new System.Drawing.Point(65, 348);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(12, 11);
             this.checkBox1.TabIndex = 4;
@@ -101,7 +103,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(80, 344);
+            this.label2.Location = new System.Drawing.Point(80, 347);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(217, 15);
             this.label2.TabIndex = 4;
@@ -112,7 +114,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(80, 361);
+            this.label3.Location = new System.Drawing.Point(80, 364);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(143, 15);
             this.label3.TabIndex = 5;
@@ -163,21 +165,34 @@
             this.rbMonthly.Text = "Monthly Donation";
             this.rbMonthly.UseVisualStyleBackColor = false;
             // 
-            // radioButton2
+            // rbOneTime
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(134)))), ((int)(((byte)(238)))));
-            this.radioButton2.FlatAppearance.BorderSize = 0;
-            this.radioButton2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.radioButton2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.ForeColor = System.Drawing.Color.Black;
-            this.radioButton2.Location = new System.Drawing.Point(81, 288);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(159, 22);
-            this.radioButton2.TabIndex = 18;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "One Time Donation";
-            this.radioButton2.UseVisualStyleBackColor = false;
+            this.rbOneTime.AutoSize = true;
+            this.rbOneTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(134)))), ((int)(((byte)(238)))));
+            this.rbOneTime.FlatAppearance.BorderSize = 0;
+            this.rbOneTime.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rbOneTime.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rbOneTime.ForeColor = System.Drawing.Color.Black;
+            this.rbOneTime.Location = new System.Drawing.Point(81, 288);
+            this.rbOneTime.Name = "rbOneTime";
+            this.rbOneTime.Size = new System.Drawing.Size(159, 22);
+            this.rbOneTime.TabIndex = 18;
+            this.rbOneTime.TabStop = true;
+            this.rbOneTime.Text = "One Time Donation";
+            this.rbOneTime.UseVisualStyleBackColor = false;
+            // 
+            // lbWarn2
+            // 
+            this.lbWarn2.AutoSize = true;
+            this.lbWarn2.BackColor = System.Drawing.Color.White;
+            this.lbWarn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lbWarn2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbWarn2.ForeColor = System.Drawing.Color.Red;
+            this.lbWarn2.Location = new System.Drawing.Point(76, 323);
+            this.lbWarn2.Name = "lbWarn2";
+            this.lbWarn2.Size = new System.Drawing.Size(59, 16);
+            this.lbWarn2.TabIndex = 19;
+            this.lbWarn2.Text = "Test Text";
             // 
             // User1Panel
             // 
@@ -185,7 +200,8 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.Controls.Add(this.radioButton2);
+            this.Controls.Add(this.lbWarn2);
+            this.Controls.Add(this.rbOneTime);
             this.Controls.Add(this.rbMonthly);
             this.Controls.Add(this.rbYearly);
             this.Controls.Add(this.lbWarn);
@@ -213,6 +229,7 @@
         private System.Windows.Forms.Label lbWarn;
         private System.Windows.Forms.RadioButton rbYearly;
         private System.Windows.Forms.RadioButton rbMonthly;
-        private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.RadioButton rbOneTime;
+        private System.Windows.Forms.Label lbWarn2;
     }
 }

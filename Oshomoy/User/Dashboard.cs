@@ -30,8 +30,11 @@ namespace Oshomoy
 
             paymentSelect1.Hide();
             user2Panel1.Hide();
+
             user1Panel1.Show();
             user1Panel1.BringToFront();
+
+
         }
         public void ShowPayment()
         {

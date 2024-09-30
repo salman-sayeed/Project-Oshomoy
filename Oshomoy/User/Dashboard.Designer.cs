@@ -204,6 +204,7 @@
             // paymentSelect1
             // 
             this.paymentSelect1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
+            this.paymentSelect1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("paymentSelect1.BackgroundImage")));
             this.paymentSelect1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.paymentSelect1.Location = new System.Drawing.Point(250, 0);
             this.paymentSelect1.Name = "paymentSelect1";
