@@ -38,6 +38,7 @@
             this.login1 = new Oshomoy.Login();
             this.signup1 = new Oshomoy.Signup();
             this.dashboard1 = new Oshomoy.Dashboard();
+            this.forgotpass1 = new Oshomoy.Register___Login.Forgotpass();
             ((System.ComponentModel.ISupportInitialize)(this.closeBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.minimizeBox)).BeginInit();
             this.topPanel.SuspendLayout();
@@ -152,11 +153,20 @@
             this.dashboard1.TabIndex = 7;
             this.dashboard1.UserId = 0;
             // 
+            // forgotpass1
+            // 
+            this.forgotpass1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.forgotpass1.Location = new System.Drawing.Point(0, 30);
+            this.forgotpass1.Name = "forgotpass1";
+            this.forgotpass1.Size = new System.Drawing.Size(1000, 500);
+            this.forgotpass1.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
             this.ClientSize = new System.Drawing.Size(1000, 530);
+            this.Controls.Add(this.forgotpass1);
             this.Controls.Add(this.topPanel);
             this.Controls.Add(this.adminDb1);
             this.Controls.Add(this.login1);
@@ -190,6 +200,7 @@
         private AdminDb adminDb1;
         private Dashboard dashboard1;
         private System.Windows.Forms.PictureBox logo;
+        private Register___Login.Forgotpass forgotpass1;
     }
 }
 

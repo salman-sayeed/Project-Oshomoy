@@ -115,3 +115,4 @@ D:\AIUB\Projects\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.pdb
 D:\AIUB\Projects\Project-Oshomoy\Oshomoy\bin\Debug\System.Configuration.ConfigurationManager.dll
 D:\AIUB\Projects\Project-Oshomoy\Oshomoy\bin\Debug\System.Configuration.ConfigurationManager.xml
 D:\AIUB\Projects\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.csproj.Up2Date
+D:\AIUB\Projects\Project-Oshomoy\Oshomoy\obj\Debug\Oshomoy.Register___Login.Forgotpass.resources

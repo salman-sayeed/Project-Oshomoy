@@ -53,9 +53,13 @@ namespace Oshomoy
 
         }
 
-        private void LbForgPass_Click(object sender, EventArgs e)
+        private void lbLinkForgot_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-           
+            Form1 parentForm = this.Parent as Form1;
+            if (parentForm != null)
+            {
+                parentForm.ShowForgotPassword();
+            }
         }
 
         private void paassImg_Click(object sender, EventArgs e)
@@ -190,11 +194,6 @@ namespace Oshomoy
                     MessageBox.Show("An error occurred: " + ex.Message);
                 }
             }
-        }
-
-        private void lbForgPass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-
         }
     }
 }

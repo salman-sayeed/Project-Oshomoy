@@ -46,6 +46,7 @@
             this.tbUsername = new System.Windows.Forms.TextBox();
             this.lbGetStart = new System.Windows.Forms.Label();
             this.loginImage = new System.Windows.Forms.PictureBox();
+            this.lbLinkForgot = new System.Windows.Forms.LinkLabel();
             btLogin = new System.Windows.Forms.Button();
             this.logPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.linkedIn)).BeginInit();
@@ -77,6 +78,7 @@
             // logPanel
             // 
             this.logPanel.BackColor = System.Drawing.Color.White;
+            this.logPanel.Controls.Add(this.lbLinkForgot);
             this.logPanel.Controls.Add(this.linkedIn);
             this.logPanel.Controls.Add(this.faceBook);
             this.logPanel.Controls.Add(this.gitHub);
@@ -94,9 +96,9 @@
             this.logPanel.Controls.Add(this.lbGetStart);
             this.logPanel.Dock = System.Windows.Forms.DockStyle.Right;
             this.logPanel.ForeColor = System.Drawing.SystemColors.Control;
-            this.logPanel.Location = new System.Drawing.Point(662, 0);
+            this.logPanel.Location = new System.Drawing.Point(668, 0);
             this.logPanel.Name = "logPanel";
-            this.logPanel.Size = new System.Drawing.Size(332, 503);
+            this.logPanel.Size = new System.Drawing.Size(332, 500);
             this.logPanel.TabIndex = 0;
             // 
             // linkedIn
@@ -281,9 +283,27 @@
             this.loginImage.Dock = System.Windows.Forms.DockStyle.Fill;
             this.loginImage.Location = new System.Drawing.Point(0, 0);
             this.loginImage.Name = "loginImage";
-            this.loginImage.Size = new System.Drawing.Size(662, 503);
+            this.loginImage.Size = new System.Drawing.Size(668, 500);
             this.loginImage.TabIndex = 1;
             this.loginImage.TabStop = false;
+            // 
+            // lbLinkForgot
+            // 
+            this.lbLinkForgot.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(109)))));
+            this.lbLinkForgot.AutoSize = true;
+            this.lbLinkForgot.BackColor = System.Drawing.Color.Transparent;
+            this.lbLinkForgot.DisabledLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(109)))));
+            this.lbLinkForgot.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLinkForgot.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(109)))));
+            this.lbLinkForgot.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.lbLinkForgot.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(109)))));
+            this.lbLinkForgot.Location = new System.Drawing.Point(114, 403);
+            this.lbLinkForgot.Name = "lbLinkForgot";
+            this.lbLinkForgot.Size = new System.Drawing.Size(124, 15);
+            this.lbLinkForgot.TabIndex = 22;
+            this.lbLinkForgot.TabStop = true;
+            this.lbLinkForgot.Text = "Forgot Password?";
+            this.lbLinkForgot.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lbLinkForgot_LinkClicked);
             // 
             // Login
             // 
@@ -294,7 +314,7 @@
             this.ForeColor = System.Drawing.SystemColors.Control;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Login";
-            this.Size = new System.Drawing.Size(994, 503);
+            this.Size = new System.Drawing.Size(1000, 500);
             this.Load += new System.EventHandler(this.Login_Load);
             this.logPanel.ResumeLayout(false);
             this.logPanel.PerformLayout();
@@ -326,5 +346,6 @@
         private System.Windows.Forms.PictureBox gitHub;
         private System.Windows.Forms.PictureBox linkedIn;
         private System.Windows.Forms.PictureBox faceBook;
+        private System.Windows.Forms.LinkLabel lbLinkForgot;
     }
 }

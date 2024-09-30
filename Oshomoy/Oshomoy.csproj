@@ -87,6 +87,12 @@
     <Compile Include="Payment\Confirmation.Designer.cs">
       <DependentUpon>Confirmation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Register &amp; Login\Forgotpass.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Register &amp; Login\Forgotpass.Designer.cs">
+      <DependentUpon>Forgotpass.cs</DependentUpon>
+    </Compile>
     <Compile Include="User\Dashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -139,6 +145,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Payment\Confirmation.resx">
       <DependentUpon>Confirmation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Register &amp; Login\Forgotpass.resx">
+      <DependentUpon>Forgotpass.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>

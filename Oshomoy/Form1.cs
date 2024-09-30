@@ -20,6 +20,7 @@ namespace Oshomoy
             signup1.Hide();
             adminDb1.Hide();
             dashboard1.Hide();
+            forgotpass1.Hide();
             login1.Show();
             login1.BringToFront();
         }
@@ -65,6 +66,7 @@ namespace Oshomoy
             login1.Hide();
             adminDb1.Hide();
             dashboard1.Hide();
+            forgotpass1.Hide();
             signup1.Show();
             signup1.BringToFront();
         }
@@ -78,11 +80,23 @@ namespace Oshomoy
             login1.BringToFront();
         }
 
+        public void ShowForgotPassword()
+        {
+            login1.Hide();
+            signup1.Hide();
+            adminDb1.Hide();
+            dashboard1.Hide();
+            forgotpass1.Hide();
+            forgotpass1.Show();
+            forgotpass1.BringToFront();
+        }
+
         public void ShowAdminDb(int userId)
         {
             signup1.Hide();
             login1.Hide();
             dashboard1.Hide();
+            forgotpass1.Hide();
 
             adminDb1.Show();
             adminDb1.BringToFront();
@@ -96,6 +110,7 @@ namespace Oshomoy
             signup1.Hide();
             login1.Hide();
             adminDb1.Hide();
+            forgotpass1.Hide();
 
             dashboard1.Show();
             dashboard1.BringToFront();
