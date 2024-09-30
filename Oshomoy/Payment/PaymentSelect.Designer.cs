@@ -39,10 +39,8 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.tbBkashPin = new System.Windows.Forms.TextBox();
             this.tbBkashPhone = new System.Windows.Forms.TextBox();
-            this.tbBkashAmount = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.bkashConfirm = new System.Windows.Forms.Button();
@@ -60,6 +58,8 @@
             this.tbNagadPhone = new System.Windows.Forms.TextBox();
             this.tbNagadAmount = new System.Windows.Forms.TextBox();
             this.confirmation1 = new Oshomoy.Payment.Confirmation();
+            this.tbBkashAmount = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -75,6 +75,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(175, 34);
@@ -184,19 +185,9 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Mobile No";
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(20, 27);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 17);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Amount";
-            // 
             // tbBkashPin
             // 
+            this.tbBkashPin.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbBkashPin.Location = new System.Drawing.Point(90, 90);
             this.tbBkashPin.Name = "tbBkashPin";
             this.tbBkashPin.Size = new System.Drawing.Size(148, 25);
@@ -204,17 +195,11 @@
             // 
             // tbBkashPhone
             // 
+            this.tbBkashPhone.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbBkashPhone.Location = new System.Drawing.Point(90, 57);
             this.tbBkashPhone.Name = "tbBkashPhone";
             this.tbBkashPhone.Size = new System.Drawing.Size(148, 25);
             this.tbBkashPhone.TabIndex = 1;
-            // 
-            // tbBkashAmount
-            // 
-            this.tbBkashAmount.Location = new System.Drawing.Point(90, 24);
-            this.tbBkashAmount.Name = "tbBkashAmount";
-            this.tbBkashAmount.Size = new System.Drawing.Size(148, 25);
-            this.tbBkashAmount.TabIndex = 0;
             // 
             // panel2
             // 
@@ -362,6 +347,7 @@
             // 
             // tbNagadPin
             // 
+            this.tbNagadPin.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbNagadPin.Location = new System.Drawing.Point(92, 84);
             this.tbNagadPin.Name = "tbNagadPin";
             this.tbNagadPin.Size = new System.Drawing.Size(148, 25);
@@ -369,6 +355,7 @@
             // 
             // tbNagadPhone
             // 
+            this.tbNagadPhone.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbNagadPhone.Location = new System.Drawing.Point(92, 51);
             this.tbNagadPhone.Name = "tbNagadPhone";
             this.tbNagadPhone.Size = new System.Drawing.Size(148, 25);
@@ -376,8 +363,10 @@
             // 
             // tbNagadAmount
             // 
+            this.tbNagadAmount.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbNagadAmount.Location = new System.Drawing.Point(92, 18);
             this.tbNagadAmount.Name = "tbNagadAmount";
+            this.tbNagadAmount.ReadOnly = true;
             this.tbNagadAmount.Size = new System.Drawing.Size(148, 25);
             this.tbNagadAmount.TabIndex = 6;
             // 
@@ -389,11 +378,31 @@
             this.confirmation1.Size = new System.Drawing.Size(300, 400);
             this.confirmation1.TabIndex = 10;
             // 
+            // tbBkashAmount
+            // 
+            this.tbBkashAmount.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbBkashAmount.Location = new System.Drawing.Point(90, 24);
+            this.tbBkashAmount.Name = "tbBkashAmount";
+            this.tbBkashAmount.ReadOnly = true;
+            this.tbBkashAmount.Size = new System.Drawing.Size(148, 25);
+            this.tbBkashAmount.TabIndex = 0;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(20, 27);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(64, 17);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Amount";
+            // 
             // PaymentSelect
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
-            this.Controls.Add(this.confirmation1);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
@@ -401,6 +410,7 @@
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.confirmation1);
             this.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "PaymentSelect";
             this.Size = new System.Drawing.Size(750, 500);
@@ -432,10 +442,8 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tbBkashPin;
         private System.Windows.Forms.TextBox tbBkashPhone;
-        private System.Windows.Forms.TextBox tbBkashAmount;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel4;
@@ -456,5 +464,7 @@
         private System.Windows.Forms.TextBox tbNagadPhone;
         private System.Windows.Forms.TextBox tbNagadAmount;
         private Payment.Confirmation confirmation1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox tbBkashAmount;
     }
 }

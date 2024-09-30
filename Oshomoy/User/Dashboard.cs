@@ -15,7 +15,11 @@ namespace Oshomoy
     {
         string connectionString;
         public int UserId { get; set; }
-        
+
+        public string username;
+        public string email;
+
+
         public Dashboard()
         {
             InitializeComponent();
@@ -57,8 +61,8 @@ namespace Oshomoy
                         {
                             if (reader.Read())
                             {
-                                string username = reader["UserName"].ToString();
-                                string email = reader["Email"].ToString();
+                                username = reader["UserName"].ToString();
+                                email = reader["Email"].ToString();
 
                                 showUsername.Text = username;
                                 showEmail.Text = email;

@@ -16,11 +16,10 @@ namespace Oshomoy
 
         private void bkashConfirm_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(tbBkashAmount.Text) ||
-                string.IsNullOrWhiteSpace(tbBkashPhone.Text) ||
+            if  (string.IsNullOrWhiteSpace(tbBkashPhone.Text) ||
                 string.IsNullOrWhiteSpace(tbBkashPin.Text))
             {
-                MessageBox.Show("Please fill in all fields: Amount, Phone Number, and PIN.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please fill in all fields: Phone Number and PIN.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return; 
             }
             if (tbBkashPin.Text.Length != 5 || !tbBkashPin.Text.All(char.IsDigit))
@@ -41,11 +40,10 @@ namespace Oshomoy
 
         private void nagadConfirm_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(tbNagadAmount.Text) ||
-                string.IsNullOrWhiteSpace(tbNagadPhone.Text) ||
+            if (string.IsNullOrWhiteSpace(tbNagadPhone.Text) ||
                 string.IsNullOrWhiteSpace(tbNagadPin.Text))
             {
-                MessageBox.Show("Please fill in all fields: Amount, Phone Number, and PIN.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please fill in all fields: Phone Number and PIN.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
             if (tbBkashPin.Text.Length != 5 || !tbBkashPin.Text.All(char.IsDigit))

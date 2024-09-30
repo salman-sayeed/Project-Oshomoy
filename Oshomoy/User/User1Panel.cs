@@ -17,13 +17,6 @@ namespace Oshomoy.User
             InitializeComponent();
         }
 
-        private void btDonate_Click(object sender, EventArgs e)
-        {
-            Dashboard parentForm = this.Parent as Dashboard;
-            if (parentForm != null)
-            {
-                parentForm.ShowPayment();
-            }
-        }
+
     }
 }

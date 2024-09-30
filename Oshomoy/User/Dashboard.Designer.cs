@@ -38,9 +38,9 @@
             this.indicator1 = new System.Windows.Forms.Panel();
             this.userBtn1 = new System.Windows.Forms.Button();
             this.UserBtn3 = new System.Windows.Forms.Button();
-            this.user1Panel1 = new Oshomoy.User.User1Panel();
             this.user2Panel1 = new Oshomoy.User.User2Panel();
             this.paymentSelect1 = new Oshomoy.PaymentSelect();
+            this.user1Panel1 = new Oshomoy.User.User1Panel();
             this.userSidePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.userPfp)).BeginInit();
             this.SuspendLayout();
@@ -74,7 +74,7 @@
             this.btSignout.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btSignout.Image = ((System.Drawing.Image)(resources.GetObject("btSignout.Image")));
             this.btSignout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btSignout.Location = new System.Drawing.Point(49, 434);
+            this.btSignout.Location = new System.Drawing.Point(49, 414);
             this.btSignout.Name = "btSignout";
             this.btSignout.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
             this.btSignout.Size = new System.Drawing.Size(150, 25);
@@ -192,14 +192,6 @@
             this.UserBtn3.UseVisualStyleBackColor = false;
             this.UserBtn3.Click += new System.EventHandler(this.UserBtn3_Click);
             // 
-            // user1Panel1
-            // 
-            this.user1Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
-            this.user1Panel1.Location = new System.Drawing.Point(250, 0);
-            this.user1Panel1.Name = "user1Panel1";
-            this.user1Panel1.Size = new System.Drawing.Size(750, 500);
-            this.user1Panel1.TabIndex = 3;
-            // 
             // user2Panel1
             // 
             this.user2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
@@ -218,14 +210,25 @@
             this.paymentSelect1.Size = new System.Drawing.Size(750, 500);
             this.paymentSelect1.TabIndex = 5;
             // 
+            // user1Panel1
+            // 
+            this.user1Panel1.BackColor = System.Drawing.Color.White;
+            this.user1Panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("user1Panel1.BackgroundImage")));
+            this.user1Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.user1Panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.user1Panel1.Location = new System.Drawing.Point(250, 0);
+            this.user1Panel1.Name = "user1Panel1";
+            this.user1Panel1.Size = new System.Drawing.Size(750, 500);
+            this.user1Panel1.TabIndex = 6;
+            // 
             // Dashboard
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.Controls.Add(this.paymentSelect1);
             this.Controls.Add(this.user1Panel1);
             this.Controls.Add(this.userSidePanel);
             this.Controls.Add(this.user2Panel1);
+            this.Controls.Add(this.paymentSelect1);
             this.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "Dashboard";
             this.Size = new System.Drawing.Size(1000, 500);
@@ -245,8 +248,8 @@
         private System.Windows.Forms.Panel indicator1;
         private System.Windows.Forms.Button userBtn1;
         private System.Windows.Forms.Button UserBtn3;
-        private User.User1Panel user1Panel1;
         private User.User2Panel user2Panel1;
         private PaymentSelect paymentSelect1;
+        private User.User1Panel user1Panel1;
     }
 }
