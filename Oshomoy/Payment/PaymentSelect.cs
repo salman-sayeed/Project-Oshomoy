@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Data.SqlClient;
+using System.Drawing.Printing;
+using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -14,12 +16,18 @@ namespace Oshomoy
         public string Username { get; set; }
         public string Email { get; set; }
 
+        string phone;
+
         public PaymentSelect()
         {
             InitializeComponent();
             connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\SALMAN\Documents\UserInfo.mdf;Integrated Security=True;Connect Timeout=30";
 
             confirmation1.Hide();
+
+            lbTest1.Hide();
+            lbTest2.Hide();
+            lbTest3.Hide();
         }
 
         public void UpdateAmounts()
@@ -35,10 +43,32 @@ namespace Oshomoy
             lbTest3.Text = Email;
         }
 
-        public void Reciept() 
+        public void Reciept()
         {
+            PrintDocument printDocument = new PrintDocument();
+            printDocument.PrintPage += new PrintPageEventHandler(PrintDocument_PrintPage);
 
+            PrintPreviewDialog printPreviewDialog = new PrintPreviewDialog();
+            printPreviewDialog.Document = printDocument;
+            printPreviewDialog.ShowDialog();
         }
+
+        private void PrintDocument_PrintPage(object sender, PrintPageEventArgs e)
+        {
+            Font titleFont = new Font("Arial", 20, FontStyle.Bold);
+            Font contentFont = new Font("Arial", 13);
+            e.Graphics.DrawString("OSHOMOY - Empowering Lives", titleFont, Brushes.Black, new PointF(100, 100));
+
+            string receiptText = $"Payment Receipt\n\n" +
+                                 $"Username: {Username}\n" +
+                                 $"Email: {Email}\n" +
+                                 $"Phone: +88{phone}\n" +
+                                 $"Amount: {Amount} Tk\n" +
+                                 $"Date & Time: {DateTime.Now.ToString("g")}";
+
+            e.Graphics.DrawString(receiptText, contentFont, Brushes.Black, new PointF(100, 140)); 
+        }
+
 
         private void bkashConfirm_Click(object sender, EventArgs e)
         {
@@ -81,6 +111,7 @@ namespace Oshomoy
                         {
                             confirmation1.Show();
                             confirmation1.BringToFront();
+                            phone = tbBkashPhone.Text;
                         }
                         else
                         {
@@ -94,7 +125,7 @@ namespace Oshomoy
                 MessageBox.Show("An error occurred: " + ex.Message);
             }
         }
-
+     
         private void nagadConfirm_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrWhiteSpace(tbNagadPhone.Text) ||
@@ -135,6 +166,7 @@ namespace Oshomoy
                         {
                             confirmation1.Show();
                             confirmation1.BringToFront();
+                            phone = tbNagadPhone.Text;
                         }
                         else
                         {

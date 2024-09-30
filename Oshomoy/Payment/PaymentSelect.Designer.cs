@@ -60,9 +60,9 @@
             this.tbNagadPhone = new System.Windows.Forms.TextBox();
             this.tbNagadAmount = new System.Windows.Forms.TextBox();
             this.confirmation1 = new Oshomoy.Payment.Confirmation();
-            this.lbTest1 = new System.Windows.Forms.Label();
-            this.lbTest2 = new System.Windows.Forms.Label();
             this.lbTest3 = new System.Windows.Forms.Label();
+            this.lbTest2 = new System.Windows.Forms.Label();
+            this.lbTest1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -401,16 +401,16 @@
             this.confirmation1.Size = new System.Drawing.Size(300, 400);
             this.confirmation1.TabIndex = 10;
             // 
-            // lbTest1
+            // lbTest3
             // 
-            this.lbTest1.AutoSize = true;
-            this.lbTest1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTest1.ForeColor = System.Drawing.Color.White;
-            this.lbTest1.Location = new System.Drawing.Point(24, 14);
-            this.lbTest1.Name = "lbTest1";
-            this.lbTest1.Size = new System.Drawing.Size(64, 17);
-            this.lbTest1.TabIndex = 6;
-            this.lbTest1.Text = "Amount";
+            this.lbTest3.AutoSize = true;
+            this.lbTest3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTest3.ForeColor = System.Drawing.Color.White;
+            this.lbTest3.Location = new System.Drawing.Point(24, 56);
+            this.lbTest3.Name = "lbTest3";
+            this.lbTest3.Size = new System.Drawing.Size(64, 17);
+            this.lbTest3.TabIndex = 12;
+            this.lbTest3.Text = "Amount";
             // 
             // lbTest2
             // 
@@ -423,16 +423,16 @@
             this.lbTest2.TabIndex = 11;
             this.lbTest2.Text = "Amount";
             // 
-            // lbTest3
+            // lbTest1
             // 
-            this.lbTest3.AutoSize = true;
-            this.lbTest3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbTest3.ForeColor = System.Drawing.Color.White;
-            this.lbTest3.Location = new System.Drawing.Point(24, 56);
-            this.lbTest3.Name = "lbTest3";
-            this.lbTest3.Size = new System.Drawing.Size(64, 17);
-            this.lbTest3.TabIndex = 12;
-            this.lbTest3.Text = "Amount";
+            this.lbTest1.AutoSize = true;
+            this.lbTest1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbTest1.ForeColor = System.Drawing.Color.White;
+            this.lbTest1.Location = new System.Drawing.Point(24, 14);
+            this.lbTest1.Name = "lbTest1";
+            this.lbTest1.Size = new System.Drawing.Size(64, 17);
+            this.lbTest1.TabIndex = 6;
+            this.lbTest1.Text = "Amount";
             // 
             // PaymentSelect
             // 
@@ -505,8 +505,8 @@
         private Payment.Confirmation confirmation1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tbBkashAmount;
-        private System.Windows.Forms.Label lbTest1;
-        private System.Windows.Forms.Label lbTest2;
         private System.Windows.Forms.Label lbTest3;
+        private System.Windows.Forms.Label lbTest2;
+        private System.Windows.Forms.Label lbTest1;
     }
 }
