@@ -41,6 +41,11 @@ namespace Oshomoy
             user2Panel1.Hide();
             user2Panel1.Hide();
 
+            paymentSelect1.UserId = this.UserId;
+            paymentSelect1.Username = this.username; 
+            paymentSelect1.Email = this.email;
+            paymentSelect1.LoadUserInfo();
+
             paymentSelect1.Show();
             paymentSelect1.BringToFront(); 
 
