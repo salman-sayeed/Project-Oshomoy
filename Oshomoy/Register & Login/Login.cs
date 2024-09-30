@@ -31,6 +31,7 @@ namespace Oshomoy
 
             tbUsername.MaxLength = 16;
             tbPassword.MaxLength = 16;
+
             tbUsername.KeyPress += TbUsername_KeyPress;
             tbPassword.KeyPress += TbPassword_KeyPress;
 
