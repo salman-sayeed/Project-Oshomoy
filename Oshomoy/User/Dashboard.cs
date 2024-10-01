@@ -120,9 +120,11 @@ namespace Oshomoy
             user2Panel1.Hide();
             paymentSelect1.Hide();
 
+            user3Panel1.UserId = this.UserId;
+            user3Panel1.LoadData();
+
             user3Panel1.Show();
             user3Panel1.BringToFront();
-            user3Panel1.UserId = this.UserId;
         }
         private void UserBtn3_Click(object sender, EventArgs e)
         {
