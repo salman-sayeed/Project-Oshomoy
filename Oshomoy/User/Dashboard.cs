@@ -27,13 +27,14 @@ namespace Oshomoy
 
             indicator1.Show();
             indicator2.Hide();
+            indicator3.Hide();
 
             paymentSelect1.Hide();
             user2Panel1.Hide();
+            user3Panel1.Hide();
 
             user1Panel1.Show();
             user1Panel1.BringToFront();
-
 
         }
         public void ShowPayment()
@@ -48,7 +49,6 @@ namespace Oshomoy
 
             paymentSelect1.Show();
             paymentSelect1.BringToFront(); 
-
         }
         public void LoadUserData()
         {
@@ -88,7 +88,6 @@ namespace Oshomoy
                 MessageBox.Show("An error occurred: " + ex.Message);
             }
         }
-
         private void btSignout_Click(object sender, EventArgs e)
         {
             Form1 parentForm = this.Parent as Form1;
@@ -102,32 +101,43 @@ namespace Oshomoy
         {
             indicator1.Show();
             indicator2.Hide();
+            indicator3.Hide();
 
             user2Panel1.Hide();
+            user3Panel1.Hide();
             paymentSelect1.Hide();
 
             user1Panel1.Show();
             user1Panel1.BringToFront();
-
-            LoadUserData();
         }
-
-        private void UserBtn3_Click(object sender, EventArgs e)
+        private void userBtn2_Click(object sender, EventArgs e)
         {
             indicator1.Hide();
             indicator2.Show();
+            indicator3.Hide();
 
             user1Panel1.Hide();
+            user2Panel1.Hide();
+            paymentSelect1.Hide();
+
+            user3Panel1.Show();
+            user3Panel1.BringToFront();
+            user3Panel1.UserId = this.UserId;
+        }
+        private void UserBtn3_Click(object sender, EventArgs e)
+        {
+            indicator1.Hide();
+            indicator2.Hide();
+            indicator3.Show();
+
+            user1Panel1.Hide();
+            user3Panel1.Hide();
             paymentSelect1.Hide();
 
             user2Panel1.Show();
             user2Panel1.BringToFront();
 
             user2Panel1.UserId = this.UserId;
-
-            LoadUserData();
         }
-
-        
     }
 }
