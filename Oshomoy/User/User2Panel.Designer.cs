@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(User2Panel));
             this.lbPassword = new System.Windows.Forms.Label();
             this.lbEmail = new System.Windows.Forms.Label();
             this.lbUsername = new System.Windows.Forms.Label();
@@ -107,7 +108,7 @@
             // 
             // addUserPanel
             // 
-            this.addUserPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
+            this.addUserPanel.BackColor = System.Drawing.Color.Transparent;
             this.addUserPanel.Controls.Add(this.btUpdateUser);
             this.addUserPanel.Controls.Add(this.lbPassword);
             this.addUserPanel.Controls.Add(this.lbEmail);
@@ -143,6 +144,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.Controls.Add(this.addUserPanel);
             this.Name = "User2Panel";
             this.Size = new System.Drawing.Size(750, 500);

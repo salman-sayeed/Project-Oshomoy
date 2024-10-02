@@ -204,6 +204,7 @@
             this.tbBkashPin.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbBkashPin.Location = new System.Drawing.Point(90, 90);
             this.tbBkashPin.Name = "tbBkashPin";
+            this.tbBkashPin.PasswordChar = '•';
             this.tbBkashPin.Size = new System.Drawing.Size(148, 25);
             this.tbBkashPin.TabIndex = 2;
             // 
@@ -373,6 +374,7 @@
             this.tbNagadPin.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbNagadPin.Location = new System.Drawing.Point(92, 84);
             this.tbNagadPin.Name = "tbNagadPin";
+            this.tbNagadPin.PasswordChar = '•';
             this.tbNagadPin.Size = new System.Drawing.Size(148, 25);
             this.tbNagadPin.TabIndex = 8;
             // 

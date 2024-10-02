@@ -28,10 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Adm2Panel));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btAddUser = new System.Windows.Forms.Button();
             this.tbUsername = new System.Windows.Forms.TextBox();
             this.addUserPanel = new System.Windows.Forms.Panel();
+            this.btDeleteUser = new System.Windows.Forms.Button();
+            this.btMakeUser = new System.Windows.Forms.Button();
+            this.btMakeAdmin = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lbId = new System.Windows.Forms.Label();
             this.tbUserId = new System.Windows.Forms.TextBox();
@@ -41,9 +45,6 @@
             this.lbUsername = new System.Windows.Forms.Label();
             this.tbPassword = new System.Windows.Forms.TextBox();
             this.tbEmail = new System.Windows.Forms.TextBox();
-            this.btMakeAdmin = new System.Windows.Forms.Button();
-            this.btMakeUser = new System.Windows.Forms.Button();
-            this.btDeleteUser = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.addUserPanel.SuspendLayout();
             this.SuspendLayout();
@@ -97,7 +98,7 @@
             // 
             // addUserPanel
             // 
-            this.addUserPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(72)))), ((int)(((byte)(72)))));
+            this.addUserPanel.BackColor = System.Drawing.Color.Transparent;
             this.addUserPanel.Controls.Add(this.btDeleteUser);
             this.addUserPanel.Controls.Add(this.btMakeUser);
             this.addUserPanel.Controls.Add(this.btMakeAdmin);
@@ -112,10 +113,67 @@
             this.addUserPanel.Controls.Add(this.btAddUser);
             this.addUserPanel.Controls.Add(this.tbEmail);
             this.addUserPanel.Controls.Add(this.tbUsername);
-            this.addUserPanel.Location = new System.Drawing.Point(95, 21);
+            this.addUserPanel.Location = new System.Drawing.Point(95, 23);
             this.addUserPanel.Name = "addUserPanel";
             this.addUserPanel.Size = new System.Drawing.Size(576, 188);
             this.addUserPanel.TabIndex = 3;
+            // 
+            // btDeleteUser
+            // 
+            this.btDeleteUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(102)))), ((int)(((byte)(199)))));
+            this.btDeleteUser.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(102)))), ((int)(((byte)(199)))));
+            this.btDeleteUser.FlatAppearance.BorderSize = 0;
+            this.btDeleteUser.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(92)))), ((int)(((byte)(179)))));
+            this.btDeleteUser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(71)))), ((int)(((byte)(139)))));
+            this.btDeleteUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btDeleteUser.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btDeleteUser.ForeColor = System.Drawing.Color.White;
+            this.btDeleteUser.Location = new System.Drawing.Point(378, 128);
+            this.btDeleteUser.Name = "btDeleteUser";
+            this.btDeleteUser.Size = new System.Drawing.Size(150, 30);
+            this.btDeleteUser.TabIndex = 14;
+            this.btDeleteUser.TabStop = false;
+            this.btDeleteUser.Text = "Delete User";
+            this.btDeleteUser.UseVisualStyleBackColor = false;
+            this.btDeleteUser.Click += new System.EventHandler(this.btDeleteUser_Click);
+            // 
+            // btMakeUser
+            // 
+            this.btMakeUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(102)))), ((int)(((byte)(199)))));
+            this.btMakeUser.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(102)))), ((int)(((byte)(199)))));
+            this.btMakeUser.FlatAppearance.BorderSize = 0;
+            this.btMakeUser.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(92)))), ((int)(((byte)(179)))));
+            this.btMakeUser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(71)))), ((int)(((byte)(139)))));
+            this.btMakeUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btMakeUser.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btMakeUser.ForeColor = System.Drawing.Color.White;
+            this.btMakeUser.Location = new System.Drawing.Point(378, 76);
+            this.btMakeUser.Name = "btMakeUser";
+            this.btMakeUser.Size = new System.Drawing.Size(150, 30);
+            this.btMakeUser.TabIndex = 13;
+            this.btMakeUser.TabStop = false;
+            this.btMakeUser.Text = "Make User";
+            this.btMakeUser.UseVisualStyleBackColor = false;
+            this.btMakeUser.Click += new System.EventHandler(this.btMakeUser_Click);
+            // 
+            // btMakeAdmin
+            // 
+            this.btMakeAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(102)))), ((int)(((byte)(199)))));
+            this.btMakeAdmin.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(102)))), ((int)(((byte)(199)))));
+            this.btMakeAdmin.FlatAppearance.BorderSize = 0;
+            this.btMakeAdmin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(92)))), ((int)(((byte)(179)))));
+            this.btMakeAdmin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(71)))), ((int)(((byte)(139)))));
+            this.btMakeAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btMakeAdmin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btMakeAdmin.ForeColor = System.Drawing.Color.White;
+            this.btMakeAdmin.Location = new System.Drawing.Point(378, 28);
+            this.btMakeAdmin.Name = "btMakeAdmin";
+            this.btMakeAdmin.Size = new System.Drawing.Size(150, 30);
+            this.btMakeAdmin.TabIndex = 12;
+            this.btMakeAdmin.TabStop = false;
+            this.btMakeAdmin.Text = "Make Admin";
+            this.btMakeAdmin.UseVisualStyleBackColor = false;
+            this.btMakeAdmin.Click += new System.EventHandler(this.btMakeAdmin_Click);
             // 
             // label1
             // 
@@ -224,67 +282,11 @@
             this.tbEmail.TabIndex = 3;
             this.tbEmail.TabStop = false;
             // 
-            // btMakeAdmin
-            // 
-            this.btMakeAdmin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(102)))), ((int)(((byte)(199)))));
-            this.btMakeAdmin.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(102)))), ((int)(((byte)(199)))));
-            this.btMakeAdmin.FlatAppearance.BorderSize = 0;
-            this.btMakeAdmin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(92)))), ((int)(((byte)(179)))));
-            this.btMakeAdmin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(71)))), ((int)(((byte)(139)))));
-            this.btMakeAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btMakeAdmin.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btMakeAdmin.ForeColor = System.Drawing.Color.White;
-            this.btMakeAdmin.Location = new System.Drawing.Point(378, 28);
-            this.btMakeAdmin.Name = "btMakeAdmin";
-            this.btMakeAdmin.Size = new System.Drawing.Size(150, 30);
-            this.btMakeAdmin.TabIndex = 12;
-            this.btMakeAdmin.TabStop = false;
-            this.btMakeAdmin.Text = "Make Admin";
-            this.btMakeAdmin.UseVisualStyleBackColor = false;
-            this.btMakeAdmin.Click += new System.EventHandler(this.btMakeAdmin_Click);
-            // 
-            // btMakeUser
-            // 
-            this.btMakeUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(102)))), ((int)(((byte)(199)))));
-            this.btMakeUser.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(102)))), ((int)(((byte)(199)))));
-            this.btMakeUser.FlatAppearance.BorderSize = 0;
-            this.btMakeUser.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(92)))), ((int)(((byte)(179)))));
-            this.btMakeUser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(71)))), ((int)(((byte)(139)))));
-            this.btMakeUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btMakeUser.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btMakeUser.ForeColor = System.Drawing.Color.White;
-            this.btMakeUser.Location = new System.Drawing.Point(378, 76);
-            this.btMakeUser.Name = "btMakeUser";
-            this.btMakeUser.Size = new System.Drawing.Size(150, 30);
-            this.btMakeUser.TabIndex = 13;
-            this.btMakeUser.TabStop = false;
-            this.btMakeUser.Text = "Make User";
-            this.btMakeUser.UseVisualStyleBackColor = false;
-            this.btMakeUser.Click += new System.EventHandler(this.btMakeUser_Click);
-            // 
-            // btDeleteUser
-            // 
-            this.btDeleteUser.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(102)))), ((int)(((byte)(199)))));
-            this.btDeleteUser.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(102)))), ((int)(((byte)(199)))));
-            this.btDeleteUser.FlatAppearance.BorderSize = 0;
-            this.btDeleteUser.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(161)))), ((int)(((byte)(92)))), ((int)(((byte)(179)))));
-            this.btDeleteUser.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(71)))), ((int)(((byte)(139)))));
-            this.btDeleteUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btDeleteUser.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btDeleteUser.ForeColor = System.Drawing.Color.White;
-            this.btDeleteUser.Location = new System.Drawing.Point(378, 128);
-            this.btDeleteUser.Name = "btDeleteUser";
-            this.btDeleteUser.Size = new System.Drawing.Size(150, 30);
-            this.btDeleteUser.TabIndex = 14;
-            this.btDeleteUser.TabStop = false;
-            this.btDeleteUser.Text = "Delete User";
-            this.btDeleteUser.UseVisualStyleBackColor = false;
-            this.btDeleteUser.Click += new System.EventHandler(this.btDeleteUser_Click);
-            // 
             // Adm2Panel
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.Controls.Add(this.addUserPanel);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Adm2Panel";

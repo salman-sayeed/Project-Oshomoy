@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
-using System.Drawing;  // Required for color changes
+using System.Drawing;  
 using System.Windows.Forms;
+using ClosedXML.Excel;  
+
 
 namespace Oshomoy.User
 {
@@ -77,6 +79,38 @@ namespace Oshomoy.User
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+        }
+
+        private void btSave_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveFileDialog = new SaveFileDialog();
+            saveFileDialog.Filter = "Excel Files|*.xlsx";
+            saveFileDialog.Title = "Save Payment Data as Excel File";
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                try
+                {
+                    using (XLWorkbook wb = new XLWorkbook()) 
+                    {
+                        DataTable dataTable = (DataTable)dataGridView1.DataSource; 
+                        if (dataTable != null)
+                        {
+                            wb.Worksheets.Add(dataTable, "PaymentData"); 
+                            wb.SaveAs(saveFileDialog.FileName); 
+                            MessageBox.Show("Data saved successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        else
+                        {
+                            MessageBox.Show("No data available to save.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("An error occurred while saving: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
     }
 }
