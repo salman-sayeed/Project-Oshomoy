@@ -7,20 +7,20 @@
 <!-- ![ alt text](https://img.shields.io/badge/release-1.0-1590cd?style=for-the-badge&logo=Tesla)
 ![My License](https://badgen.net/badge/MyLicense/MIT/blue) -->
 
-Welcome to Oshomoy, a comprehensive social welfare application dedicated to bringing communities together for the greater good. In today’s world, where natural disasters and social issues can drastically impact lives, Oshomoy serves as a vital platform for individuals to contribute positively and make a meaningful impact.
+Welcome to Oshomoy, a dedicated platform focused on simplifying donations for disaster relief efforts and social causes. Oshomoy provides users with an easy and secure way to contribute financially, helping those affected by natural disasters or social challenges. Whether donating to support relief efforts or aiding charitable causes, Oshomoy empowers individuals to make a meaningful impact.
 
 ## Purpose and Vision
-At its core, Oshomoy aims to empower users by providing them with the tools and opportunities to support those in need. Whether through financial donations or volunteer efforts, every contribution plays a significant role in fostering community solidarity and resilience. Our vision is to create a compassionate society where individuals actively engage in addressing social challenges, thus enriching their communities.
+At its core, Oshomoy aims to streamline the donation process, enabling users to quickly support causes that matter. Our vision is to create a platform where individuals can contribute effortlessly, ensuring that aid reaches those in need during critical times. By fostering a community of givers, Oshomoy envisions a world where people unite to alleviate the effects of disasters and improve the lives of others. Every donation, no matter the size, plays a significant role in creating a more compassionate and resilient society.
 
 
 ## Key Features
 
 - Seamless Donations
-- Volunteer Opportunities
-- Information Hub
-- Community Engagement
-- User-Friendly Interface
-- Secure Transactions
+- Flexible Payment Options
+- View Donation History
+- Manage Account Information
+- Receive Donation Receipts
+- Backup Donation History
 
 
 ## Members
@@ -40,23 +40,38 @@ At its core, Oshomoy aims to empower users by providing them with the tools and 
 
 ## Screenshots
 
-<img src="https://imgur.com/qFNPq2y.png" alt="Login" height="300">
+<img src="https://imgur.com/qFNPq2y.png"  height="300">
 Login Page
         
-<img src="https://imgur.com/DMCrn2H.png" alt="Register" height="300">
+<img src="https://imgur.com/DMCrn2H.png" height="300">
 Register Page
 
-<img src="https://imgur.com/dHyQeg8.png" alt="User Dashboard" height="300">
-User Dashboard
+<img src="https://imgur.com/IyE7Wit.png"  height="300">
+Forgot Password Page
 
-<img src="https://imgur.com/OEWVevw.png" alt="User Payment" height="300">
-User Payment 
+<img src="https://imgur.com/QeqxL39.png" height="300">
+User Home Page
 
-<img src="https://imgur.com/InONwmu.png" alt="User Payment Success" height="300">
-Login User Payment Success
+<img src="https://imgur.com/9TM7Q4s.png" height="300">
+User Donation Page
 
-<img src="https://imgur.com/MMGERv7.png" alt="User Settings" height="300">
-User Settings Page 
+<img src="https://imgur.com/lXItwsY.png" height="300">
+User Payment Page
 
-<img src="https://imgur.com/TltSAs4.png" alt="Admin Dashboard" height="300">
-Admin Dashboard Page
+<img src="https://imgur.com/phVihL5.png" height="300">
+User Payment Success Page
+
+<img src="https://imgur.com/phVihL5.png" height="300">
+User Payment Success Page
+
+<img src="https://imgur.com/fQJzebI.png" height="300">
+User Payment Receipt Page
+
+<img src="https://imgur.com/fQJzebI.png" height="300">
+User Settings Page
+
+<img src="https://imgur.com/ULcKkNH.png" height="300">
+Admin UserControl Page
+
+<img src="https://imgur.com/BddNooQ.png" height="300">
+ Admin Payments Page
