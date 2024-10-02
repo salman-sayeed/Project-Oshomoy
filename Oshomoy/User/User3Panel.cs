@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;  // Required for color changes
 using System.Windows.Forms;
 
 namespace Oshomoy.User
@@ -16,20 +17,37 @@ namespace Oshomoy.User
             connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\SALMAN\Documents\UserInfo.mdf;Integrated Security=True;Connect Timeout=30";
 
             dataGridView1.ReadOnly = true;
+
+            dataGridView1.BackgroundColor = Color.FromArgb(72, 72, 72);   
+            dataGridView1.DefaultCellStyle.BackColor = Color.FromArgb(72, 72, 72);  
+            dataGridView1.DefaultCellStyle.ForeColor = Color.White;            
+            dataGridView1.DefaultCellStyle.Font = new Font("Arial", 11);      
+            dataGridView1.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(72, 72, 72);  
+            dataGridView1.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;      
+            dataGridView1.EnableHeadersVisualStyles = false;  
+
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dataGridView1.AllowUserToAddRows = false;
         }
 
         public void LoadData()
         {
             if (UserId > 0)
             {
-                LoadPaymentData();  
+                LoadPaymentData();
+            }
+            else
+            {
+                MessageBox.Show("Invalid User ID.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
         private void LoadPaymentData()
         {
             string query = "SELECT TrxId, Phone, Method, Date FROM Payment WHERE UserId = @UserId";
-            DataTable paymentTable = new DataTable(); 
+            DataTable paymentTable = new DataTable();
 
             try
             {
@@ -37,20 +55,19 @@ namespace Oshomoy.User
                 {
                     using (SqlCommand command = new SqlCommand(query, connection))
                     {
-                        command.Parameters.AddWithValue("@UserId", UserId); 
+                        command.Parameters.AddWithValue("@UserId", UserId);
                         connection.Open();
 
                         using (SqlDataAdapter adapter = new SqlDataAdapter(command))
                         {
-                            adapter.Fill(paymentTable);  
+                            adapter.Fill(paymentTable);
                         }
                     }
                 }
 
                 dataGridView1.DataSource = paymentTable;
-                dataGridView1.ReadOnly = true;  
                 dataGridView1.AutoResizeColumns();  
-
+                dataGridView1.AutoResizeRows();     
             }
             catch (Exception ex)
             {
@@ -60,7 +77,6 @@ namespace Oshomoy.User
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-           
         }
     }
 }
